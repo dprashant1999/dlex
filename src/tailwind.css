@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+
+
+body{@apply text-dark bg-gray-50 font-pop;}
+
+/* ANim */
+.anim {@apply transition-all duration-200;}
+
+ /* scroll  */
+ ::-webkit-scrollbar {background-color: transparent;}
+ ::-webkit-scrollbar {width: 0.375rem!important;}
+ ::-webkit-scrollbar {height: 0.375rem!important;}
+ ::-webkit-scrollbar-thumb {--tw-bg-opacity: 1!important;background-color: rgb(203 213 225/var(--tw-bg-opacity))!important;}
+ ::-webkit-scrollbar-thumb {border-radius: 0.25rem!important;}
+ ::-webkit-scrollbar-track {--tw-bg-opacity: 1!important;background-color: rgb(241 245 249/var(--tw-bg-opacity))!important;}
+ ::-webkit-scrollbar-track {border-radius: 0.25rem!important;}
+ /* scroll end  */
+
+ /* buttons  */
+
+.right_bar{@apply w-full lg:w-[calc(100%-300px)] 2xl:w-[calc(100%-340px)];}
+.left_bar{@apply  absolute inset-y-0 left-0 h-screen -translate-x-[320px] z-10 lg:translate-x-0 py-7 px-4 2xl:px-10 xl:py-9 w-full max-w-[300px] 2xl:max-w-[340px] bg-white overflow-y-auto;}
+.content-area{@apply h-[calc(100vh-70px)] md:h-[calc(100vh-100px)] px-4 sm:px-6 lg:px-8 2xl:px-10 py-5 overflow-y-auto;}
+
+/* asidebar  */
+.navitems{@apply flex flex-col mt-7 lg:mt-10 2xl:mt-14 space-y-5 xl:space-y-7;}
+.navitems a span{@apply pl-10 xl:pl-6 lg:text-base 2xl:text-lg font-semibold anim;}
+.navitems a span i{@apply mr-3.5 2xl:mr-5 text-base 2xl:text-lg;}
+.navitems a:hover span{@apply text-primary;}
+
+/* header profile  */
+.header{@apply  w-full bg-white px-4 lg:px-6 xl:px-8 2xl:px-12 flex items-center relative h-[70px] md:h-[100px];}
+.headerMenu{@apply flex items-center justify-center w-8 h-8 md:w-10 md:h-10 2xl:h-14 2xl:w-14 rounded-full bg-gray-50;}
+.homeProfile{@apply anim invisible rounded-2xl drop-shadow-one p-5 space-y-2 bg-white absolute right-5 w-full top-full translate-y-2 max-w-[200px] z-10;}
+ #userProfile:hover ~ .homeProfile, .homeProfile:hover, .notifictionbar:hover, #notifications:hover ~ .notifictionbar{@apply -translate-y-2 visible;}
+.notifictionbar{@apply anim invisible rounded-xl drop-shadow-one bg-white absolute right-2.5 sm:right-16 xl:right-24 w-full top-full translate-y-2 max-w-[320px] sm:max-w-[440px] z-10;}
+
+/* header search bar */
+.searchHolder{@apply absolute hidden right-0 top-full mt-1 mr-0 px-3 sm:px-0 sm:relative sm:block w-full sm:w-9/12 sm:max-w-full sm:mr-5 2xl:mr-8;}
+.searchHolder.active{@apply block;}
+
+/* titel  */
+h1,.h1{@apply text-xl sm:text-2xl xl:text-3xl text-dark font-bold;}
+h2,.h2{@apply text-[22px] xl:text-26 text-dark font-medium;}
+h3,.h3{@apply text-xl xl:text-2xl text-dark font-medium;}
+h4,.h4{@apply text-base md:text-lg xl:text-xl text-dark font-medium font-semibold;}
+
+/* form login */
+.form-labal{@apply text-xs sm:text-sm text-grey;}
+.form-input{@apply w-full border text-sm lg:text-base border-grey/40 rounded py-2 sm:py-2.5 px-4 mt-1 outline-primary;}
+.selaction-input{@apply appearance-none mt-0 text-xs lg:text-sm text-grey border-grey/40 rounded py-2 sm:py-2.5 pr-8 pl-3 overflow-hidden overflow-ellipsis w-full border outline-primary;}
+.down-icon{@apply absolute top-1/2 -translate-y-1/2 right-3 text-sm text-grey pointer-events-none;}
+
+/* button  */
+.btn-primary{@apply text-sm lg:text-base p-2.5 bg-primary rounded text-white border border-primary hover:text-primary hover:bg-white anim;}
+.btn-primary1{@apply text-xs sm:text-sm lg:text-base bg-primary text-white border border-primary hover:text-primary hover:bg-white rounded-lg px-3 py-2 lg:py-3.5 2xl:py-4 w-full max-w-[180px] text-center anim;}
+.btn-secondary{@apply text-xs sm:text-sm lg:text-base bg-white text-dark border border-gray-300 hover:text-primary hover:bg-white hover:border-primary rounded-lg px-3 py-2 lg:py-3.5 2xl:py-4 w-full max-w-[180px] text-center anim;}
+
+/* ads campaign-list page */
+input.adsclender[type="date"]::-webkit-calendar-picker-indicator{@apply opacity-0;}
+
+/* checkbox check  */
+.userPlans{@apply flex items-center relative;}
+.userPlans input{@apply absolute inset-0 w-full h-full opacity-0 cursor-pointer;}
+.userPlans span{@apply w-6 h-6 md:w-8 md:h-8 rounded md:rounded-md bg-gray-200 flex items-center justify-center;}
+.userPlans span i{@apply text-white scale-0 anim text-xs mt-1 md:text-base pointer-events-none;}
+.userPlans label{@apply text-sm sm:text-base text-gray-50 font-semibold;}
+/* checkbox plan checked  */
+.userPlans input:checked ~ span{@apply bg-primary;}
+.userPlans input:checked ~ span i{@apply scale-100;}
+
+/* data table styling  */
+table{
+  border-collapse: separate !important;
+   border-spacing: 0 15px;
+}
+tr td, tr th{@apply border-0 px-3 py-2 lg:px-4 align-middle whitespace-nowrap text-left;}
+tbody tr:hover td{@apply bg-gray-50;}
+tbody tr:hover td .status{@apply text-leafGreen;}
+tbody tr td .action a span{@apply text-sm xl:text-base text-grey;}
+tbody tr:hover td .action a span{@apply text-grey;}
+tbody tr:hover td:first-child{@apply rounded-tl-lg rounded-bl-lg overflow-hidden;}
+tbody tr:hover td:last-child{@apply rounded-tr-lg rounded-br-lg overflow-hidden;}
+.tableTitel{@apply text-sm font-semibold text-dark whitespace-nowrap;}
+.tbDetails{@apply text-grey text-xs lg:text-sm font-medium;}
+.status{@apply rounded-md bg-gray-200 text-leafGreen inline-block p-1 px-1 text-xs xl:text-sm min-w-[80px] xl:min-w-[90px] text-center;}
+.status.scheduled, tbody tr:hover td .status.scheduled{@apply text-primary bg-primary/25;}
+tbody tr:hover td span, tbody tr td .action a span:hover{@apply text-dark;}
+tbody tr td .action a:last-child span{@apply hover:text-red}
+
+
+/* Create New Ad */
+.mediafile{@apply absolute inset-0 w-full h-full opacity-0 z-10;}
+.mediafile:checked + span{@apply bg-primary text-white anim;}
+.mediafile:checked + span i{@apply text-white anim;}
+
+
+
+@media (max-width: 1600px){
+  .listflitter{@apply flex-wrap;}
+}
+
+/* popup */
+.popWidth{@apply w-full sm:max-w-[480px] mx-auto max-h-[calc(100vh-55px)] overflow-y-auto px-4 md:px-0;}
+.popMain{@apply relative bg-white rounded-lg shadow;}
+.popPad{@apply py-4 md:py-[30px] px-4 sm:px-[30px] md:px-[60px];}
+.popBtn{@apply w-full md:max-w-[172px] font-semibold rounded-xl text-xs sm:text-sm px-5 py-3 text-center;}
+.popLabel{@apply text-xs sm:text-sm font-medium;}
+.popInputdata{@apply relative mt-1 border border-gray-300 rounded-xl overflow-hidden;}
+.popInput{@apply w-full p-2 pl-11 text-xs sm:text-base leading-6 sm:leading-7 outline-0;}
+.popInputicon{@apply absolute inset-y-0 left-4 inline-flex items-center;}
+.popSelect{@apply text-grey font-normal text-sm md:text-base rounded-lg block w-full p-2.5 outline-none appearance-none;}
+.popSeicon{@apply text-[8px] text-grey absolute right-3 top-[18px] pointer-events-none;}
+
+
+@tailwind utilities;

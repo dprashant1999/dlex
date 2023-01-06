@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/tailwind.css -o ./public/assest/css/style.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.8",
+    "tailwindcss": "^3.0.23"
+  }
+}
