@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create New ADS</title>
+    <title>Create New ADS Schedule</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
@@ -198,7 +198,8 @@
             </div>
           </div>
         </div>
-        <div class="content-area space-y-7">
+        <div class="content-area flex flex-col">
+          <div class="w-full space-y-7">
             <div class="flex items-center justify-between flex-wrap space-y-4 sm:space-y-0">
               <div class="w-full sm:w-5/12 md:w-1/2">
                 <a href="javascript:void(0)" class="inline-block">                
@@ -206,117 +207,468 @@
                 </a>
               </div>
               <div class="flex items-center sm:justify-end space-x-3 w-full sm:w-7/12 md:w-1/2">
-                <a href="javascript:void(0)" class="btn-secondary">Preview</a>
-                <a href="javascript:void(0)" class="btn-secondary">Save Draft</a>
+                <a href="javascript:void(0)" class="btn-secondary">Back</a>
                 <a href="javascript:void(0)" class="btn-primary1">Continue</a>
               </div>
             </div>
-            <form method="post" class="flex flex-wrap -mx-4">
-              <div class="w-full xl:w-1/2 p-4">
-                <div class="p-5 sm:p-7 rounded-lg bg-white drop-shadow-one space-y-5">
-                  <h4>Create Ad</h4>
-                  <div class="w-full">
-                    <span class="block w-full form-labal 2xl:text-base mb-2">Brand Logo</span>
-                    <div class="flex items-center">
-                      <!-- img upload  -->
-                      <div class="p-4 sm:p-5 md:p-8 rounded-lg border sm:border-2 border-dashed border-grey flex items-center justify-center">
-                          <span class="icon-imges text-2xl sm:text-4xl text-grey"></span>
-                      </div> 
-                      <!-- button group  -->
-                      <div class="space-y-4 ml-3 sm:ml-5">
-                        <div class="flex items-center space-x-3">
-                          <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base">choose file</a>
-                          <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base">Upload Now</a>
-                        </div>
-                        <span class="block form-labal 2xl:text-base">JPG, PNG. Max size of 800K</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w-full">
-                    <label for="#brand-name" class="form-labal 2xl:text-base">Brand Name</label>
-                    <input type="text" name="Brand-Name" id="brand-name" class="form-input font-semibold"/>
-                  </div>
-                  <div class="w-full">
-                    <label for="#campaign-name" class="form-labal 2xl:text-base">Campaign Name</label>
-                    <input type="text" name="campaign-name" id="campaign-name" class="form-input font-semibold"/>
-                  </div>
-                  <div class="w-full">
-                    <label for="#Password" class="form-labal 2xl:text-base">Call to Action Button Name</label>
-                    <div class="relative">
+            <div class="w-full space-y-3 md:space-y-5">
+              <div class="accodion">
+                <div class="accodionTitel">
+                  <h4>Ads schedule 1</h4>
+                  <span class="icon-downarrow text-sm md:text-lg text-dark ml-auto"></span>
+                </div>
+                <form method="post" class="accodion-content">
+                  <div class="px-4 py-2 w-full sm:w-1/2 space-y-2">
+                    <label for="#new-password" class="form-labal">Select projects</label>
+                    <div class="relative w-full">
                       <span class="down-icon icon-downarrow"></span>
-                      <select name="call-button" id="call-button" class="form-input appearance-none">
-                        <option value="Brand Name">Open Now</option>
-                        <option value="Brand Name">Open Now</option>
-                        <option value="Brand Name">Open Now</option>
-                        <option value="Brand Name">Open Now</option>
+                      <select name="brand-name" id="brand-name" class="selaction-input py-3 xl:py-4 text-dark font-semibold">
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
                       </select>
                     </div>
                   </div>
-                  <div class="w-full">
-                    <label for="#click-URL" class="form-labal 2xl:text-base">ADS Click URL</label>
-                    <input type="text" name="click-URL" id="click-URL" class="form-input font-semibold"/>
-                  </div>
-                  <div class="w-full space-y-2">
-                    <span class="form-labal 2xl:text-base block">Choose where to place ads</span>
-                    <div class="flex items-center space-x-4">
-                      <label for="website-ads" class="text-xs sm:text-sm 2xl:text-base text-dark font-semibold flex items-center cursor-pointer">
-                        <input type="radio" name="website-ads" id="website-ads" class="mr-2 accent-red filter hue-rotate-[210deg] brightness-150 w-5 h-5"/>Website ADS
-                      </label>
-                      <label for="application-ads" class="text-xs sm:text-sm 2xl:text-base text-dark font-semibold flex items-center cursor-pointer">
-                        <input type="radio" name="website-ads" id="application-ads" class="mr-2 accent-red filter hue-rotate-[210deg] brightness-150 w-5 h-5"/>Application Ads
-                      </label>
+                  <div class="px-4 py-2 w-full sm:w-1/2 space-y-2">
+                    <label for="#new-password" class="form-labal">Select the screen for the AD place</label>
+                    <div class="relative w-full">
+                      <span class="down-icon icon-downarrow"></span>
+                      <select name="brand-name" id="brand-name" class="selaction-input py-3 xl:py-4 text-dark font-semibold">
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
+                      </select>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="w-full xl:w-1/2 p-4">
-                <div class="p-5 sm:p-7 rounded-lg bg-white drop-shadow-one space-y-5">
-                  <span class="block w-full form-labal 2xl:text-base">Upload Images</span>
-                  <div class="p-5 sm:p-7 border-2 border-dashed border-grey/50 rounded-lg">
-                    <div class="w-full bg-[#F8F8F8] text-center p-4 py-14 rounded-lg">
-                      <div class="flex justify-center flex-wrap space-x-5">
-                        <div class="relative">
-                          <input type="radio" name="mediafile" id="mediafile" class="mediafile"/>
-                          <span class="rounded-md w-16 h-16 bg-gray-200 flex items-center justify-center"><i class="icon-imges text-4xl text-grey"></i></span>
+                  <div class="px-4 py-2 w-full sm:w-1/2 space-y-2">
+                    <label for="#new-password" class="form-labal">Select start date</label>
+                    <div class="relative w-full">
+                      <span class="down-icon icon-calendar text-primary text-xl"></span>
+                      <input type="date" name="startdate" id="startdate" class="form-input text-dark font-semibold text-xs lg:text-sm leading-[10px] mt-0 px-3 py-3 xl:py-4 adsclender">
+                    </div>
+                  </div>
+                  <div class="px-4 py-2 w-full sm:w-1/2 space-y-2">
+                    <label for="#new-password" class="form-labal">Select the screen for the AD place</label>
+                    <div class="relative w-full">
+                      <span class="down-icon icon-mark text-primary text-xl"></span>
+                      <input type="text" value="Surat" name="startdate" id="startdate" class="form-input text-dark font-semibold text-xs lg:text-sm leading-[10px] mt-0 px-3 py-3 xl:py-4 adsclender">
+                    </div>
+                  </div>
+                  <div class="w-full px-4 space-y-2">
+                    <span class="form-labal block">Available slide place for ads</span>
+                    <div class="flex flex-wrap -mx-2">
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">1</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
                         </div>
-                        <div class="relative">
-                          <input type="radio" name="mediafile" id="mediafile" class="mediafile"/>
-                          <span class="rounded-md w-16 h-16 bg-gray-200 flex items-center justify-center"><i class="icon-imges text-4xl text-grey"></i></span>
+                      </div>
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide n_availableHolder">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">2</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
+                          <span class="n-available">Not<br>Available</span>
                         </div>
-                        <div class="w-full mt-5">
-                          <span class="text-center max-w-[300px] mx-auto inline-block text-xs">Drag and drop an image, or <a href="javascript:void(0)" class="text-primary">Browse</a>
-                            800x80 or higher recommended. Max 10MB each (20MB for videos).
-                            JPG, PNG, GIF, Video MP4</span>
+                      </div>
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">3</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide n_availableHolder">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">4</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
+                          <span class="n-available">Not<br>Available</span>
+                        </div>
+                      </div>
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">5</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide n_availableHolder">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">6</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
+                          <span class="n-available">Not<br>Available</span>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="w-full">
-                    <span class="block w-full form-labal 2xl:text-base mb-2">Video Thumb</span>
-                    <div class="flex items-center">
-                      <!-- img upload  -->
-                      <div class="w-full max-w-[200px] py-3 md:py-5 rounded-lg border sm:border-2 border-dashed border-grey flex items-center justify-center">
-                          <span class="icon-imges text-2xl sm:text-4xl text-grey"></span>
-                      </div> 
-                      <!-- button group  -->
-                      <div class="space-y-4 ml-3 sm:ml-5">
-                        <div class="flex items-center space-x-3">
-                          <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base bg-[#E6E7E9] text-grey border-[#E6E7E9] whitespace-nowrap">choose file</a>
-                          <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base whitespace-nowrap">Upload Now</a>
+                </form>
+                <div class="w-full max-w-[40px] md:max-w-[60px] py-3.5 md:py-5 left-full absolute top-0">
+                  <a href="javascript:void(0)" class="w-7 h-7 border-2 border-red rounded-full flex items-center justify-center ml-auto"><span class="icon-minus2 text-red text-xs md:text-sm font-semibold"></span></a>
+                </div>
+              </div>
+              <div class="accodion">
+                <div class="accodionTitel active">
+                  <h4>Ads schedule 1</h4>
+                  <span class="icon-downarrow text-sm md:text-lg text-dark ml-auto"></span>
+                </div>
+                <form method="post" class="accodion-content">
+                  <div class="px-4 py-2 w-full sm:w-1/2 space-y-2">
+                    <label for="#new-password" class="form-labal">Select projects</label>
+                    <div class="relative w-full">
+                      <span class="down-icon icon-downarrow"></span>
+                      <select name="brand-name" id="brand-name" class="selaction-input py-3 xl:py-4 text-dark font-semibold">
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="px-4 py-2 w-full sm:w-1/2 space-y-2">
+                    <label for="#new-password" class="form-labal">Select the screen for the AD place</label>
+                    <div class="relative w-full">
+                      <span class="down-icon icon-downarrow"></span>
+                      <select name="brand-name" id="brand-name" class="selaction-input py-3 xl:py-4 text-dark font-semibold">
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
+                        <option value="Brand Name">Brand Name</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="px-4 py-2 w-full sm:w-1/2 space-y-2">
+                    <label for="#new-password" class="form-labal">Select start date</label>
+                    <div class="relative w-full">
+                      <span class="down-icon icon-calendar text-primary text-xl"></span>
+                      <input type="date" name="startdate" id="startdate" class="form-input text-dark font-semibold text-xs lg:text-sm leading-[10px] mt-0 px-3 py-3 xl:py-4 adsclender">
+                    </div>
+                  </div>
+                  <div class="px-4 py-2 w-full sm:w-1/2 space-y-2">
+                    <label for="#new-password" class="form-labal">Select the screen for the AD place</label>
+                    <div class="relative w-full">
+                      <span class="down-icon icon-mark text-primary text-xl"></span>
+                      <input type="text" value="Surat" name="startdate" id="startdate" class="form-input text-dark font-semibold text-xs lg:text-sm leading-[10px] mt-0 px-3 py-3 xl:py-4 adsclender">
+                    </div>
+                  </div>
+                  <div class="w-full px-4 space-y-2">
+                    <span class="form-labal block">Available slide place for ads</span>
+                    <div class="flex flex-wrap -mx-2">
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">1</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
                         </div>
-                        <span class="block form-labal 2xl:text-base">JPG, PNG. Max size of 800K</span>
+                      </div>
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide n_availableHolder">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">2</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
+                          <span class="n-available">Not<br>Available</span>
+                        </div>
+                      </div>
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">3</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide n_availableHolder">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">4</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
+                          <span class="n-available">Not<br>Available</span>
+                        </div>
+                      </div>
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">5</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0 text-white"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-full sm:w-1/3 md:W-1/3 xl:w-1/4 2xl:w-1/6 p-2">
+                        <div class="slide n_availableHolder">
+                          <div class="flex items-baseline">
+                            <span class="text-xs md:text-[13px] font-normal inline-block"><span class="text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1">6</span>Slide</span>
+                            <span class="text-xs md:text-[13px] font-normal inline-block ml-auto">₹ 5000</span>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">500 User</option>
+                              <option value="Brand Name">1000 User</option>
+                              <option value="Brand Name">1500 User</option>
+                              <option value="Brand Name">2000 User</option>
+                            </select>
+                          </div>
+                          <div class="relative w-full mt-2">
+                            <span class="down-icon icon-downarrow text-xs right-0"></span>
+                            <select name="brand-name" id="brand-name" class="bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px]">
+                              <option value="Brand Name">1 Hour (₹ 10/hrs)</option>
+                              <option value="Brand Name">2 Hour (₹ 20/hrs)</option>
+                              <option value="Brand Name">3 Hour (₹ 30/hrs)</option>
+                              <option value="Brand Name">4 Hour (₹ 40/hrs)</option>
+                            </select>
+                          </div>
+                          <span class="n-available">Not<br>Available</span>
+                        </div>
                       </div>
                     </div>
                   </div>
+                </form>
+                <div class="w-full max-w-[40px] md:max-w-[60px] py-3.5 md:py-5 left-full absolute top-0">
+                  <a href="javascript:void(0)" class="w-7 h-7 border-2 border-red rounded-full items-center justify-center ml-auto hidden"><span class="icon-minus2 text-red text-xs md:text-sm font-semibold"></span></a>
+                  <a href="javascript:void(0)" class="w-7 h-7 border-2 border-primary rounded-full flex items-center justify-center ml-auto"><span class="icon-plus2 text-primary text-xs md:text-sm font-semibold"></span></a>
                 </div>
               </div>
-            </form>
+            </div>
+          </div>
+          <div class="w-full flex justify-end items-center mt-auto pt-5">
+            <a href="javascript:void(0)" class="btn-secondary inline-block">Cancel</a>
+          </div>
         </div>
       </div>
     </div>
     <script src="../assest/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="../assest/js/script.js"></script>
+    <script>
+      $(function() {
+        $('.accodion-content').slideUp();
+        $('.accodionTitel.active').next().slideDown();
+        $('.accodionTitel').click(function(j) {   
+          if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $('.accodionTitel').removeClass('active');
+            $(this).next().slideUp();
+          }
+          else {
+            $('.accodionTitel').removeClass('active');
+            $('.accodion-content').slideUp();
+            $(this).addClass('active');
+            $(this).next().slideDown();
+          }     
+        });
+      });
+
+    </script>
   </body>
 </html>

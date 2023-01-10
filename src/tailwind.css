@@ -6,6 +6,7 @@ body{@apply text-dark bg-gray-50 font-pop;}
 
 /* ANim */
 .anim {@apply transition-all duration-200;}
+select option{@apply text-dark;}
 
  /* scroll  */
  ::-webkit-scrollbar {background-color: transparent;}
@@ -95,6 +96,14 @@ tbody tr td .action a:last-child span{@apply hover:text-red}
 .mediafile:checked + span{@apply bg-primary text-white anim;}
 .mediafile:checked + span i{@apply text-white anim;}
 
+.accodion{@apply bg-white rounded-xl drop-shadow-two w-[calc(100%-40px)] md:w-[calc(100%-60px)];}
+.accodionTitel{@apply w-full flex items-center px-5 py-4 md:px-7 md:py-5;}
+.accodion-content{@apply flex flex-wrap pb-5 md:pb-7 -mx-4 pt-2 px-5 md:px-7;}
+.slide{@apply rounded-lg bg-primary text-white p-4 w-full relative;}
+.n-available{@apply w-full h-full absolute z-10 inset-0 text-xs items-center justify-center text-red font-medium text-center hidden;}
+.n_availableHolder{@apply bg-gray-300 text-grey;}
+.n_availableHolder .n-available{@apply flex;}
+.n_availableHolder .n-available .down-icon{@apply text-grey;}
 
 
 @media (max-width: 1600px){
