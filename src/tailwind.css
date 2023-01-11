@@ -42,7 +42,7 @@ select option{@apply text-dark;}
 .searchHolder.active{@apply block;}
 
 /* titel  */
-h1,.h1{@apply text-xl sm:text-2xl xl:text-3xl text-dark font-bold;}
+h1,.h1{@apply text-xl sm:text-2xl xl:text-3xl text-dark font-semibold;}
 h2,.h2{@apply text-[22px] xl:text-26 text-dark font-medium;}
 h3,.h3{@apply text-xl xl:text-2xl text-dark font-medium;}
 h4,.h4{@apply text-base md:text-lg xl:text-xl text-dark font-medium font-semibold;}
@@ -54,9 +54,11 @@ h4,.h4{@apply text-base md:text-lg xl:text-xl text-dark font-medium font-semibol
 .down-icon{@apply absolute top-1/2 -translate-y-1/2 right-3 text-sm text-grey pointer-events-none;}
 
 /* button  */
+.btnCancel{@apply block py-3.5 2xl:py-4 w-full max-w-[100px] md:max-w-[130px] lg:max-w-[180px] ml-auto text-xs sm:text-sm lg:text-base bg-white text-dark border border-gray-300 hover:text-primary hover:bg-white hover:border-primary rounded-lg px-3 text-center anim font-medium;}
 .btn-primary{@apply text-sm lg:text-base p-2.5 bg-primary rounded text-white border border-primary hover:text-primary hover:bg-white anim;}
 .btn-primary1{@apply text-xs sm:text-sm lg:text-base bg-primary text-white border border-primary hover:text-primary hover:bg-white rounded-lg px-3 py-2 lg:py-3.5 2xl:py-4 w-full max-w-[180px] text-center anim;}
-.btn-secondary{@apply text-xs sm:text-sm lg:text-base bg-white text-dark border border-gray-300 hover:text-primary hover:bg-white hover:border-primary rounded-lg px-3 py-2 lg:py-3.5 2xl:py-4 w-full max-w-[180px] text-center anim;}
+.btn-secondary{@apply text-xs sm:text-sm lg:text-base bg-white text-dark border border-gray-300 hover:text-primary hover:bg-white hover:border-primary rounded-lg px-3 py-2 lg:py-3.5 2xl:py-4 w-full max-w-[180px] text-center anim font-medium;}
+
 
 /* ads campaign-list page */
 input.adsclender[type="date"]::-webkit-calendar-picker-indicator{@apply opacity-0;}
@@ -127,6 +129,8 @@ tbody tr td .action a:last-child span{@apply hover:text-red}
 .popInputicon{@apply absolute inset-y-0 left-4 inline-flex items-center;}
 .popSelect{@apply text-grey font-normal text-sm md:text-base rounded-lg block w-full p-2.5 outline-none appearance-none;}
 .popSeicon{@apply text-[8px] text-grey absolute right-3 top-[18px] pointer-events-none;}
+
+
 
 
 @tailwind utilities;

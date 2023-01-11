@@ -864,7 +864,7 @@ select option {
 h1, .h1 {
   font-size: 1.25rem;
   line-height: 1.875rem;
-  font-weight: 700;
+  font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(24 24 25 / var(--tw-text-opacity));
 }
@@ -1030,6 +1030,69 @@ h4, .h4 {
 
 /* button  */
 
+.btnCancel {
+  margin-left: auto;
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  text-align: center;
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(24 24 25 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.btnCancel:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(32 192 232 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(32 192 232 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .btnCancel {
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .btnCancel {
+    max-width: 130px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btnCancel {
+    max-width: 180px;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .btnCancel {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 .btn-primary {
   border-radius: 0.25rem;
   border-width: 1px;
@@ -1130,6 +1193,7 @@ h4, .h4 {
   text-align: center;
   font-size: .75rem;
   line-height: 1rem;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(24 24 25 / var(--tw-text-opacity));
   transition-property: all;
@@ -1864,6 +1928,11 @@ tbody tr td .action a:last-child span:hover {
   margin-right: -1rem;
 }
 
+.-mx-2\.5 {
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1999,6 +2068,10 @@ tbody tr td .action a:last-child span:hover {
 
 .h-16 {
   height: 4rem;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .h-0\.5 {
@@ -2188,6 +2261,10 @@ tbody tr td .action a:last-child span:hover {
   flex-wrap: wrap;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -2254,6 +2331,30 @@ tbody tr td .action a:last-child span:hover {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-1\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.375rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.375rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-2\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.625rem * var(--tw-space-y-reverse));
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2362,6 +2463,10 @@ tbody tr td .action a:last-child span:hover {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-grey\/20 {
+  border-color: rgb(158 158 158 / 0.2);
 }
 
 .bg-primary {
@@ -2850,6 +2955,10 @@ tbody tr td .action a:last-child span:hover {
     width: 50%;
   }
 
+  .md\:w-1\/5 {
+    width: 20%;
+  }
+
   .md\:w-10 {
     width: 2.5rem;
   }
@@ -2973,6 +3082,16 @@ tbody tr td .action a:last-child span:hover {
     padding-bottom: 0.75rem;
   }
 
+  .lg\:px-2\.5 {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -3086,6 +3205,14 @@ tbody tr td .action a:last-child span:hover {
 
   .\32xl\:w-1\/6 {
     width: 16.666667%;
+  }
+
+  .\32xl\:w-1\/2 {
+    width: 50%;
+  }
+
+  .\32xl\:w-1\/5 {
+    width: 20%;
   }
 
   .\32xl\:max-w-\[240px\] {
