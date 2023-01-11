@@ -1859,6 +1859,10 @@ tbody tr td .action a:last-child span:hover {
   top: 0px;
 }
 
+.right-8 {
+  right: 2rem;
+}
+
 .right-1 {
   right: 0.25rem;
 }
@@ -1881,18 +1885,6 @@ tbody tr td .action a:last-child span:hover {
 
 .right-\[44\.3\%\] {
   right: 44.3%;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.right-8 {
-  right: 2rem;
 }
 
 .z-40 {
@@ -2192,6 +2184,10 @@ tbody tr td .action a:last-child span:hover {
 
 .max-w-\[160px\] {
   max-width: 160px;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .max-w-\[420px\] {
@@ -2616,6 +2612,16 @@ tbody tr td .action a:last-child span:hover {
   padding-right: 0.25rem;
 }
 
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -2653,6 +2659,10 @@ tbody tr td .action a:last-child span:hover {
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .pb-0 {
@@ -2854,12 +2864,12 @@ tbody tr td .action a:last-child span:hover {
     left: 1rem;
   }
 
-  .sm\:left-0 {
-    left: 0px;
-  }
-
   .sm\:right-10 {
     right: 2.5rem;
+  }
+
+  .sm\:left-0 {
+    left: 0px;
   }
 
   .sm\:ml-5 {
