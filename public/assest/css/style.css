@@ -1426,6 +1426,8 @@ tbody tr td .action a:last-child span:hover {
   transition-duration: 200ms;
 }
 
+/* Create New Ad ads-schedule */
+
 .accodion {
   width: calc(100% - 40px);
   border-radius: 0.75rem;
@@ -1522,6 +1524,26 @@ tbody tr td .action a:last-child span:hover {
 }
 
 .n_availableHolder .n-available .down-icon {
+  --tw-text-opacity: 1;
+  color: rgb(158 158 158 / var(--tw-text-opacity));
+}
+
+/* Create New ADS - Invoice  */
+
+.invoiceTBdetails tr th:first-child, .invoiceTBdetails tr td:first-child {
+  padding-left: 0px;
+}
+
+.invoiceTBdetails tr td {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.invoiceTBdetails tr:hover td {
+  background-color: transparent;
+}
+
+.invoiceTBdetails tr:hover td span {
   --tw-text-opacity: 1;
   color: rgb(158 158 158 / var(--tw-text-opacity));
 }
@@ -1698,6 +1720,10 @@ tbody tr td .action a:last-child span:hover {
   color: rgb(158 158 158 / var(--tw-text-opacity));
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .visible {
   visibility: visible;
 }
@@ -1716,11 +1742,6 @@ tbody tr td .action a:last-child span:hover {
 
 .relative {
   position: relative;
-}
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 .inset-0 {
@@ -1774,6 +1795,10 @@ tbody tr td .action a:last-child span:hover {
   top: 0px;
 }
 
+.right-1 {
+  right: 0.25rem;
+}
+
 .-left-1 {
   left: -0.25rem;
 }
@@ -1794,8 +1819,16 @@ tbody tr td .action a:last-child span:hover {
   right: 44.3%;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.right-5 {
+  right: 1.25rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-8 {
+  right: 2rem;
 }
 
 .z-40 {
@@ -1868,6 +1901,10 @@ tbody tr td .action a:last-child span:hover {
   margin-top: 0.5rem;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1894,14 +1931,6 @@ tbody tr td .action a:last-child span:hover {
 
 .ml-4 {
   margin-left: 1rem;
-}
-
-.mt-auto {
-  margin-top: auto;
-}
-
-.mb-auto {
-  margin-bottom: auto;
 }
 
 .block {
@@ -2036,6 +2065,10 @@ tbody tr td .action a:last-child span:hover {
   width: 4rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-28 {
   width: 7rem;
 }
@@ -2044,16 +2077,20 @@ tbody tr td .action a:last-child span:hover {
   width: 2.5rem;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .min-w-\[160px\] {
   min-width: 160px;
 }
 
 .min-w-\[130px\] {
   min-width: 130px;
+}
+
+.min-w-\[100px\] {
+  min-width: 100px;
+}
+
+.min-w-\[150px\] {
+  min-width: 150px;
 }
 
 .min-w-\[75px\] {
@@ -2074,6 +2111,14 @@ tbody tr td .action a:last-child span:hover {
 
 .max-w-\[200px\] {
   max-width: 200px;
+}
+
+.max-w-\[110px\] {
+  max-width: 110px;
+}
+
+.max-w-\[160px\] {
+  max-width: 160px;
 }
 
 .max-w-\[420px\] {
@@ -2135,10 +2180,6 @@ tbody tr td .action a:last-child span:hover {
           appearance: none;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -2147,20 +2188,12 @@ tbody tr td .action a:last-child span:hover {
   flex-wrap: wrap;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
 .items-center {
   align-items: center;
 }
 
 .items-baseline {
   align-items: baseline;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-end {
@@ -2421,20 +2454,16 @@ tbody tr td .action a:last-child span:hover {
   padding: 0.25rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
 
 .p-2\.5 {
   padding: 0.625rem;
-}
-
-.p-0 {
-  padding: 0px;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-2 {
@@ -2477,6 +2506,11 @@ tbody tr td .action a:last-child span:hover {
   padding-bottom: 3.5rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -2504,10 +2538,6 @@ tbody tr td .action a:last-child span:hover {
   padding-right: 0.25rem;
 }
 
-.pb-0 {
-  padding-bottom: 0px;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -2516,12 +2546,12 @@ tbody tr td .action a:last-child span:hover {
   padding-top: 1rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .text-center {
@@ -2530,14 +2560,6 @@ tbody tr td .action a:last-child span:hover {
 
 .text-right {
   text-align: right;
-}
-
-.align-top {
-  vertical-align: top;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .text-base {
@@ -2731,6 +2753,10 @@ tbody tr td .action a:last-child span:hover {
     left: 0px;
   }
 
+  .sm\:right-10 {
+    right: 2.5rem;
+  }
+
   .sm\:ml-5 {
     margin-left: 1.25rem;
   }
@@ -2836,6 +2862,12 @@ tbody tr td .action a:last-child span:hover {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-7 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:p-8 {
