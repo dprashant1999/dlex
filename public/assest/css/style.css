@@ -1847,6 +1847,10 @@ tbody tr td .action a:last-child span:hover {
   top: 0.5rem;
 }
 
+.right-8 {
+  right: 2rem;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -1857,10 +1861,6 @@ tbody tr td .action a:last-child span:hover {
 
 .top-0 {
   top: 0px;
-}
-
-.right-8 {
-  right: 2rem;
 }
 
 .right-1 {
@@ -1885,6 +1885,18 @@ tbody tr td .action a:last-child span:hover {
 
 .right-\[44\.3\%\] {
   right: 44.3%;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.left-8 {
+  left: 2rem;
 }
 
 .z-40 {
@@ -2461,6 +2473,11 @@ tbody tr td .action a:last-child span:hover {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .border-grey\/20 {
   border-color: rgb(158 158 158 / 0.2);
 }
@@ -2617,14 +2634,14 @@ tbody tr td .action a:last-child span:hover {
   padding-right: 0.625rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-7 {
@@ -2781,6 +2798,10 @@ tbody tr td .action a:last-child span:hover {
 
 .accent-red {
   accent-color: #FA5657;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .opacity-100 {
@@ -3022,13 +3043,13 @@ tbody tr td .action a:last-child span:hover {
     line-height: 1.75rem;
   }
 
-  .md\:text-\[13px\] {
-    font-size: 13px;
-  }
-
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.625rem;
+  }
+
+  .md\:text-\[13px\] {
+    font-size: 13px;
   }
 }
 
