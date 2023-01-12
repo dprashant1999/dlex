@@ -1993,11 +1993,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   position: relative;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 .inset-0 {
   top: 0px;
   right: 0px;
@@ -2075,10 +2070,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .right-\[44\.3\%\] {
   right: 44.3%;
-}
-
-.left-0 {
-  left: 0px;
 }
 
 .z-30 {
