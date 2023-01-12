@@ -82,6 +82,7 @@ tr td, tr th{@apply border-0 px-3 py-2 lg:px-4 align-middle whitespace-nowrap te
 tbody tr:hover td{@apply bg-gray-50;}
 tbody tr:hover td .status{@apply text-leafGreen;}
 tbody tr td .action a span{@apply text-sm xl:text-base text-grey;}
+tbody tr td .action a:first-child span{@apply text-dark;}
 tbody tr:hover td:first-child{@apply rounded-tl-lg rounded-bl-lg overflow-hidden;}
 tbody tr:hover td:last-child{@apply rounded-tr-lg rounded-br-lg overflow-hidden;}
 .tableTitel{@apply text-sm font-semibold text-dark whitespace-nowrap;}
@@ -118,13 +119,20 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 }
 .invoiceTBdetails tr th:first-child, .invoiceTBdetails tr td:first-child{@apply pl-0;}
 .invoiceTBdetails tr th:last-child, .invoiceTBdetails tr td:last-child{@apply pr-0;}
-.invoiceTBdetails tr td{@apply py-0;}
+.invoiceTBdetails tr td{@apply py-0 align-top;}
+.invoiceTBdetails tr:hover td:first-child{@apply rounded-none;}
+.invoiceTBdetails tr:hover td:last-child{@apply rounded-none;}
 .invoiceTBdetails tr:hover td{@apply bg-transparent;}
-.invoiceTBdetails tr:hover td span{@apply text-grey;}
 .invoiceTBdetails tr th{@apply align-top;}
 .invoiceTBdetails tr:first-child th:nth-child(2), .invoiceTBdetails tr:first-child td:nth-child(2){@apply whitespace-normal min-w-[165px] text-center;}
 .invoiceTBdetails tr:first-child th:nth-child(3), .invoiceTBdetails tr:first-child td:nth-child(3){@apply whitespace-normal min-w-[120px] text-center;}
 .invoiceTBdetails tr:first-child th:nth-child(4), .invoiceTBdetails tr:first-child td:nth-child(4){@apply whitespace-normal min-w-[150px] text-center;}
+.invoiceSlidenum {@apply text-xs md:text-[13px] font-normal inline-block w-full max-w-[100px];}
+.invoiceSlidenum span{@apply text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1 leading-7;}
+.invoceuserSelaction{@apply bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px] px-1;}
+.invoiceAmount{@apply text-sm xl:text-base font-semibold text-primary block leading-7;}
+.invoiceTBdetails .adsSchedule td{@apply border-b border-gray-300 pb-5;}
+.invoiceTBdetails .adsSchedule.both td{@apply border-0 border-gray-300 pb-0;}
 
 
 @media (max-width: 1600px){

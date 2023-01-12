@@ -1377,6 +1377,11 @@ tbody tr td .action a span {
   }
 }
 
+tbody tr td .action a:first-child span {
+  --tw-text-opacity: 1;
+  color: rgb(24 24 25 / var(--tw-text-opacity));
+}
+
 tbody tr:hover td:first-child {
   overflow: hidden;
   border-top-left-radius: 0.5rem;
@@ -1624,15 +1629,19 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 .invoiceTBdetails tr td {
   padding-top: 0px;
   padding-bottom: 0px;
+  vertical-align: top;
+}
+
+.invoiceTBdetails tr:hover td:first-child {
+  border-radius: 0px;
+}
+
+.invoiceTBdetails tr:hover td:last-child {
+  border-radius: 0px;
 }
 
 .invoiceTBdetails tr:hover td {
   background-color: transparent;
-}
-
-.invoiceTBdetails tr:hover td span {
-  --tw-text-opacity: 1;
-  color: rgb(158 158 158 / var(--tw-text-opacity));
 }
 
 .invoiceTBdetails tr th {
@@ -1655,6 +1664,101 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   min-width: 150px;
   white-space: normal;
   text-align: center;
+}
+
+.invoiceSlidenum {
+  display: inline-block;
+  width: 100%;
+  max-width: 100px;
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .invoiceSlidenum {
+    font-size: 13px;
+  }
+}
+
+.invoiceSlidenum span {
+  padding-right: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .invoiceSlidenum span {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .invoiceSlidenum span {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .invoiceSlidenum span {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.invoceuserSelaction {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-width: 0px;
+  background-color: transparent;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .invoceuserSelaction {
+    font-size: 13px;
+  }
+}
+
+.invoiceAmount {
+  display: block;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(32 192 232 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1280px) {
+  .invoiceAmount {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+.invoiceTBdetails .adsSchedule td {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-bottom: 1.25rem;
+}
+
+.invoiceTBdetails .adsSchedule.both td {
+  border-width: 0px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-bottom: 0px;
 }
 
 @media (max-width: 1600px){
@@ -1889,6 +1993,11 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   position: relative;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .inset-0 {
   top: 0px;
   right: 0px;
@@ -1928,6 +2037,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   top: 0.5rem;
 }
 
+.right-8 {
+  right: 2rem;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -1938,10 +2051,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .top-0 {
   top: 0px;
-}
-
-.right-8 {
-  right: 2rem;
 }
 
 .right-1 {
@@ -1966,6 +2075,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .right-\[44\.3\%\] {
   right: 44.3%;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .z-30 {
@@ -2043,6 +2156,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   margin-top: 0px;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -2065,10 +2182,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .mb-5 {
@@ -2426,6 +2539,12 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .space-x-7 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.75rem * var(--tw-space-x-reverse));
@@ -2722,14 +2841,14 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   padding-bottom: 1.25rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .px-2\.5 {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .py-20 {
@@ -3159,13 +3278,18 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     line-height: 1.75rem;
   }
 
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
   .md\:text-\[13px\] {
     font-size: 13px;
   }
 
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.625rem;
+  .md\:text-xs {
+    font-size: .75rem;
+    line-height: 1rem;
   }
 }
 
