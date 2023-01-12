@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create New ADS</title>
+    <title>Create New ADS img video</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
@@ -211,9 +211,9 @@
                 <a href="javascript:void(0)" class="btn-primary1">Continue</a>
               </div>
             </div>
-            <form method="post" class="flex flex-wrap -mx-4">
+            <form method="post" class="flex items-stretch flex-wrap -mx-4">
               <div class="w-full xl:w-1/2 p-4">
-                <div class="p-5 sm:p-7 rounded-lg bg-white drop-shadow-one space-y-5">
+                <div class="p-5 sm:p-7 rounded-lg bg-white drop-shadow-one space-y-5 h-full">
                   <h4>Create Ad</h4>
                   <div class="w-full">
                     <span class="block w-full form-labal 2xl:text-base mb-2">Brand Logo</span>
@@ -244,7 +244,7 @@
                     <label for="#Password" class="form-labal 2xl:text-base">Call to Action Button Name</label>
                     <div class="relative">
                       <span class="down-icon icon-downarrow"></span>
-                      <select name="call-button" id="call-button" class="form-input appearance-none">
+                      <select name="call-button" id="call-button" class="form-input appearance-none font-semibold">
                         <option value="Brand Name">Open Now</option>
                         <option value="Brand Name">Open Now</option>
                         <option value="Brand Name">Open Now</option>
@@ -255,8 +255,9 @@
                   <div class="w-full">
                     <label for="#click-URL" class="form-labal 2xl:text-base">ADS Click URL</label>
                     <input type="text" name="click-URL" id="click-URL" class="form-input font-semibold"/>
-                  </div>
-                  <div class="w-full space-y-2">
+                  </div>                  
+                  <!-- readio selaction choos one -->
+                  <!-- <div class="w-full space-y-2">
                     <span class="form-labal 2xl:text-base block">Choose where to place ads</span>
                     <div class="flex items-center space-x-4">
                       <label for="website-ads" class="text-xs sm:text-sm 2xl:text-base text-dark font-semibold flex items-center cursor-pointer">
@@ -266,11 +267,11 @@
                         <input type="radio" name="website-ads" id="application-ads" class="mr-2 accent-red filter hue-rotate-[210deg] brightness-150 w-5 h-5"/>Application Ads
                       </label>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="w-full xl:w-1/2 p-4">
-                <div class="p-5 sm:p-7 rounded-lg bg-white drop-shadow-one space-y-5">
+                <div class="p-5 sm:p-7 rounded-lg bg-white drop-shadow-one space-y-5 h-full">
                   <span class="block w-full form-labal 2xl:text-base">Upload Images</span>
                   <div class="p-5 sm:p-7 border-2 border-dashed border-grey/50 rounded-lg">
                     <div class="w-full bg-[#F8F8F8] text-center p-4 py-14 rounded-lg">
@@ -308,11 +309,30 @@
                       </div>
                     </div>
                   </div>
+                  <div class="w-full flex flex-wrap">
+                    <div class="w-full md:w-1/2 xl:w-full 2xl:w-1/2 p-3 space-y-4">
+                      <span class="form-labal text-sm 2xl:text-base block">Call to Action Button Name</span>
+                      <div class="w-full h-full mx-auto overflow-hidden bglep">
+                        <div class="pb-[57%] relative">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/xsWs0qWQlzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full md:w-1/2 xl:w-full 2xl:w-1/2 p-3 space-y-4">
+                      <span class="form-labal text-sm 2xl:text-base block">Call to Action Button Name</span>
+                      <div class="w-full mx-auto overflow-hidden bgmob flex py-5">
+                        <div class="w-full max-w-[75px] h-0 min-h-[150px] mx-auto relative overflow-hidden rounded-[13px]">
+                          <img src="../assest/images/svg/mobile-mocup.svg" class="absolute inset-0 w-full h-full object-contain z-30 pointer-events-none" alt="mob-mocup"/>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/xsWs0qWQlzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </form>
             <div class="w-full flex justify-end items-center mt-auto pt-5">
-              <a href="javascript:void(0)" class="btn-secondary inline-block">Cancel</a>
+              <a href="javascript:void(0)" class="btn-secondary inline-block py-3 sm:py-3.5 lg:py-4">Cancel</a>
             </div>
         </div>
       </div>
