@@ -1784,6 +1784,33 @@ tbody tr td .action a:last-child span:hover {
   color: rgb(158 158 158 / var(--tw-text-opacity));
 }
 
+/* tab */
+
+.adsTab {
+  margin-bottom: -1px;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-width: 1px;
+  border-color: rgb(158 158 158 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(32 192 232 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.adsTab.active {
+  border-bottom-width: 0px;
+  --tw-border-opacity: 1;
+  border-color: rgb(32 192 232 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -1887,18 +1914,6 @@ tbody tr td .action a:last-child span:hover {
   right: 44.3%;
 }
 
-.top-1 {
-  top: 0.25rem;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
-.left-8 {
-  left: 2rem;
-}
-
 .z-40 {
   z-index: 40;
 }
@@ -1994,6 +2009,10 @@ tbody tr td .action a:last-child span:hover {
   margin-top: 1.25rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -2020,6 +2039,10 @@ tbody tr td .action a:last-child span:hover {
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .table {
