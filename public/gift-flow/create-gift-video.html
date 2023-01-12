@@ -76,7 +76,7 @@
               </svg>
             </button>    
           </div>
-          <div class="flex items-center ml-auto">            
+          <div class="flex items-center ml-auto">
             <a href="javascript:void(0)" class="headerMenu">
               <span class="icon-scan text-base md:text-xl 2xl:text-26 text-primary"></span>                 
             </a> 
@@ -93,7 +93,7 @@
               </div>
               <span class="flex items-center text-xs md:text-sm xl:text-base font-semibold text-dark">Samantha <i class="icon-downarrow ml-2"></i></span>
             </button>
-            <!-- onlclick show Profilepopup  -->
+            <!-- onclick show Profile popup  -->
             <div class="homeProfile">
               <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-dark group hover:text-primary anim">
                 <span class="icon-view mr-3 text-base lg:text-lg"></span>
@@ -226,8 +226,11 @@
                         <!-- button group  -->
                         <div class="space-y-4 ml-3 sm:ml-5">
                           <div class="flex items-center space-x-3">
-                            <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base">choose file</a>
-                            <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base">Upload Now</a>
+                            <a href="javascript:void(0)" class="relative block btn-primary w-full text-grey text-xs sm:text-sm 2xl:text-base whitespace-nowrap bg-gray-200 px-5 border-gray-200">
+                              choose file
+                              <input type="file" class="w-full opacity-0 absolute inset-0" />
+                            </a>
+                            <a href="javascript:void(0)" class="block btn-primary w-full text-xs sm:text-sm 2xl:text-base whitespace-nowrap px-5">Upload Now</a>
                           </div>
                           <span class="block form-labal 2xl:text-base">JPG, PNG. Max size of 800K</span>
                         </div>
@@ -349,10 +352,13 @@
                       </div> 
                       <!-- button group  -->
                       <div class="space-y-4 ml-3 sm:ml-5">
-                        <div class="flex items-center space-x-3">
-                          <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base bg-[#E6E7E9] text-grey border-[#E6E7E9] whitespace-nowrap">choose file</a>
-                          <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base whitespace-nowrap">Upload Now</a>
-                        </div>
+                       <div class="flex items-center space-x-3">
+                            <a href="javascript:void(0)" class="relative block btn-primary w-full text-grey text-xs sm:text-sm 2xl:text-base whitespace-nowrap bg-gray-200 px-5 border-gray-200">
+                              choose file
+                              <input type="file" class="w-full opacity-0 absolute inset-0" />
+                            </a>
+                            <a href="javascript:void(0)" class="block btn-primary w-full text-xs sm:text-sm 2xl:text-base whitespace-nowrap px-5">Upload Now</a>
+                          </div>
                         <span class="block form-labal 2xl:text-base">JPG, PNG. Max size of 800K</span>
                       </div>
                     </div>

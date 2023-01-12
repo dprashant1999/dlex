@@ -156,6 +156,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .popSelect{@apply text-grey font-normal text-sm md:text-base rounded-lg block w-full p-2.5 outline-none appearance-none;}
 .popSeicon{@apply text-[8px] text-grey absolute right-3 top-[18px] pointer-events-none;}
 
+/* tab */
+.adsTab{@apply px-4 text-gray-800 font-semibold py-2 rounded-t border border-grey border-b-primary -mb-px;}
+.adsTab.active{@apply bg-white border-primary border-b-0;}
+
 
 
 
