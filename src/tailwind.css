@@ -86,7 +86,7 @@ tbody tr td .action a:first-child span{@apply text-dark;}
 tbody tr:hover td:first-child{@apply rounded-tl-lg rounded-bl-lg overflow-hidden;}
 tbody tr:hover td:last-child{@apply rounded-tr-lg rounded-br-lg overflow-hidden;}
 .tableTitel{@apply text-sm font-semibold text-dark whitespace-nowrap;}
-.tbDetails{@apply text-grey text-xs lg:text-sm font-medium;}
+.tbDetails{@apply text-dark text-xs lg:text-sm font-medium;}
 .status{@apply rounded-md bg-gray-200 text-leafGreen inline-block p-1 px-1 text-xs xl:text-sm min-w-[80px] xl:min-w-[90px] text-center;}
 .status.scheduled, tbody tr:hover td .status.scheduled{@apply text-primary bg-primary/25;}
 tbody tr td .scheduled-action a span{@apply text-dark;}
@@ -134,6 +134,14 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .invoiceTBdetails .adsSchedule td{@apply border-b border-gray-300 pb-5;}
 .invoiceTBdetails .adsSchedule.both td{@apply border-0 border-gray-300 pb-0;}
 
+/* gift - Invoice  */
+.gift_invoice tr:first-child th:nth-child(1){@apply whitespace-normal min-w-[150px];}
+.gift_invoice tr:first-child th:nth-child(2), .gift_invoice tr:first-child td:nth-child(2){@apply whitespace-normal min-w-[120px];}
+.gift_invoice tr:first-child th:nth-child(6), .gift_invoice tr:first-child td:nth-child(6){@apply whitespace-normal min-w-[100px];}
+.gift_invoice tr th:first-child, .gift_invoice tr td:first-child{@apply pl-0;}
+.gift_invoice tr th:last-child, .gift_invoice tr td:last-child{@apply pr-0;}
+.gift_invoice tr th{@apply align-top;}
+.gift_invoice tr:hover td{@apply bg-transparent;}
 
 @media (max-width: 1600px){
   .listflitter{@apply flex-wrap;}
@@ -141,8 +149,8 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 
 
 /* ads campping video mob and laptop  */
-.bglep iframe {@apply bg-[url('../../assest/images/svg/laptop-mocup.svg')] bg-no-repeat bg-contain absolute inset-0 w-full h-full z-20 pt-[5%] pr-[14.5%] pb-[6.5%] pl-[14.5%];  }
-.bgmob iframe {@apply absolute inset-0 object-cover w-full h-full pt-[1%] pr-[5%] pb-[1%] pl-[5%];}
+.bglep iframe, .bglep img, .bglep video {@apply bg-[url('../../assest/images/svg/laptop-mocup.svg')] bg-no-repeat bg-contain absolute inset-0 w-full h-full z-20 pt-[5%] pr-[14.5%] pb-[6.5%] pl-[14.5%];}
+.bgmob iframe, .bgmob video {@apply absolute inset-0 w-full h-full object-cover px-[5px];}
 
 /* popup */
 .popWidth{@apply w-full sm:max-w-[480px] mx-auto max-h-[calc(100vh-55px)] overflow-y-auto px-4 md:px-0;}

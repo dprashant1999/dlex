@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create New ADS img video</title>
+    <title>Gift Payment Details</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
@@ -76,7 +76,7 @@
               </svg>
             </button>    
           </div>
-          <div class="flex items-center ml-auto">
+          <div class="flex items-center ml-auto">            
             <a href="javascript:void(0)" class="headerMenu">
               <span class="icon-scan text-base md:text-xl 2xl:text-26 text-primary"></span>                 
             </a> 
@@ -198,7 +198,8 @@
             </div>
           </div>
         </div>
-        <div class="content-area space-y-7">
+        <div class="content-area flex flex-col">
+          <div class="w-full space-y-7">
             <div class="flex items-center justify-between flex-wrap space-y-4 sm:space-y-0">
               <div class="w-full sm:w-5/12 md:w-1/2">
                 <a href="javascript:void(0)" class="inline-block">                
@@ -206,136 +207,37 @@
                 </a>
               </div>
               <div class="flex items-center sm:justify-end space-x-3 w-full sm:w-7/12 md:w-1/2">
-                <a href="javascript:void(0)" class="btn-secondary">Preview</a>
-                <a href="javascript:void(0)" class="btn-secondary">Save Draft</a>
-                <a href="javascript:void(0)" class="btn-primary1">Continue</a>
+                <a href="javascript:void(0)" class="btn-secondary">Back</a>
+                <a href="javascript:void(0)" class="btn-secondary">Cancel</a>
               </div>
             </div>
-            <form method="post" class="flex items-stretch flex-wrap -mx-4">
-              <div class="w-full xl:w-1/2 p-4">
-                <div class="p-5 sm:p-7 rounded-lg bg-white drop-shadow-one space-y-5 h-full">
-                  <h4>Create Ad</h4>
-                  <div class="w-full">
-                    <span class="block w-full form-labal 2xl:text-base mb-2">Brand Logo</span>
-                    <div class="flex items-center">
-                      <!-- img upload  -->
-                      <div class="p-4 sm:p-5 md:p-8 rounded-lg border sm:border-2 border-dashed border-grey flex items-center justify-center">
-                          <span class="icon-imges text-2xl sm:text-4xl text-grey"></span>
-                      </div> 
-                      <!-- button group  -->
-                      <div class="space-y-4 ml-3 sm:ml-5">
-                        <div class="flex items-center space-x-3">
-                          <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base">choose file</a>
-                          <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base">Upload Now</a>
-                        </div>
-                        <span class="block form-labal 2xl:text-base">JPG, PNG. Max size of 800K</span>
-                      </div>
-                    </div>
+            <div class="w-full flex">
+              <div class="w-full xl:w-1/2 p-5 md:p-7 rounded-lg drop-shadow-two bg-white">
+                <h4>Payment Details</h4>
+                <div class="flex flex-wrap -mx-4 space-y-2 lg:space-y-4 mt-3 md:mt-7">
+                  <div class="w-full px-4">
+                    <label for="#brand-name" class="form-labal 2xl:text-base">Card Holder Name</label>
+                    <input type="text" name="Brand-Name" id="brand-name" class="form-input font-semibold">
                   </div>
-                  <div class="w-full">
-                    <label for="#brand-name" class="form-labal 2xl:text-base">Brand Name</label>
-                    <input type="text" name="Brand-Name" id="brand-name" class="form-input font-semibold"/>
+                  <div class="w-full px-4">
+                    <label for="#brand-name" class="form-labal 2xl:text-base">Card Number</label>
+                    <input type="text" name="Brand-Name" id="brand-name" class="form-input font-semibold">
                   </div>
-                  <div class="w-full">
-                    <label for="#campaign-name" class="form-labal 2xl:text-base">Campaign Name</label>
-                    <input type="text" name="campaign-name" id="campaign-name" class="form-input font-semibold"/>
+                  <div class="w-full sm:w-1/2 px-4">
+                    <label for="#brand-name" class="form-labal 2xl:text-base">Expiry Date</label>
+                    <input type="text" name="Brand-Name" id="brand-name" class="form-input font-semibold">
                   </div>
-                  <div class="w-full">
-                    <label for="#Password" class="form-labal 2xl:text-base">Call to Action Button Name</label>
-                    <div class="relative">
-                      <span class="down-icon icon-downarrow"></span>
-                      <select name="call-button" id="call-button" class="form-input appearance-none font-semibold">
-                        <option value="Brand Name">Open Now</option>
-                        <option value="Brand Name">Open Now</option>
-                        <option value="Brand Name">Open Now</option>
-                        <option value="Brand Name">Open Now</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="w-full">
-                    <label for="#click-URL" class="form-labal 2xl:text-base">ADS Click URL</label>
-                    <input type="text" name="click-URL" id="click-URL" class="form-input font-semibold"/>
-                  </div>                  
-                  <!-- readio selaction choos one -->
-                  <!-- <div class="w-full space-y-2">
-                    <span class="form-labal 2xl:text-base block">Choose where to place ads</span>
-                    <div class="flex items-center space-x-4">
-                      <label for="website-ads" class="text-xs sm:text-sm 2xl:text-base text-dark font-semibold flex items-center cursor-pointer">
-                        <input type="radio" name="website-ads" id="website-ads" class="mr-2 accent-red filter hue-rotate-[210deg] brightness-150 w-5 h-5"/>Website ADS
-                      </label>
-                      <label for="application-ads" class="text-xs sm:text-sm 2xl:text-base text-dark font-semibold flex items-center cursor-pointer">
-                        <input type="radio" name="website-ads" id="application-ads" class="mr-2 accent-red filter hue-rotate-[210deg] brightness-150 w-5 h-5"/>Application Ads
-                      </label>
-                    </div>
-                  </div> -->
-                </div>
-              </div>
-              <div class="w-full xl:w-1/2 p-4">
-                <div class="p-5 sm:p-7 rounded-lg bg-white drop-shadow-one space-y-5 h-full">
-                  <span class="block w-full form-labal 2xl:text-base">Upload Images</span>
-                  <div class="p-5 sm:p-7 border-2 border-dashed border-grey/50 rounded-lg">
-                    <div class="w-full bg-[#F8F8F8] text-center p-4 py-14 rounded-lg">
-                      <div class="flex justify-center flex-wrap space-x-5">
-                        <div class="relative">
-                          <input type="radio" name="mediafile" id="mediafile" class="mediafile"/>
-                          <span class="rounded-md w-16 h-16 bg-gray-200 flex items-center justify-center"><i class="icon-imges text-4xl text-grey"></i></span>
-                        </div>
-                        <div class="relative">
-                          <input type="radio" name="mediafile" id="mediafile" class="mediafile" checked/>
-                          <span class="rounded-md w-16 h-16 bg-gray-200 flex items-center justify-center"><i class="icon-imges text-4xl text-grey"></i></span>
-                        </div>
-                        <div class="w-full mt-5">
-                          <span class="text-center max-w-[300px] mx-auto inline-block text-xs">Drag and drop an image, or <a href="javascript:void(0)" class="text-primary">Browse</a>
-                            800x80 or higher recommended. Max 10MB each (20MB for videos).
-                            JPG, PNG, GIF, Video MP4</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w-full">
-                    <span class="block w-full form-labal 2xl:text-base mb-2">Video Thumb</span>
-                    <div class="flex items-center">
-                      <!-- img upload  -->
-                      <div class="w-full max-w-[200px] py-3 md:py-5 rounded-lg border sm:border-2 border-dashed border-grey flex items-center justify-center">
-                          <span class="icon-imges text-2xl sm:text-4xl text-grey"></span>
-                      </div> 
-                      <!-- button group  -->
-                      <div class="space-y-4 ml-3 sm:ml-5">
-                        <div class="flex items-center space-x-3">
-                          <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base bg-[#E6E7E9] text-grey border-[#E6E7E9] whitespace-nowrap">choose file</a>
-                          <a href="javascript:void(0)" class="btn-primary p-1.5 sm:px-3 text-xs sm:text-sm 2xl:text-base whitespace-nowrap">Upload Now</a>
-                        </div>
-                        <span class="block form-labal 2xl:text-base">JPG, PNG. Max size of 800K</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w-full flex flex-wrap">
-                    <div class="w-full md:w-7/12 xl:w-full 2xl:w-1/2 p-3 space-y-4">
-                      <span class="form-labal text-sm 2xl:text-base block">Call to Action Button Name</span>
-                      <div class="w-full h-full mx-auto overflow-hidden bglep">
-                        <div class="pb-[57%] relative">
-                          <img src="../assest/images/adspreview.png" class="w-full" alt="adspreview"/>
-                          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/xsWs0qWQlzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                        </div>
-                      </div>
-                    </div>
-                    <div class="w-full md:w-5/12 xl:w-full 2xl:w-1/2 p-3 space-y-4">
-                      <span class="form-labal text-sm 2xl:text-base block">Call to Action Button Name</span>
-                      <div class="w-full mx-auto overflow-hidden bgmob flex pt-2">
-                        <div class="w-full max-w-[80px] mx-auto min-h-[155px] relative overflow-hidden rounded-[15px] px-[5px]">
-                          <img src="../assest/images/mobads.png" class="w-full h-full object-cover z-10" alt="adspreview"/>
-                          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/xsWs0qWQ lzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                          <span class="absolute inset-0 w-full h-full pointer-events-none"><img src="../assest/images/svg/mobile-mocup.svg" class="w-full h-full" alt="mobile-mocup"/></span>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="w-full sm:w-1/2 px-4">
+                    <label for="#brand-name" class="form-labal 2xl:text-base">CVV</label>
+                    <input type="text" name="Brand-Name" id="brand-name" class="form-input font-semibold">
                   </div>
                 </div>
               </div>
-            </form>
-            <div class="w-full flex justify-end items-center mt-auto pt-5">
-              <a href="javascript:void(0)" class="btn-secondary inline-block py-3 sm:py-3.5 lg:py-4">Cancel</a>
             </div>
+          </div>
+          <div class="w-full flex justify-end items-center mt-auto pt-5">
+            <a href="javascript:void(0)" class="btn-primary text-center inline-block w-full py-3 sm:py-3.5 lg:py-4">Pay Now ₹ 540</a>
+          </div>
         </div>
       </div>
     </div>
