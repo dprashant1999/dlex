@@ -58,6 +58,7 @@ h4,.h4{@apply text-base md:text-lg xl:text-xl text-dark font-medium font-semibol
 .btn-primary{@apply text-sm lg:text-base p-2.5 bg-primary rounded text-white border border-primary hover:text-primary hover:bg-white anim;}
 .btn-primary1{@apply text-xs sm:text-sm lg:text-base bg-primary text-white border border-primary hover:text-primary hover:bg-white rounded-lg px-3 py-2 lg:py-3.5 2xl:py-4 w-full max-w-[180px] text-center anim;}
 .btn-secondary{@apply text-xs sm:text-sm lg:text-base bg-white text-dark border border-gray-300 hover:text-primary hover:bg-white hover:border-primary rounded-lg px-3 py-2 lg:py-3.5 2xl:py-4 w-full max-w-[180px] text-center anim font-medium;}
+.btnDownload{@apply bg-leafGreen border-leafGreen text-white p-2 md:p-3 rounded md:rounded-xl flex items-center text-xs md:text-base;}
 
 
 /* ads campaign-list page */
@@ -132,7 +133,7 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .invoceuserSelaction{@apply bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px] px-1;}
 .invoiceAmount{@apply text-sm xl:text-base font-semibold text-primary block leading-7;}
 .invoiceTBdetails .adsSchedule td{@apply border-b border-gray-300 pb-5;}
-.invoiceTBdetails .adsSchedule.both td{@apply border-0 border-gray-300 pb-0;}
+.invoiceTBdetails .adsSchedule.both td{@apply border-0 pb-0;}
 
 
 @media (max-width: 1600px){
@@ -157,9 +158,16 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .popSeicon{@apply text-[8px] text-grey absolute right-3 top-[18px] pointer-events-none;}
 
 /* tab */
-.adsTab{@apply px-4 text-gray-800 font-semibold py-2 rounded-t border border-grey border-b-primary -mb-px;}
-.adsTab.active{@apply bg-white border-primary border-b-0;}
+.adsTab{@apply text-[10px] sm:text-xs md:text-sm xl:text-base font-medium rounded-t border border-grey border-b-primary -mb-px;}
+.adsTab a{@apply px-3 md:px-5 xl:px-8 py-2 md:py-3 block text-grey;}
+.adsTab.active{@apply bg-white border-primary border-b-0 text-primary;}
+.adsTab.active a{@apply text-primary;}
 
+/* report table */
+.reporTable{border-collapse: collapse !important;}
+.reporTable tr th:first-child, .reporTable tr td:first-child{@apply pl-0 text-left;}
+.reporTable tr th:last-child, .reporTable tr td:last-child{@apply pr-0 text-right;}
+.reporTable tr th, .reporTable tr td{@apply text-center;}
 
 
 

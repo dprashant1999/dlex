@@ -79,3 +79,57 @@ tabTogglers.forEach(function(toggler) {
     e.target.parentElement.classList.add("active");
   });
 });
+
+ // Chart.defaults.global.legend.labels.usePointStyle = true;
+ const ctx = document.getElementById('myChart');
+ new Chart(ctx, {
+   type: 'line',
+   data: {
+     labels: ['Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat', 'Sun'],
+     datasets: [{
+       label: 'Click ADS',
+       fill: false,
+       data: [1000,2500,1500,2800,400,1700,2300],
+     }, {
+       label: 'View ADS',
+       fill: false,
+       data: [500,300,700,450,1500,2000,2000],		
+     }]
+   },
+   options: {
+     elements: {
+         point:{
+             radius: 0
+         }
+     },
+     scales: {
+       x:{
+         grid: {
+           display: false
+         }
+       },
+       y: {
+         beginAtZero: true,
+         grid: {
+           display: false
+         },
+         ticks: {
+             min: 0,
+             max: 3000,
+
+             stepSize: 500
+           }
+       }
+     },
+     plugins: {
+       display: true,
+       legend: {
+           align: "end",
+         labels: {
+             usePointStyle:true
+         }
+       }
+     }
+     
+   }
+ });
