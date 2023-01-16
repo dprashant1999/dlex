@@ -1825,6 +1825,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   padding-left: 5%;
 }
 
+.mobPriew iframe {
+  border-radius: 40px;
+}
+
 /* popup */
 
 .popWidth {
@@ -1832,21 +1836,23 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   margin-right: auto;
   max-height: calc(100vh - 55px);
   width: 100%;
+  max-width: 48rem;
   overflow-y: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1280px) {
   .popWidth {
-    max-width: 480px;
+    max-width: 56rem;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1536px) {
   .popWidth {
-    padding-left: 0px;
-    padding-right: 0px;
+    max-width: 72rem;
   }
 }
 
@@ -2182,12 +2188,8 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   left: 50%;
 }
 
-.top-\[30px\] {
-  top: 30px;
-}
-
-.right-\[44\.3\%\] {
-  right: 44.3%;
+.right-10 {
+  right: 2.5rem;
 }
 
 .z-30 {
@@ -2196,10 +2198,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .z-40 {
   z-index: 40;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .mx-auto {
@@ -2301,14 +2299,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   margin-bottom: 1.25rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .block {
   display: block;
 }
@@ -2401,10 +2391,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   height: 0.125rem;
 }
 
-.h-\[calc\(100vh-72px\)\] {
-  height: calc(100vh - 72px);
-}
-
 .h-screen {
   height: 100vh;
 }
@@ -2423,6 +2409,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .min-h-\[150px\] {
   min-height: 150px;
+}
+
+.min-h-\[400px\] {
+  min-height: 400px;
 }
 
 .w-full {
@@ -2557,25 +2547,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@-webkit-keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping {
-  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .cursor-pointer {
@@ -2752,6 +2723,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   border-radius: 0.25rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .border-4 {
   border-width: 4px;
 }
@@ -2880,25 +2855,12 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#FEE4E2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 228 226 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
 }
 
-.fill-grey {
-  fill: #9E9E9E;
-}
-
 .stroke-primary {
   stroke: #20C0E8;
-}
-
-.stroke-grey {
-  stroke: #9E9E9E;
 }
 
 .object-contain {
@@ -3022,11 +2984,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   padding-bottom: 1.75rem;
 }
 
-.py-9 {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
 .pl-12 {
   padding-left: 3rem;
 }
@@ -3069,10 +3026,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .pt-1 {
   padding-top: 0.25rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
 }
 
 .text-center {
@@ -3180,21 +3133,12 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   color: rgb(158 158 158 / var(--tw-text-opacity));
 }
 
-.text-leafGreen {
-  --tw-text-opacity: 1;
-  color: rgb(42 171 63 / var(--tw-text-opacity));
-}
-
 .accent-red {
   accent-color: #FA5657;
 }
 
 .opacity-0 {
   opacity: 0;
-}
-
-.opacity-100 {
-  opacity: 1;
 }
 
 .outline-none {
@@ -3264,16 +3208,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   color: rgb(32 192 232 / var(--tw-text-opacity));
 }
 
-.hover\:text-leafGreen:hover {
-  --tw-text-opacity: 1;
-  color: rgb(42 171 63 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-leafGreen {
-  --tw-text-opacity: 1;
-  color: rgb(42 171 63 / var(--tw-text-opacity));
-}
-
 @media (min-width: 640px) {
   .sm\:left-4 {
     left: 1rem;
@@ -3293,10 +3227,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .sm\:hidden {
     display: none;
-  }
-
-  .sm\:h-\[calc\(100vh-84px\)\] {
-    height: calc(100vh - 84px);
   }
 
   .sm\:w-5\/12 {
@@ -3368,10 +3298,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     padding: 0.5rem;
   }
 
-  .sm\:p-6 {
-    padding: 1.5rem;
-  }
-
   .sm\:py-3\.5 {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
@@ -3404,6 +3330,14 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 }
 
 @media (min-width: 768px) {
+  .md\:right-20 {
+    right: 5rem;
+  }
+
+  .md\:top-20 {
+    top: 5rem;
+  }
+
   .md\:-mx-2\.5 {
     margin-left: -0.625rem;
     margin-right: -0.625rem;
@@ -3416,10 +3350,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .md\:mt-7 {
     margin-top: 1.75rem;
-  }
-
-  .md\:h-10 {
-    height: 2.5rem;
   }
 
   .md\:max-h-\[100px\] {
@@ -3436,10 +3366,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .md\:w-1\/5 {
     width: 20%;
-  }
-
-  .md\:w-10 {
-    width: 2.5rem;
   }
 
   .md\:max-w-\[60px\] {
@@ -3489,6 +3415,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     padding-bottom: 1.25rem;
   }
 
+  .md\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.875rem;
@@ -3535,20 +3465,12 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     margin-right: -0.5rem;
   }
 
-  .lg\:mt-\[91px\] {
-    margin-top: 91px;
-  }
-
   .lg\:h-7 {
     height: 1.75rem;
   }
 
   .lg\:h-12 {
     height: 3rem;
-  }
-
-  .lg\:h-\[calc\(100vh-100px\)\] {
-    height: calc(100vh - 100px);
   }
 
   .lg\:w-7 {
@@ -3635,11 +3557,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     padding-right: 0.5rem;
   }
 
-  .lg\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .lg\:pl-14 {
     padding-left: 3.5rem;
   }
@@ -3670,10 +3587,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     margin-bottom: 1.75rem;
   }
 
-  .xl\:ml-4 {
-    margin-left: 1rem;
-  }
-
   .xl\:w-1\/4 {
     width: 25%;
   }
@@ -3692,10 +3605,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
   }
 
-  .xl\:p-10 {
-    padding: 2.5rem;
-  }
-
   .xl\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -3706,11 +3615,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     padding-bottom: 1rem;
   }
 
-  .xl\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.625rem;
@@ -3719,11 +3623,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .xl\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
   }
 }
 
@@ -3744,6 +3643,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .\32xl\:h-5 {
     height: 1.25rem;
+  }
+
+  .\32xl\:min-h-\[683px\] {
+    min-height: 683px;
   }
 
   .\32xl\:w-5 {
@@ -3774,6 +3677,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     max-width: 160px;
   }
 
+  .\32xl\:max-w-\[338px\] {
+    max-width: 338px;
+  }
+
   .\32xl\:p-10 {
     padding: 2.5rem;
   }
@@ -3786,6 +3693,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   .\32xl\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .\32xl\:pb-14 {
+    padding-bottom: 3.5rem;
   }
 
   .\32xl\:text-26 {

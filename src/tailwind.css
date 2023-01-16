@@ -144,9 +144,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 /* ads campping video mob and laptop  */
 .bglep iframe {@apply bg-[url('../../assest/images/svg/laptop-mocup.svg')] bg-no-repeat bg-contain absolute inset-0 w-full h-full z-20 pt-[5%] pr-[14.5%] pb-[6.5%] pl-[14.5%];  }
 .bgmob iframe {@apply absolute inset-0 object-cover w-full h-full pt-[1%] pr-[5%] pb-[1%] pl-[5%];}
+.mobPriew iframe {@apply rounded-[40px];}
 
 /* popup */
-.popWidth{@apply w-full sm:max-w-[480px] mx-auto max-h-[calc(100vh-55px)] overflow-y-auto px-4 md:px-0;}
+.popWidth{@apply w-full max-w-3xl xl:max-w-4xl 2xl:max-w-6xl mx-auto max-h-[calc(100vh-55px)] overflow-y-auto px-7 xl:px-0;}
 .popMain{@apply relative bg-white rounded-lg shadow;}
 .popPad{@apply py-4 md:py-[30px] px-4 sm:px-[30px] md:px-[60px];}
 .popBtn{@apply w-full md:max-w-[172px] font-semibold rounded-xl text-xs sm:text-sm px-5 py-3 text-center;}
