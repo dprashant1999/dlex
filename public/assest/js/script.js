@@ -12,6 +12,12 @@ function removeActive(Id, db) {
   element.classList.remove(db);
 }
 
+// gift product ads swiper 
+var swiper = new Swiper(".adslider", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
 // searchtoggle mobile
 $(function() {
@@ -133,3 +139,4 @@ tabTogglers.forEach(function(toggler) {
      
    }
  });
+
