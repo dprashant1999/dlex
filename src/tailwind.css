@@ -52,10 +52,13 @@ h4,.h4{@apply text-base md:text-lg xl:text-xl text-dark font-medium font-semibol
 .form-input{@apply w-full border text-sm lg:text-base border-grey/40 rounded py-2 sm:py-2.5 px-4 mt-1 outline-primary;}
 .selaction-input{@apply appearance-none mt-0 text-xs lg:text-sm text-grey border-grey/40 rounded py-2 sm:py-2.5 pr-8 pl-3 overflow-hidden overflow-ellipsis w-full border outline-primary;}
 .down-icon{@apply absolute top-1/2 -translate-y-1/2 right-3 text-sm text-grey pointer-events-none;}
+.detailsTitel{@apply text-sm sm:text-base text-dark font-semibold;}
+
 
 /* button  */
 .btnCancel{@apply block py-3.5 2xl:py-4 w-full max-w-[100px] md:max-w-[130px] lg:max-w-[180px] ml-auto text-xs sm:text-sm lg:text-base bg-white text-dark border border-gray-300 hover:text-primary hover:bg-white hover:border-primary rounded-lg px-3 text-center anim font-medium;}
 .btn-primary{@apply text-sm lg:text-base p-2.5 bg-primary rounded text-white border border-primary hover:text-primary hover:bg-white anim;}
+.btn-red{@apply text-sm lg:text-base p-2.5 bg-red rounded text-white border border-red hover:text-red hover:bg-white anim;}
 .btn-primary1{@apply text-xs sm:text-sm lg:text-base bg-primary text-white border border-primary hover:text-primary hover:bg-white rounded-lg px-3 py-2 lg:py-3.5 2xl:py-4 w-full max-w-[180px] text-center anim;}
 .btn-secondary{@apply text-xs sm:text-sm lg:text-base bg-white text-dark border border-gray-300 hover:text-primary hover:bg-white hover:border-primary rounded-lg px-3 py-2 lg:py-3.5 2xl:py-4 w-full max-w-[180px] text-center anim font-medium;}
 .btnDownload{@apply bg-leafGreen border-leafGreen text-white p-2 md:p-3 rounded md:rounded-xl flex items-center text-xs md:text-base;}
@@ -79,9 +82,11 @@ table{
   border-collapse: separate !important;
    border-spacing: 0 15px;
 }
-tr td, tr th{@apply border-0 px-3 py-2 lg:px-4 align-middle whitespace-nowrap text-left;}
+tr td, tr th{@apply border-0 px-3 py-2 lg:px-4 align-middle whitespace-nowrap text-center;}
+tr th{@apply border-b-2 border-grey/25 pb-5;}
 tbody tr:hover td{@apply bg-gray-50;}
 tbody tr:hover td .status{@apply text-leafGreen;}
+tbody tr td .action{@apply flex space-x-3 items-center justify-center;}
 tbody tr td .action a span{@apply text-sm xl:text-base text-grey;}
 tbody tr td .action a:first-child span{@apply text-dark;}
 tbody tr:hover td:first-child{@apply rounded-tl-lg rounded-bl-lg overflow-hidden;}
@@ -90,6 +95,7 @@ tbody tr:hover td:last-child{@apply rounded-tr-lg rounded-br-lg overflow-hidden;
 .tbDetails{@apply text-dark text-xs lg:text-sm font-medium;}
 .status{@apply rounded-md bg-gray-200 text-leafGreen inline-block p-1 px-1 text-xs xl:text-sm min-w-[80px] xl:min-w-[90px] text-center;}
 .status.scheduled, tbody tr:hover td .status.scheduled{@apply text-primary bg-primary/25;}
+.status.published, tbody tr:hover td .status.published{@apply text-red bg-red/25;}
 tbody tr td .scheduled-action a span{@apply text-dark;}
 tbody tr td .scheduled-action a:hover span{@apply text-dark;}
 tbody tr td .scheduled-action a:hover:nth-child(2) span{@apply text-primary;}
@@ -124,10 +130,11 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .invoiceTBdetails tr:hover td:first-child{@apply rounded-none;}
 .invoiceTBdetails tr:hover td:last-child{@apply rounded-none;}
 .invoiceTBdetails tr:hover td{@apply bg-transparent;}
-.invoiceTBdetails tr th{@apply align-top;}
-.invoiceTBdetails tr:first-child th:nth-child(2), .invoiceTBdetails tr:first-child td:nth-child(2){@apply whitespace-normal min-w-[165px] text-center;}
-.invoiceTBdetails tr:first-child th:nth-child(3), .invoiceTBdetails tr:first-child td:nth-child(3){@apply whitespace-normal min-w-[120px] text-center;}
-.invoiceTBdetails tr:first-child th:nth-child(4), .invoiceTBdetails tr:first-child td:nth-child(4){@apply whitespace-normal min-w-[150px] text-center;}
+.invoiceTBdetails tr th{@apply align-top text-left;}
+.invoiceTBdetails tr td:first-child, .invoiceTBdetails tr td:nth-child(5){@apply text-left;}
+.invoiceTBdetails tr:first-child th:nth-child(2), .invoiceTBdetails tr:first-child td:nth-child(2){@apply whitespace-normal min-w-[165px] max-w-[165px] text-center;}
+.invoiceTBdetails tr:first-child th:nth-child(3), .invoiceTBdetails tr:first-child td:nth-child(3){@apply whitespace-normal min-w-[120px] max-w-[120px] text-center;}
+.invoiceTBdetails tr:first-child th:nth-child(4), .invoiceTBdetails tr:first-child td:nth-child(4){@apply whitespace-normal min-w-[150px] max-w-[150px] text-center;}
 .invoiceSlidenum {@apply text-xs md:text-[13px] font-normal inline-block w-full max-w-[100px];}
 .invoiceSlidenum span{@apply text-base md:text-lg lg:text-xl 2xl:text-2xl font-semibold pr-1 leading-7;}
 .invoceuserSelaction{@apply bg-transparent border-0 outline-none font-normal w-full appearance-none text-xs md:text-[13px] px-1;}
@@ -143,6 +150,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .gift_invoice tr th:last-child, .gift_invoice tr td:last-child{@apply pr-0;}
 .gift_invoice tr th{@apply align-top;}
 .gift_invoice tr:hover td{@apply bg-transparent;}
+
+/* Attendee Details */
+.attendeeDetails{@apply py-2.5 px-5 bg-white drop-shadow-two rounded-lg flex items-center justify-between;}
+.attendeeDetails .bookOffer{@apply text-sm md:text-base xl:text-lg text-primary font-semibold text-right;}
 
 @media (max-width: 1600px){
   .listflitter{@apply flex-wrap;}
@@ -167,17 +178,20 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .popSeicon{@apply text-[8px] text-grey absolute right-3 top-[18px] pointer-events-none;}
 
 /* tab */
-.adsTab{@apply text-[10px] sm:text-xs md:text-sm xl:text-base font-medium rounded-t border border-grey border-b-primary -mb-px;}
-.adsTab a{@apply px-3 md:px-5 xl:px-8 py-2 md:py-3 block text-grey;}
+.tebMenu{@apply inline-flex w-full border-b border-primary space-x-2 md:space-x-5 overflow-hidden overflow-x-auto;}
+.adsTab{@apply text-xs md:text-sm xl:text-base font-medium rounded-t border border-grey border-b-primary -mb-px;}
+.adsTab a{@apply px-3 md:px-5 xl:px-8 py-2 md:py-3 block text-grey whitespace-nowrap;}
 .adsTab.active{@apply bg-white border-primary border-b-0 text-primary;}
 .adsTab.active a{@apply text-primary;}
 
 /* report table */
 .reporTable{border-collapse: collapse !important;}
 .reporTable tr th:first-child, .reporTable tr td:first-child{@apply pl-0 text-left;}
-.reporTable tr th:last-child, .reporTable tr td:last-child{@apply pr-0 text-right;}
-.reporTable tr th, .reporTable tr td{@apply text-center;}
-
+.reporTable tr th:last-child, .reporTable tr td:last-child{@apply pr-0;}
+.reporTable tr th, .reporTable tr td{@apply text-xs md:text-sm;}
+.reporTable tr th{@apply border-b-[1.5px] border-gray-300 pb-3 lg:pb-5;}
+.reporTable tbody tr:first-child td{@apply pt-3 lg:pt-5;}
 
 
 @tailwind utilities;
+

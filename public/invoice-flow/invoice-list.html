@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ads Campaign List</title>
+    <title>Invoice Flow</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
@@ -21,7 +21,7 @@
             <span><i class="icon-Category"></i>Dashboard</span>
           </a>
           <a href="javascript:void(0)">
-            <span><i class="icon-ads"></i>All Ads</span>
+            <span><i class="icon-ads"></i>All Gift</span>
           </a>
           <a href="javascript:void(0)">
             <span><i class="icon-gift"></i>Gift</span>
@@ -201,12 +201,15 @@
         <div class="content-area space-y-7">
             <div class="flex items-center justify-between">
               <a href="javascript:void(0)" class="inline-block">
-                <h1>All ADS</h1>
+                <h1>History</h1>
               </a>
-              <a href="javascript:void(0)" class="btn-primary rounded-lg px-4 py-3 lg:px-6 lg:py-3.5 2xl:px-8 2xl:py-4">Create New Ad</a>
+              <a href="javascript:void(0)" class="btn-red w-full text-center max-w-[150px] rounded-lg px-4 py-3 lg:px-6 2xl:px-8">Delete</a>
             </div>
-            <div class="py-4 px-2 flex rounded-lg bg-white drop-shadow-two listflitter">
-              <div class="relative w-full min-w-[160px] md:w-[23%] lg:w-[23%] max-w-full 2xl:max-w-[240px] mx-1 2xl:mx-2.5 my-1">
+            <div class="py-4 px-2 flex justify-center xl:justify-end rounded-lg bg-white drop-shadow-two listflitter">
+              <div class="relative w-full min-w-[180px] md:w-[48%] xl:w-[23%] max-w-full 2xl:max-w-[180px] mx-1 2xl:mx-2.5 my-1">
+                <a href="javascript:void(0)" class="btnDownload justify-center text-xs lg:text-sm py-3 px-4"><i class="icon-downarrow text-white pr-1"></i>Download Report</a>
+              </div>
+              <div class="relative w-full min-w-[160px] md:w-[48%] xl:w-[23%] max-w-full 2xl:max-w-[240px] mx-1 2xl:mx-2.5 my-1">
                 <span class="down-icon icon-downarrow"></span>
                 <select name="brand-name" id="brand-name" class="selaction-input">
                   <option value="Brand Name">Brand Name</option>
@@ -215,7 +218,7 @@
                   <option value="Brand Name">Brand Name</option>
                 </select>
               </div>
-              <div class="relative w-full min-w-[160px] md:w-[23%] lg:w-[23%] max-w-full 2xl:max-w-[240px] mx-1 2xl:mx-2.5 my-1">
+              <div class="relative w-full min-w-[160px] md:w-[48%] xl:w-[23%] max-w-full 2xl:max-w-[240px] mx-1 2xl:mx-2.5 my-1">
                 <span class="down-icon icon-downarrow"></span>
                 <select name="campaign-name" id="campaign-name" class="selaction-input">
                   <option value="campaign-name">Campaign Name</option>
@@ -224,45 +227,9 @@
                   <option value="campaign-name">Campaign Name</option>
                 </select>
               </div>
-              <div class="relative w-full min-w-[160px] md:w-[23%] lg:w-[23%] max-w-full 2xl:max-w-[240px] mx-1 2xl:mx-2.5 my-1">
-                <span class="down-icon icon-downarrow"></span>
-                <select name="select-projects" id="select-projects" class="selaction-input">
-                  <option value="select-projects">Select Projects</option>
-                  <option value="select-projects">Select Projects</option>
-                  <option value="select-projects">Select Projects</option>
-                  <option value="select-projects">Select Projects</option>
-                </select>
-              </div>
-              <div class="relative w-full min-w-[130px] md:w-[23%] lg:w-[23%] max-w-full 2xl:max-w-[140px] mx-1 2xl:mx-2.5 my-1">
-                <span class="down-icon icon-downarrow"></span>
-                <select name="user" id="user" class="selaction-input">
-                  <option value="user">User</option>
-                  <option value="user">User</option>
-                  <option value="user">User</option>
-                  <option value="user">User</option>
-                </select>
-              </div>
-              <div class="relative w-full min-w-[130px] md:w-[23%] lg:w-[23%] max-w-full 2xl:max-w-[160px] mx-1 2xl:mx-2.5 my-1">
+              <div class="relative w-full min-w-[130px] md:w-[48%] xl:w-[23%] max-w-full 2xl:max-w-[160px] mx-1 2xl:mx-2.5 my-1">
                 <span class="down-icon icon-calendar"></span>
                 <input type="date" name="startdate" id="startdate" class="form-input text-xs lg:text-sm leading-[10px] mt-0 px-3 adsclender"/>
-              </div>
-              <div class="relative w-full min-w-[130px] md:w-[23%] lg:w-[23%] max-w-full 2xl:max-w-[160px] mx-1 2xl:mx-2.5 my-1">
-                <span class="down-icon icon-downarrow"></span>
-                <select name="slide-place" id="slide-place" class="selaction-input">
-                  <option value="slide-place">Slide Place</option>
-                  <option value="slide-place">Slide Place</option>
-                  <option value="slide-place">Slide Place</option>
-                  <option value="slide-place">Slide Place</option>
-                </select>
-              </div>
-              <div class="relative w-full min-w-[130px] md:w-[23%] lg:w-[23%] max-w-full 2xl:max-w-[160px] mx-1 2xl:mx-2.5 my-1">
-                <span class="down-icon icon-downarrow"></span>
-                <select name="status" id="status" class="selaction-input">
-                  <option value="status">Status</option>
-                  <option value="status">Status</option>
-                  <option value="status">Status</option>
-                  <option value="status">Status</option>
-                </select>
               </div>
             </div>
             <div class="w-full relative bg-white rounded-xl overflow-x-auto p-4">
@@ -270,10 +237,7 @@
                 <thead class="border-b border-grey">
                   <tr>
                     <th>
-                      <div class="userPlans">
-                        <input type="checkbox" name="selactUserPlan">
-                        <span><i class="icon-nright"></i></span>
-                      </div>
+                      <span class="tableTitel">Download</span>
                     </th>
                     <th>
                       <span class="tableTitel">logo</span>
@@ -288,35 +252,26 @@
                       <span class="tableTitel">ADS Banner</span>
                     </th>
                     <th>
-                      <span class="tableTitel">Select Projects</span>
+                      <span class="tableTitel">Payment Date</span>
                     </th>
                     <th>
-                      <span class="tableTitel">Select User</span>
+                      <span class="tableTitel">Transaction  ID</span>
+                    </th>                    
+                    <th>
+                      <span class="tableTitel">Types</span>
                     </th>
                     <th>
-                      <span class="tableTitel">Start Date</span>
-                    </th>
-                    <th>
-                      <span class="tableTitel">Slide Place</span>
-                    </th>
-                    <th>
-                      <span class="tableTitel">Status</span>
-                    </th>
-                    <th>
-                      <span class="tableTitel">Action</span>
+                      <span class="tableTitel">Amount</span>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
-                      <div class="userPlans">
-                        <input type="checkbox" name="selactUserPlan">
-                        <span><i class="icon-nright"></i></span>
-                      </div>
+                      <a href="javascript-void(0)" class="text-leafGreen text-xl lg:text-2xl"><i class="icon-draft"></i></a>
                     </td>
                     <td>
-                      <div class="w-12 h-12 rounded-full overflow-hidden">
+                      <div class="w-12 h-12 rounded-full overflow-hidden mx-auto">
                         <img src="../assest/images/banner.png" class="w-full h-full object-cover" alt="banner"/>
                       </div>
                     </td>
@@ -327,44 +282,62 @@
                       <span class="tbDetails">Fashion Campaign</span>
                     </td>
                     <td>
-                      <div class="w-24 h-12 rounded-xl overflow-hidden">
+                      <div class="w-24 h-12 rounded-xl overflow-hidden mx-auto">
                         <img src="../assest/images/banner.png" class="w-full object-cover" alt="banner"/>
                       </div>
-                    </td>
-                    <td>
-                      <span class="tbDetails">Evento Package</span>
-                    </td>
-                    <td>
-                      <span class="tbDetails">500000 user</span>
                     </td>
                     <td>
                       <span class="tbDetails">9 sep 2022</span>
                     </td>
                     <td>
-                      <span class="tbDetails">1 Slide</span>
+                      <span class="tbDetails">#2536789523</span>
                     </td>
                     <td>
-                      <span class="status">Running</span>
+                      <span class="tbDetails">ADS</span>
                     </td>
                     <td>
-                      <div class="action">
-                        <a href="javascript:void(0)"><span class="icon-view"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-edit"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-calendarhistory"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-remove"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-promotion"></span></a>
+                      <span class="tbDetails text-primary font-bold">₹ 1000.00</span>
+                    </td>
+                  </tr> 
+                  <tr>
+                    <td>
+                      <a href="javascript-void(0)" class="text-leafGreen text-xl lg:text-2xl"><i class="icon-draft"></i></a>
+                    </td>
+                    <td>
+                      <div class="w-12 h-12 rounded-full overflow-hidden mx-auto">
+                        <img src="../assest/images/banner.png" class="w-full h-full object-cover" alt="banner"/>
                       </div>
+                    </td>
+                    <td>
+                      <span class="tbDetails">Panasonic</span>
+                    </td>
+                    <td>
+                      <span class="tbDetails">Fashion Campaign</span>
+                    </td>
+                    <td>
+                      <div class="w-24 h-12 rounded-xl overflow-hidden mx-auto">
+                        <img src="../assest/images/banner.png" class="w-full object-cover" alt="banner"/>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="tbDetails">9 sep 2022</span>
+                    </td>
+                    <td>
+                      <span class="tbDetails">#2536789523</span>
+                    </td>
+                    <td>
+                      <span class="tbDetails">G-ADS</span>
+                    </td>
+                    <td>
+                      <span class="tbDetails text-primary font-bold">₹ 1000.00</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div class="userPlans">
-                        <input type="checkbox" name="selactUserPlan">
-                        <span><i class="icon-nright"></i></span>
-                      </div>
+                      <a href="javascript-void(0)" class="text-leafGreen text-xl lg:text-2xl"><i class="icon-draft"></i></a>
                     </td>
                     <td>
-                      <div class="w-12 h-12 rounded-full overflow-hidden">
+                      <div class="w-12 h-12 rounded-full overflow-hidden mx-auto">
                         <img src="../assest/images/banner.png" class="w-full h-full object-cover" alt="banner"/>
                       </div>
                     </td>
@@ -375,44 +348,29 @@
                       <span class="tbDetails">Fashion Campaign</span>
                     </td>
                     <td>
-                      <div class="w-24 h-12 rounded-xl overflow-hidden">
+                      <div class="w-24 h-12 rounded-xl overflow-hidden mx-auto">
                         <img src="../assest/images/banner.png" class="w-full object-cover" alt="banner"/>
                       </div>
-                    </td>
-                    <td>
-                      <span class="tbDetails">Evento Package</span>
-                    </td>
-                    <td>
-                      <span class="tbDetails">500000 user</span>
                     </td>
                     <td>
                       <span class="tbDetails">9 sep 2022</span>
                     </td>
                     <td>
-                      <span class="tbDetails">1 Slide</span>
+                      <span class="tbDetails">#2536789523</span>
                     </td>
                     <td>
-                      <span class="status">Running</span>
+                      <span class="tbDetails">Gift</span>
                     </td>
                     <td>
-                      <div class="action">
-                        <a href="javascript:void(0)"><span class="icon-view"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-edit"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-calendarhistory"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-remove"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-promotion"></span></a>
-                      </div>
+                      <span class="tbDetails text-primary font-bold">₹ 1000.00</span>
                     </td>
-                  </tr>     
+                  </tr>                 
                   <tr>
                     <td>
-                      <div class="userPlans">
-                        <input type="checkbox" name="selactUserPlan">
-                        <span><i class="icon-nright"></i></span>
-                      </div>
+                      <a href="javascript-void(0)" class="text-leafGreen text-xl lg:text-2xl"><i class="icon-draft"></i></a>
                     </td>
                     <td>
-                      <div class="w-12 h-12 rounded-full overflow-hidden">
+                      <div class="w-12 h-12 rounded-full overflow-hidden mx-auto">
                         <img src="../assest/images/banner.png" class="w-full h-full object-cover" alt="banner"/>
                       </div>
                     </td>
@@ -423,44 +381,62 @@
                       <span class="tbDetails">Fashion Campaign</span>
                     </td>
                     <td>
-                      <div class="w-24 h-12 rounded-xl overflow-hidden">
+                      <div class="w-24 h-12 rounded-xl overflow-hidden mx-auto">
                         <img src="../assest/images/banner.png" class="w-full object-cover" alt="banner"/>
                       </div>
-                    </td>
-                    <td>
-                      <span class="tbDetails">Evento Package</span>
-                    </td>
-                    <td>
-                      <span class="tbDetails">500000 user</span>
                     </td>
                     <td>
                       <span class="tbDetails">9 sep 2022</span>
                     </td>
                     <td>
-                      <span class="tbDetails">1 Slide</span>
+                      <span class="tbDetails">#2536789523</span>
                     </td>
                     <td>
-                      <span class="status">Running</span>
+                      <span class="tbDetails">ADS</span>
                     </td>
                     <td>
-                      <div class="action">
-                        <a href="javascript:void(0)"><span class="icon-view"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-edit"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-calendarhistory"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-remove"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-promotion"></span></a>
+                      <span class="tbDetails text-primary font-bold">₹ 1000.00</span>
+                    </td>
+                  </tr> 
+                  <tr>
+                    <td>
+                      <a href="javascript-void(0)" class="text-leafGreen text-xl lg:text-2xl"><i class="icon-draft"></i></a>
+                    </td>
+                    <td>
+                      <div class="w-12 h-12 rounded-full overflow-hidden mx-auto">
+                        <img src="../assest/images/banner.png" class="w-full h-full object-cover" alt="banner"/>
                       </div>
+                    </td>
+                    <td>
+                      <span class="tbDetails">Panasonic</span>
+                    </td>
+                    <td>
+                      <span class="tbDetails">Fashion Campaign</span>
+                    </td>
+                    <td>
+                      <div class="w-24 h-12 rounded-xl overflow-hidden mx-auto">
+                        <img src="../assest/images/banner.png" class="w-full object-cover" alt="banner"/>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="tbDetails">9 sep 2022</span>
+                    </td>
+                    <td>
+                      <span class="tbDetails">#2536789523</span>
+                    </td>
+                    <td>
+                      <span class="tbDetails">G-ADS</span>
+                    </td>
+                    <td>
+                      <span class="tbDetails text-primary font-bold">₹ 1000.00</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div class="userPlans">
-                        <input type="checkbox" name="selactUserPlan">
-                        <span><i class="icon-nright"></i></span>
-                      </div>
+                      <a href="javascript-void(0)" class="text-leafGreen text-xl lg:text-2xl"><i class="icon-draft"></i></a>
                     </td>
                     <td>
-                      <div class="w-12 h-12 rounded-full overflow-hidden">
+                      <div class="w-12 h-12 rounded-full overflow-hidden mx-auto">
                         <img src="../assest/images/banner.png" class="w-full h-full object-cover" alt="banner"/>
                       </div>
                     </td>
@@ -471,81 +447,21 @@
                       <span class="tbDetails">Fashion Campaign</span>
                     </td>
                     <td>
-                      <div class="w-24 h-12 rounded-xl overflow-hidden">
+                      <div class="w-24 h-12 rounded-xl overflow-hidden mx-auto">
                         <img src="../assest/images/banner.png" class="w-full object-cover" alt="banner"/>
                       </div>
-                    </td>
-                    <td>
-                      <span class="tbDetails">Evento Package</span>
-                    </td>
-                    <td>
-                      <span class="tbDetails">500000 user</span>
                     </td>
                     <td>
                       <span class="tbDetails">9 sep 2022</span>
                     </td>
                     <td>
-                      <span class="tbDetails">1 Slide</span>
+                      <span class="tbDetails">#2536789523</span>
                     </td>
                     <td>
-                      <span class="status scheduled">Scheduled</span>
+                      <span class="tbDetails">Gift</span>
                     </td>
                     <td>
-                      <div class="scheduled-action action">
-                        <a href="javascript:void(0)"><span class="icon-view"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-edit"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-calendarhistory"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-remove"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-promotion"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="userPlans">
-                        <input type="checkbox" name="selactUserPlan">
-                        <span><i class="icon-nright"></i></span>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="w-12 h-12 rounded-full overflow-hidden">
-                        <img src="../assest/images/banner.png" class="w-full h-full object-cover" alt="banner"/>
-                      </div>
-                    </td>
-                    <td>
-                      <span class="tbDetails">Panasonic</span>
-                    </td>
-                    <td>
-                      <span class="tbDetails">Fashion Campaign</span>
-                    </td>
-                    <td>
-                      <div class="w-24 h-12 rounded-xl overflow-hidden">
-                        <img src="../assest/images/banner.png" class="w-full object-cover" alt="banner"/>
-                      </div>
-                    </td>
-                    <td>
-                      <span class="tbDetails">Evento Package</span>
-                    </td>
-                    <td>
-                      <span class="tbDetails">500000 user</span>
-                    </td>
-                    <td>
-                      <span class="tbDetails">9 sep 2022</span>
-                    </td>
-                    <td>
-                      <span class="tbDetails">1 Slide</span>
-                    </td>
-                    <td>
-                      <span class="status scheduled">Running</span>
-                    </td>
-                    <td>
-                      <div class="scheduled-action action">
-                        <a href="javascript:void(0)"><span class="icon-view"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-edit"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-calendarhistory"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-remove"></span></a>
-                        <a href="javascript:void(0)"><span class="icon-promotion"></span></a>
-                      </div>
+                      <span class="tbDetails text-primary font-bold">₹ 1000.00</span>
                     </td>
                   </tr>
                 </tbody>
