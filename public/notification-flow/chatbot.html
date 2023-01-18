@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assest/css/iconmoon.css" />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+  <body>
+    <div class="main flex min-h-screen relative w-full h-full overflow-hidden">
+      <!-- left-bar -->
+      <div class="left_bar">
+        <a href="javascript:void(0)" class="inline-block w-full text-center">
+          <img src="../assest/images/hero-logo.png" alt="logo" class="mx-auto" />
+        </a>
+        <nav aria-label="Main Nav" class="navitems">
+          <a href="javascript:void(0)" class="active">
+            <span>
+              <i class="icon-Category"></i>Dashboard </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-ads"></i>All Ads </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-gift"></i>Gift </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-gads"></i>Google Ads </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-draft"></i>Draft </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-history"></i>History </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-invoice"></i>Invoice </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-promotion"></i>Promotion </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-our-products"></i>our Products </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-refer-earn"></i>Refer & Earn </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-redeem"></i>Redeem </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-qation"></i>FAQ </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-help"></i>Help </span>
+          </a>
+        </nav>
+      </div>
+      <!-- right-bar -->
+      <div class="right_bar relative ml-auto">
+        <div class="header">
+          <div id="searchBar" class="w-full">
+            <div class="searchHolder">
+              <button type="button" class="absolute top-1/2 left-6 sm:left-4 -translate-y-1/2 rounded-md text-gray-600 transition hover:text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-7 lg:h-7 stroke-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </button>
+              <input class="h-10 lg:h-12 w-full rounded-lg border-none sm:bg-gray-100 pl-12 lg:pl-14 pr-4 outline-none" id="search" type="search" placeholder="Search">
+            </div>
+            <button type="button" class="block sm:hidden px-2 xl:px-4" id="searchbtn">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-7 lg:h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-center ml-auto">
+            <a href="javascript:void(0)" class="headerMenu">
+              <span class="icon-scan text-base md:text-xl 2xl:text-26 text-primary"></span>
+            </a>
+            <a href="javascript:void(0)" class="headerMenu ml-2.5 2xl:ml-4">
+              <span class="icon-message text-base md:text-xl 2xl:text-26 text-primary"></span>
+            </a>
+            <a href="javascript:void(0)" id="notifications" class="headerMenu ml-2.5 2xl:ml-4 relative">
+              <span class="icon-bell text-lg md:text-26 2xl:text-32 text-primary"></span>
+              <span class="w-4 h-4 2xl:w-5 2xl:h-5 rounded-full border-4 border-white bg-primary absolute -top-0.5 -right-0.5"></span>
+            </a>
+            <button type="button" id="userProfile" class="ml-2.5 2xl:ml-4 flex space-x-3 items-center">
+              <div class="headerMenu overflow-hidden">
+                <img alt="Man" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80">
+              </div>
+              <span class="flex items-center text-xs md:text-sm xl:text-base font-semibold text-dark">Samantha <i class="icon-downarrow ml-2"></i>
+              </span>
+            </button>
+            <!-- onclick show Profile popup  -->
+            <div class="homeProfile">
+              <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-dark group hover:text-primary anim">
+                <span class="icon-view mr-3 text-base lg:text-lg"></span> View Profile </a>
+              <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-dark group hover:text-primary anim">
+                <span class="icon-edit mr-3 text-base lg:text-lg"></span> Edit Profile </a>
+              <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-red group">
+                <span class="icon-logout mr-3 text-base lg:text-lg"></span> Logout </a>
+            </div>
+            <!-- On click Notifications -->
+            <div class="notifictionbar">
+              <div class="flex items-center justify-between p-4">
+                <span class="inline-block font-semibold text-dark">Notifications</span>
+                <a href="javascript:void(0)" class="text-sm text-darkGrey flex items-center">Mark all as read <span class="icon-true ml-1 w-[18px] h-[18px] leading-4 text-center inline-block border-2 border-davyGrey rounded-full text-[8px] font-bold"></span>
+                </a>
+              </div>
+              <div class="w-full border-t border-darkGrey/50 h-full max-h-[570px] overflow-y-auto">
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-area flex flex-col">
+          <div class="w-full space-y-7">
+            <!-- pagination -->
+            <div class="w-full sm:w-5/12 md:w-1/2">
+              <a href="javascript:void(0)" class="inline-block">
+                <h1>
+                  <i class="icon-left-arrow mr-3"></i>Chatbot
+                </h1>
+              </a>
+            </div>
+            <!-- chatbot  -->
+            <div class="w-full">
+              <div class="flex flex-wrap relative w-full overflow-hidden xl:overflow-visible">
+                  <div id="chatBot" class="absolute xl:relative w-full left-full xl:left-0 xl:w-8/12 bg-[#F9FAFB] anim">
+                    <div class="shadow-lg rounded-md overflow-hidden h-full">
+                      <!-- chat-title  -->
+                      <div class="p-5 py-3.5 bg-white flex items-center">
+                          <div class="flex items-center">
+                            <a href="javascript:void(0)" class="block xl:hidden"  onclick="removeActive('#chatBot','active')"><i class="icon-left-arrow mr-3"></i></a>
+                            <div class="w-12 h-12 rounded-full overflow-hidden">
+                              <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                            </div>
+                          </div>
+                          <div class="w-full pl-3.5">
+                              <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                              <span class="text-xs sm:text-sm text-grey pb-0">markjecno@gmail.com</span>   
+                          </div>
+                      </div>
+                      <!-- chat-text  -->  
+                      <div class="chat-holder">
+                          <div class="text-massage right-massage">
+                              <p>I need your help <span class="chtinnerTime">2:55PM</span></p>
+                              <span class="arrow"></span>
+                          </div>
+                          <div class="text-massage left-massage">
+                              <p>Can you tell me exactly what you’re looking for? <span class="chtinnerTime">2:55PM</span></p>
+                              <span class="arrow"></span>
+                          </div>
+                          <div class="text-massage left-massage">
+                              <p>Pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth <br>
+                                1.praesentium voluptatum <br>
+                                2.deleniti atque corrupti quos dolores<span class="chtinnerTime">2:55PM</span></p>
+                              <span class="arrow"></span>
+                          </div>
+                          <div class="line-main">
+                              <hr>
+                              <span>Today</span>
+                          </div>
+                          <div class="text-massage right-massage">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <br>
+                              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto<br>         
+                              enouncing pleasure and praising<span class="chtinnerTime">2:55PM</span></p>
+                            <span class="arrow"></span>
+                        </div>                           
+                      </div>
+                      <!-- chat-input -->
+                      <div class="p-3 sm:p-5 bg-white flex items-center space-x-3">
+                        <a href="#">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#FFD93B"></path>
+                            <path d="M15.9998 26.2846C11.3208 26.2846 7.24381 23.1156 6.08581 18.5796C5.99481 18.2226 6.20981 17.8596 6.56681 17.7686C6.92181 17.6756 7.28581 17.8926 7.37681 18.2496C8.38481 22.1956 11.9298 24.9516 15.9988 24.9516C20.0678 24.9516 23.6138 22.1956 24.6208 18.2496C24.7108 17.8926 25.0738 17.6756 25.4318 17.7686C25.7888 17.8596 26.0038 18.2226 25.9128 18.5796C24.7558 23.1156 20.6788 26.2846 15.9998 26.2846Z" fill="#3E4347"></path>
+                            <path d="M31.9999 15.9999C31.9999 24.8399 24.8349 31.9999 15.9999 31.9999C10.9699 31.9999 6.47992 29.6799 3.54492 26.0449C6.28992 28.2649 9.78492 29.5899 13.5899 29.5899C22.4249 29.5899 29.5899 22.4299 29.5899 13.5899C29.5899 9.78492 28.2649 6.28992 26.0449 3.54492C29.6749 6.47992 31.9999 10.9699 31.9999 15.9999Z" fill="#F4C534"></path>
+                            <path d="M10.8333 16.6835C12.1876 16.6835 13.2853 15.3788 13.2853 13.7695C13.2853 12.1601 12.1876 10.8555 10.8333 10.8555C9.47915 10.8555 8.38135 12.1601 8.38135 13.7695C8.38135 15.3788 9.47915 16.6835 10.8333 16.6835Z" fill="#3E4347"></path>
+                            <path d="M11.9394 13.1425C11.7484 13.2925 11.4344 13.2185 11.2334 12.9745C11.0324 12.7305 11.0224 12.4035 11.2134 12.2535C11.4034 12.0965 11.7184 12.1705 11.9184 12.4145C12.1204 12.6655 12.1224 12.9865 11.9394 13.1425Z" fill="#5A5F63"></path>
+                            <path d="M21.1698 16.6835C22.524 16.6835 23.6218 15.3788 23.6218 13.7695C23.6218 12.1601 22.524 10.8555 21.1698 10.8555C19.8156 10.8555 18.7178 12.1601 18.7178 13.7695C18.7178 15.3788 19.8156 16.6835 21.1698 16.6835Z" fill="#3E4347"></path>
+                          </svg>
+                        </a>
+                        <label class="block w-full">
+                          <input type="text" placeholder="Type here..." class="w-full outline-none">
+                        </label>
+                        <a href="#" type="submit"><i class="icon-send text-primary text-2xl"></i></a>
+                    </div>
+                    </div>
+                  </div>                     
+                  <div id="chatprofile" class="w-full xl:w-4/12 xl:pl-5">
+                    <div class="bg-white py-4 2xl:py-7 rounded-md h-full">
+                        <div class="text-base font-bold text-japaneseIndigo pb-2.5 px-5 2xl:px-7">User List</div>
+                        <div class="user-container px-3 md:px-5 2xl:px-7">
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                                <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                    <div>
+                                      <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                      <p>6:40 PM</p>
+                                    </div>
+                                    <span>Hi, How are you?</span>   
+                                </div>
+                            </div>
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                                <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                    <div>
+                                      <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                      <p>6:40 PM</p>
+                                    </div>
+                                    <span>Hi, How are you?</span>   
+                                </div>
+                            </div> 
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                              <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                  <div>
+                                    <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                    <p>6:40 PM</p>
+                                  </div>
+                                  <span>Hi, How are you?</span>   
+                              </div>
+                            </div>
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                                <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                    <div>
+                                      <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                      <p>6:40 PM</p>
+                                    </div>
+                                    <span>Hi, How are you?</span>   
+                                </div>
+                            </div>     
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                              <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                  <div>
+                                    <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                    <p>6:40 PM</p>
+                                  </div>
+                                  <span>Hi, How are you?</span>   
+                              </div>
+                            </div>
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                                <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                    <div>
+                                      <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                      <p>6:40 PM</p>
+                                    </div>
+                                    <span>Hi, How are you?</span>   
+                                </div>
+                            </div> 
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                                <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                    <div>
+                                      <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                      <p>6:40 PM</p>
+                                    </div>
+                                    <span>Hi, How are you?</span>   
+                                </div>
+                            </div>
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                                <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                    <div>
+                                      <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                      <p>6:40 PM</p>
+                                    </div>
+                                    <span>Hi, How are you?</span>   
+                                </div>
+                            </div> 
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                                <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                    <div>
+                                      <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                      <p>6:40 PM</p>
+                                    </div>
+                                    <span>Hi, How are you?</span>   
+                                </div>
+                            </div>
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                                <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                    <div>
+                                      <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                      <p>6:40 PM</p>
+                                    </div>
+                                    <span>Hi, How are you?</span>   
+                                </div>
+                            </div> 
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                                <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                    <div>
+                                      <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                      <p>6:40 PM</p>
+                                    </div>
+                                    <span>Hi, How are you?</span>   
+                                </div>
+                            </div> 
+                            <div class="chat-user-holder">
+                              <div class="py-5 mr-2.5">
+                                <div class="user-img">
+                                  <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                                </div>
+                              </div>
+                                <div class="user-info" onclick="toggleActive('#chatBot','active')">
+                                    <div>
+                                      <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                                      <p>6:40 PM</p>
+                                    </div>
+                                    <span>Hi, How are you?</span>   
+                                </div>
+                            </div>                                 
+                        </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assest/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../assest/js/swiper-bundle.min.js"></script>
+    <script src="../assest/js/script.js"></script>
+  </body>
+</html>

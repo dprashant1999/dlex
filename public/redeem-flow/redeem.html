@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeem</title>
+    <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assest/css/iconmoon.css" />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+  <body>
+    <div class="main flex min-h-screen relative w-full h-full overflow-hidden">
+      <!-- left-bar -->
+      <div class="left_bar">
+        <a href="javascript:void(0)" class="inline-block w-full text-center">
+          <img src="../assest/images/hero-logo.png" alt="logo" class="mx-auto" />
+        </a>
+        <nav aria-label="Main Nav" class="navitems">
+          <a href="javascript:void(0)" class="active">
+            <span>
+              <i class="icon-Category"></i>Dashboard </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-ads"></i>All Ads </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-gift"></i>Gift </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-gads"></i>Google Ads </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-draft"></i>Draft </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-history"></i>History </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-invoice"></i>Invoice </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-promotion"></i>Promotion </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-our-products"></i>our Products </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-refer-earn"></i>Refer & Earn </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-redeem"></i>Redeem </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-qation"></i>FAQ </span>
+          </a>
+          <a href="javascript:void(0)">
+            <span>
+              <i class="icon-help"></i>Help </span>
+          </a>
+        </nav>
+      </div>
+      <!-- right-bar -->
+      <div class="right_bar relative ml-auto">
+        <div class="header">
+          <div id="searchBar" class="w-full">
+            <div class="searchHolder">
+              <button type="button" class="absolute top-1/2 left-6 sm:left-4 -translate-y-1/2 rounded-md text-gray-600 transition hover:text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-7 lg:h-7 stroke-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </button>
+              <input class="h-10 lg:h-12 w-full rounded-lg border-none sm:bg-gray-100 pl-12 lg:pl-14 pr-4 outline-none" id="search" type="search" placeholder="Search">
+            </div>
+            <button type="button" class="block sm:hidden px-2 xl:px-4" id="searchbtn">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-7 lg:h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-center ml-auto">
+            <a href="javascript:void(0)" class="headerMenu">
+              <span class="icon-scan text-base md:text-xl 2xl:text-26 text-primary"></span>
+            </a>
+            <a href="javascript:void(0)" class="headerMenu ml-2.5 2xl:ml-4">
+              <span class="icon-message text-base md:text-xl 2xl:text-26 text-primary"></span>
+            </a>
+            <a href="javascript:void(0)" id="notifications" class="headerMenu ml-2.5 2xl:ml-4 relative">
+              <span class="icon-bell text-lg md:text-26 2xl:text-32 text-primary"></span>
+              <span class="w-4 h-4 2xl:w-5 2xl:h-5 rounded-full border-4 border-white bg-primary absolute -top-0.5 -right-0.5"></span>
+            </a>
+            <button type="button" id="userProfile" class="ml-2.5 2xl:ml-4 flex space-x-3 items-center">
+              <div class="headerMenu overflow-hidden">
+                <img alt="Man" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80">
+              </div>
+              <span class="flex items-center text-xs md:text-sm xl:text-base font-semibold text-dark">Samantha <i class="icon-downarrow ml-2"></i>
+              </span>
+            </button>
+            <!-- onlclick show Profilepopup  -->
+            <div class="homeProfile">
+              <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-dark group hover:text-primary anim">
+                <span class="icon-view mr-3 text-base lg:text-lg"></span> View Profile </a>
+              <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-dark group hover:text-primary anim">
+                <span class="icon-edit mr-3 text-base lg:text-lg"></span> Edit Profile </a>
+              <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-red group">
+                <span class="icon-logout mr-3 text-base lg:text-lg"></span> Logout </a>
+            </div>
+            <!-- On click Notifications -->
+            <div class="notifictionbar">
+              <div class="flex items-center justify-between p-4">
+                <span class="inline-block font-semibold text-dark">Notifications</span>
+                <a href="javascript:void(0)" class="text-sm text-darkGrey flex items-center">Mark all as read <span class="icon-true ml-1 w-[18px] h-[18px] leading-4 text-center inline-block border-2 border-davyGrey rounded-full text-[8px] font-bold"></span>
+                </a>
+              </div>
+              <div class="w-full border-t border-darkGrey/50 h-full max-h-[570px] overflow-y-auto">
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile" />
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span>
+                    </p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-area flex flex-col">
+          <div class="w-full space-y-4 md:space-y-7">
+            <!-- pagination -->
+            <div class="flex items-center justify-between flex-wrap space-y-4 sm:space-y-0">
+              <div class="w-full sm:w-5/12 md:w-1/2">
+                <h1>Redeem Coin</h1>
+              </div>
+              <div class="flex items-center sm:justify-end space-x-3 w-full sm:w-7/12 md:w-1/2">
+                <a href="javascript:void(0)" class="btnDownload font-bold py-2 px-9 rounded">Redeem</a>
+              </div>
+            </div>
+            <!-- you have -->
+            <div class="bg-primary sm:flex items-center justify-between p-4 md:py-4 xl:px-7 rounded-xl  space-y-2 md:space-y-0">
+              <svg class="mx-auto md:mx-0 w-12 sm:w-16 md:w-20" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M44.7295 16.7137V22.4571C44.7295 24.0234 43.4598 25.2931 41.8935 25.2931H7.92976C6.36342 25.2931 5.09375 24.0234 5.09375 22.4571V16.7137C5.09375 15.1486 6.36342 13.8789 7.92976 13.8789H41.8934C43.4598 13.8789 44.7295 15.1486 44.7295 16.7137Z" fill="#DD9F3A"/> <path d="M39.6357 28.1278V33.8711C39.6357 35.4375 38.3661 36.7071 36.7997 36.7071H2.83601C1.26967 36.7071 0 35.4375 0 33.8711V28.1278C0 26.5626 1.26967 25.293 2.83601 25.293H36.7996C38.3661 25.293 39.6357 26.5626 39.6357 28.1278Z" fill="#DD9F3A"/> <path d="M41.5459 39.5418V45.2852C41.5459 46.8515 40.2762 48.1212 38.7099 48.1212H4.74617C3.17982 48.1212 1.91016 46.8515 1.91016 45.2852V39.5418C1.91016 37.9767 3.17982 36.707 4.74617 36.707H38.7098C40.2762 36.707 41.5459 37.9767 41.5459 39.5418Z" fill="#DD9F3A"/> <path d="M39.6357 50.9598V56.7031C39.6357 58.2695 38.3661 59.5391 36.7997 59.5391H2.83601C1.26967 59.5391 0 58.2695 0 56.7031V50.9598C0 49.3947 1.26967 48.125 2.83601 48.125H36.7996C38.3661 48.125 39.6357 49.3947 39.6357 50.9598Z" fill="#DD9F3A"/> <path d="M39.636 50.9559V54.9164C39.636 56.3809 38.5256 57.5869 37.1006 57.7371C37.0013 57.7473 36.9018 57.7524 36.8 57.7524H9.81625C8.25111 57.7524 6.98145 56.4827 6.98145 54.9164V50.9559C6.98145 49.3908 8.25111 48.1211 9.81625 48.1211H36.8C38.3664 48.1211 39.636 49.3908 39.636 50.9559Z" fill="#F4B74A"/> <path d="M39.636 50.9559V54.9164C39.636 56.3809 38.5256 57.5869 37.1006 57.7371C37.0013 57.7473 36.9018 57.7524 36.8 57.7524H9.81625C8.25111 57.7524 6.98145 56.4827 6.98145 54.9164V50.9559C6.98145 49.3908 8.25111 48.1211 9.81625 48.1211H36.8C38.3664 48.1211 39.636 49.3908 39.636 50.9559Z" fill="#F4B74A"/> <path d="M39.6356 39.5418V43.5023C39.6356 44.9668 38.5252 46.1728 37.1002 46.3231C37.0009 46.3332 36.9015 46.3383 36.7996 46.3383H9.81588C8.25074 46.3383 6.98108 45.0687 6.98108 43.5023V39.5418C6.98108 37.9767 8.25074 36.707 9.81588 36.707H36.7996C38.3661 36.7069 39.6356 37.9766 39.6356 39.5418Z" fill="#F4B74A"/> <path d="M39.6356 28.1278V32.0883C39.6356 33.5528 38.5252 34.7587 37.1002 34.909C37.0009 34.9192 36.9015 34.9243 36.7996 34.9243H9.81588C8.25074 34.9243 6.98108 33.6546 6.98108 32.0883V28.1278C6.98108 26.5626 8.25074 25.293 9.81588 25.293H36.7996C38.3661 25.293 39.6356 26.5626 39.6356 28.1278Z" fill="#F4B74A"/> <path d="M44.7293 16.7137V20.6742C44.7293 22.1387 43.6188 23.3447 42.1938 23.4949C42.0945 23.5051 41.9951 23.5102 41.8933 23.5102H14.9095C13.3444 23.5102 12.0747 22.2405 12.0747 20.6742V16.7137C12.0747 15.1486 13.3444 13.8789 14.9095 13.8789H41.8933C43.4597 13.8789 44.7293 15.1486 44.7293 16.7137Z" fill="#F4B74A"/> <path d="M39.6362 50.9559V56.6992C39.6362 58.1637 38.5258 59.3697 37.1008 59.52C36.8422 59.5302 36.5837 59.5353 36.3252 59.5353C33.5847 59.5353 30.8441 58.9711 28.2921 57.8403C26.5792 57.0826 24.9542 56.0689 23.4694 54.8018C23.0721 54.4631 22.6875 54.1065 22.3118 53.7321C20.6347 52.0549 19.3217 50.1523 18.3717 48.1211H36.8002C38.3666 48.1211 39.6362 49.3908 39.6362 50.9559Z" fill="#DD9F3A"/> <path d="M39.6363 39.5418V45.2852C39.6363 46.8515 38.3666 48.1212 36.8003 48.1212H20.2795C18.6023 44.5363 18.0573 40.5516 18.6455 36.707H36.8003C38.3666 36.7069 39.6363 37.9767 39.6363 39.5418Z" fill="#DD9F3A"/> <path d="M39.6357 5.29574V11.0391C39.6357 12.6054 38.3661 13.8751 36.7997 13.8751H2.83601C1.26967 13.8752 0 12.6055 0 11.0392V5.29574C0 3.7306 1.26967 2.46094 2.83601 2.46094H36.7996C38.3661 2.46106 39.6357 3.73072 39.6357 5.29574Z" fill="#DD9F3A"/> <path d="M39.636 5.29574V9.25622C39.636 10.7207 38.5256 11.9267 37.1006 12.077C37.0013 12.0871 36.9018 12.0922 36.8 12.0922H9.81625C8.25111 12.0922 6.98145 10.8226 6.98145 9.25622V5.29574C6.98145 3.7306 8.25111 2.46094 9.81625 2.46094H36.8C38.3664 2.46106 39.636 3.73072 39.636 5.29574Z" fill="#F4B74A"/> <path d="M34.9735 2.46094H30.8143V12.0922H34.9735V2.46094Z" fill="#F9C662"/> <path d="M27.7578 2.46094H25.6782V12.0922H27.7578V2.46094Z" fill="#F9C662"/> <path d="M39.9842 13.875H35.8245V25.2905H39.9842V13.875Z" fill="#F9C662"/> <path d="M32.7668 13.875H30.6869V25.2905H32.7668V13.875Z" fill="#F9C662"/> <path d="M44.7298 20.5998V22.4553C44.7298 24.0217 43.4601 25.2913 41.8938 25.2913H25.923C31.1048 20.4061 38.2745 18.8424 44.7298 20.5998Z" fill="#DD9F3A"/> <path d="M39.6358 28.1278V33.8711C39.6358 35.4375 38.3662 36.7071 36.7998 36.7071H16.7349C17.3499 32.6804 19.2093 28.8077 22.3101 25.7069C22.4514 25.5656 22.5941 25.428 22.7381 25.293H36.7998C38.3662 25.293 39.6358 26.5626 39.6358 28.1278Z" fill="#DD9F3A"/> <path d="M56.196 53.7334C50.2348 59.6936 41.4225 61.0637 34.1502 57.842C32.4374 57.0841 30.8116 56.0714 29.3275 54.804C28.9301 54.4656 28.5445 54.108 28.169 53.7334C20.4302 45.9936 20.4302 33.4463 28.169 25.7065C35.9088 17.9676 48.4562 17.9676 56.196 25.7065C56.5715 26.082 56.928 26.4675 57.2666 26.865C58.534 28.348 59.5467 29.9748 60.3046 31.6876C63.5263 38.9589 62.1561 47.7724 56.196 53.7334Z" fill="#F4B74A"/> <path d="M60.3045 31.686L34.1502 57.8403C32.4374 57.0824 30.8116 56.0697 29.3275 54.8023L57.2666 26.8633C58.5338 28.3463 59.5465 29.9732 60.3045 31.686Z" fill="#F9C662"/> <path d="M56.1959 39.7203C56.1959 47.4597 49.9218 53.7336 42.1826 53.7336C37.8139 53.7336 33.9128 51.7352 31.3423 48.6017C29.3588 46.1842 28.1693 43.0911 28.1693 39.7203C28.1693 31.981 34.4434 25.707 42.1826 25.707C45.5541 25.707 48.6473 26.8982 51.0647 28.8819C54.1974 31.4512 56.1959 35.3526 56.1959 39.7203Z" fill="#FFD488"/> <path d="M51.065 28.8819L31.3443 48.6026L31.3424 48.6017C30.7635 47.8963 30.2522 47.1328 29.8192 46.322C29.3255 45.4005 28.9329 44.4184 28.6544 43.3879C28.3382 42.2187 28.1694 40.9888 28.1694 39.7203C28.1694 31.981 34.4435 25.707 42.1827 25.707C43.4522 25.707 44.682 25.8756 45.8503 26.192C46.8808 26.4705 47.8629 26.8641 48.7844 27.3578C49.5954 27.7909 50.3587 28.303 51.065 28.8819Z" fill="#F9C662"/> <path d="M48.784 27.3572L29.8189 46.3215C29.3252 45.4 28.9326 44.4179 28.6541 43.3874L45.8501 26.1914C46.8803 26.4699 47.8625 26.8635 48.784 27.3572Z" fill="#FFD488"/> <path d="M43.1377 38.8408V33.581C44.5303 33.9055 45.5493 34.9198 45.5493 36.1183C45.5493 36.6457 45.9768 37.0733 46.5044 37.0733C47.032 37.0733 47.4594 36.6457 47.4594 36.1183C47.4594 33.8873 45.5928 32.0272 43.1376 31.6379V31.0762C43.1376 30.5487 42.7101 30.1211 42.1825 30.1211C41.6549 30.1211 41.2275 30.5487 41.2275 31.0762V31.6379C38.7723 32.0273 36.9055 33.8875 36.9055 36.1183C36.9055 38.349 38.7723 40.2093 41.2275 40.5986V45.8584C39.8349 45.5339 38.8158 44.5196 38.8158 43.3211C38.8158 42.7937 38.3883 42.3661 37.8607 42.3661C37.3331 42.3661 36.9056 42.7937 36.9056 43.3211C36.9056 45.552 38.7724 47.4122 41.2276 47.8015V48.3632C41.2276 48.8907 41.655 49.3183 42.1826 49.3183C42.7103 49.3183 43.1377 48.8907 43.1377 48.3632V47.8015C45.5929 47.4122 47.4595 45.5519 47.4595 43.3211C47.4595 41.0904 45.5929 39.2302 43.1377 38.8408ZM38.8159 36.1181C38.8159 34.9197 39.8349 33.9054 41.2276 33.5809V38.6554C39.835 38.331 38.8159 37.3166 38.8159 36.1181ZM43.1377 45.8584V40.7839C44.5303 41.1084 45.5493 42.1227 45.5493 43.3211C45.5493 44.5196 44.5303 45.5339 43.1377 45.8584Z" fill="#E0A33F"/> <path d="M42.1826 54.687C37.6817 54.687 33.4614 52.6892 30.6038 49.2056C28.418 46.5416 27.2141 43.1723 27.2141 39.7185C27.2141 31.4649 33.929 24.75 42.1826 24.75C45.6355 24.75 49.005 25.9545 51.6706 28.1415C55.1535 30.9983 57.151 35.2179 57.151 39.7184C57.1509 47.9721 50.4362 54.687 42.1826 54.687ZM42.1826 26.6603C34.9823 26.6603 29.1244 32.5182 29.1244 39.7185C29.1244 42.7315 30.1742 45.6706 32.0806 47.9939C34.5739 51.0335 38.2559 52.7767 42.1826 52.7767C49.3828 52.7767 55.2407 46.9188 55.2407 39.7185C55.2407 35.7924 53.4978 32.111 50.459 29.6184C48.1342 27.7107 45.1948 26.6603 42.1826 26.6603Z" fill="#E0A33F"/> </svg>
+              <p class="h1 font-normal text-white text-center">You have :  <br class="block md:hidden"> <span class="font-bold">250 F-Coins</span></p>
+              <svg class="mx-auto md:mx-0 w-12 sm:w-16 md:w-20 hidden sm:block" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M44.7295 16.7137V22.4571C44.7295 24.0234 43.4598 25.2931 41.8935 25.2931H7.92976C6.36342 25.2931 5.09375 24.0234 5.09375 22.4571V16.7137C5.09375 15.1486 6.36342 13.8789 7.92976 13.8789H41.8934C43.4598 13.8789 44.7295 15.1486 44.7295 16.7137Z" fill="#DD9F3A"/> <path d="M39.6357 28.1278V33.8711C39.6357 35.4375 38.3661 36.7071 36.7997 36.7071H2.83601C1.26967 36.7071 0 35.4375 0 33.8711V28.1278C0 26.5626 1.26967 25.293 2.83601 25.293H36.7996C38.3661 25.293 39.6357 26.5626 39.6357 28.1278Z" fill="#DD9F3A"/> <path d="M41.5459 39.5418V45.2852C41.5459 46.8515 40.2762 48.1212 38.7099 48.1212H4.74617C3.17982 48.1212 1.91016 46.8515 1.91016 45.2852V39.5418C1.91016 37.9767 3.17982 36.707 4.74617 36.707H38.7098C40.2762 36.707 41.5459 37.9767 41.5459 39.5418Z" fill="#DD9F3A"/> <path d="M39.6357 50.9598V56.7031C39.6357 58.2695 38.3661 59.5391 36.7997 59.5391H2.83601C1.26967 59.5391 0 58.2695 0 56.7031V50.9598C0 49.3947 1.26967 48.125 2.83601 48.125H36.7996C38.3661 48.125 39.6357 49.3947 39.6357 50.9598Z" fill="#DD9F3A"/> <path d="M39.636 50.9559V54.9164C39.636 56.3809 38.5256 57.5869 37.1006 57.7371C37.0013 57.7473 36.9018 57.7524 36.8 57.7524H9.81625C8.25111 57.7524 6.98145 56.4827 6.98145 54.9164V50.9559C6.98145 49.3908 8.25111 48.1211 9.81625 48.1211H36.8C38.3664 48.1211 39.636 49.3908 39.636 50.9559Z" fill="#F4B74A"/> <path d="M39.636 50.9559V54.9164C39.636 56.3809 38.5256 57.5869 37.1006 57.7371C37.0013 57.7473 36.9018 57.7524 36.8 57.7524H9.81625C8.25111 57.7524 6.98145 56.4827 6.98145 54.9164V50.9559C6.98145 49.3908 8.25111 48.1211 9.81625 48.1211H36.8C38.3664 48.1211 39.636 49.3908 39.636 50.9559Z" fill="#F4B74A"/> <path d="M39.6356 39.5418V43.5023C39.6356 44.9668 38.5252 46.1728 37.1002 46.3231C37.0009 46.3332 36.9015 46.3383 36.7996 46.3383H9.81588C8.25074 46.3383 6.98108 45.0687 6.98108 43.5023V39.5418C6.98108 37.9767 8.25074 36.707 9.81588 36.707H36.7996C38.3661 36.7069 39.6356 37.9766 39.6356 39.5418Z" fill="#F4B74A"/> <path d="M39.6356 28.1278V32.0883C39.6356 33.5528 38.5252 34.7587 37.1002 34.909C37.0009 34.9192 36.9015 34.9243 36.7996 34.9243H9.81588C8.25074 34.9243 6.98108 33.6546 6.98108 32.0883V28.1278C6.98108 26.5626 8.25074 25.293 9.81588 25.293H36.7996C38.3661 25.293 39.6356 26.5626 39.6356 28.1278Z" fill="#F4B74A"/> <path d="M44.7293 16.7137V20.6742C44.7293 22.1387 43.6188 23.3447 42.1938 23.4949C42.0945 23.5051 41.9951 23.5102 41.8933 23.5102H14.9095C13.3444 23.5102 12.0747 22.2405 12.0747 20.6742V16.7137C12.0747 15.1486 13.3444 13.8789 14.9095 13.8789H41.8933C43.4597 13.8789 44.7293 15.1486 44.7293 16.7137Z" fill="#F4B74A"/> <path d="M39.6362 50.9559V56.6992C39.6362 58.1637 38.5258 59.3697 37.1008 59.52C36.8422 59.5302 36.5837 59.5353 36.3252 59.5353C33.5847 59.5353 30.8441 58.9711 28.2921 57.8403C26.5792 57.0826 24.9542 56.0689 23.4694 54.8018C23.0721 54.4631 22.6875 54.1065 22.3118 53.7321C20.6347 52.0549 19.3217 50.1523 18.3717 48.1211H36.8002C38.3666 48.1211 39.6362 49.3908 39.6362 50.9559Z" fill="#DD9F3A"/> <path d="M39.6363 39.5418V45.2852C39.6363 46.8515 38.3666 48.1212 36.8003 48.1212H20.2795C18.6023 44.5363 18.0573 40.5516 18.6455 36.707H36.8003C38.3666 36.7069 39.6363 37.9767 39.6363 39.5418Z" fill="#DD9F3A"/> <path d="M39.6357 5.29574V11.0391C39.6357 12.6054 38.3661 13.8751 36.7997 13.8751H2.83601C1.26967 13.8752 0 12.6055 0 11.0392V5.29574C0 3.7306 1.26967 2.46094 2.83601 2.46094H36.7996C38.3661 2.46106 39.6357 3.73072 39.6357 5.29574Z" fill="#DD9F3A"/> <path d="M39.636 5.29574V9.25622C39.636 10.7207 38.5256 11.9267 37.1006 12.077C37.0013 12.0871 36.9018 12.0922 36.8 12.0922H9.81625C8.25111 12.0922 6.98145 10.8226 6.98145 9.25622V5.29574C6.98145 3.7306 8.25111 2.46094 9.81625 2.46094H36.8C38.3664 2.46106 39.636 3.73072 39.636 5.29574Z" fill="#F4B74A"/> <path d="M34.9735 2.46094H30.8143V12.0922H34.9735V2.46094Z" fill="#F9C662"/> <path d="M27.7578 2.46094H25.6782V12.0922H27.7578V2.46094Z" fill="#F9C662"/> <path d="M39.9842 13.875H35.8245V25.2905H39.9842V13.875Z" fill="#F9C662"/> <path d="M32.7668 13.875H30.6869V25.2905H32.7668V13.875Z" fill="#F9C662"/> <path d="M44.7298 20.5998V22.4553C44.7298 24.0217 43.4601 25.2913 41.8938 25.2913H25.923C31.1048 20.4061 38.2745 18.8424 44.7298 20.5998Z" fill="#DD9F3A"/> <path d="M39.6358 28.1278V33.8711C39.6358 35.4375 38.3662 36.7071 36.7998 36.7071H16.7349C17.3499 32.6804 19.2093 28.8077 22.3101 25.7069C22.4514 25.5656 22.5941 25.428 22.7381 25.293H36.7998C38.3662 25.293 39.6358 26.5626 39.6358 28.1278Z" fill="#DD9F3A"/> <path d="M56.196 53.7334C50.2348 59.6936 41.4225 61.0637 34.1502 57.842C32.4374 57.0841 30.8116 56.0714 29.3275 54.804C28.9301 54.4656 28.5445 54.108 28.169 53.7334C20.4302 45.9936 20.4302 33.4463 28.169 25.7065C35.9088 17.9676 48.4562 17.9676 56.196 25.7065C56.5715 26.082 56.928 26.4675 57.2666 26.865C58.534 28.348 59.5467 29.9748 60.3046 31.6876C63.5263 38.9589 62.1561 47.7724 56.196 53.7334Z" fill="#F4B74A"/> <path d="M60.3045 31.686L34.1502 57.8403C32.4374 57.0824 30.8116 56.0697 29.3275 54.8023L57.2666 26.8633C58.5338 28.3463 59.5465 29.9732 60.3045 31.686Z" fill="#F9C662"/> <path d="M56.1959 39.7203C56.1959 47.4597 49.9218 53.7336 42.1826 53.7336C37.8139 53.7336 33.9128 51.7352 31.3423 48.6017C29.3588 46.1842 28.1693 43.0911 28.1693 39.7203C28.1693 31.981 34.4434 25.707 42.1826 25.707C45.5541 25.707 48.6473 26.8982 51.0647 28.8819C54.1974 31.4512 56.1959 35.3526 56.1959 39.7203Z" fill="#FFD488"/> <path d="M51.065 28.8819L31.3443 48.6026L31.3424 48.6017C30.7635 47.8963 30.2522 47.1328 29.8192 46.322C29.3255 45.4005 28.9329 44.4184 28.6544 43.3879C28.3382 42.2187 28.1694 40.9888 28.1694 39.7203C28.1694 31.981 34.4435 25.707 42.1827 25.707C43.4522 25.707 44.682 25.8756 45.8503 26.192C46.8808 26.4705 47.8629 26.8641 48.7844 27.3578C49.5954 27.7909 50.3587 28.303 51.065 28.8819Z" fill="#F9C662"/> <path d="M48.784 27.3572L29.8189 46.3215C29.3252 45.4 28.9326 44.4179 28.6541 43.3874L45.8501 26.1914C46.8803 26.4699 47.8625 26.8635 48.784 27.3572Z" fill="#FFD488"/> <path d="M43.1377 38.8408V33.581C44.5303 33.9055 45.5493 34.9198 45.5493 36.1183C45.5493 36.6457 45.9768 37.0733 46.5044 37.0733C47.032 37.0733 47.4594 36.6457 47.4594 36.1183C47.4594 33.8873 45.5928 32.0272 43.1376 31.6379V31.0762C43.1376 30.5487 42.7101 30.1211 42.1825 30.1211C41.6549 30.1211 41.2275 30.5487 41.2275 31.0762V31.6379C38.7723 32.0273 36.9055 33.8875 36.9055 36.1183C36.9055 38.349 38.7723 40.2093 41.2275 40.5986V45.8584C39.8349 45.5339 38.8158 44.5196 38.8158 43.3211C38.8158 42.7937 38.3883 42.3661 37.8607 42.3661C37.3331 42.3661 36.9056 42.7937 36.9056 43.3211C36.9056 45.552 38.7724 47.4122 41.2276 47.8015V48.3632C41.2276 48.8907 41.655 49.3183 42.1826 49.3183C42.7103 49.3183 43.1377 48.8907 43.1377 48.3632V47.8015C45.5929 47.4122 47.4595 45.5519 47.4595 43.3211C47.4595 41.0904 45.5929 39.2302 43.1377 38.8408ZM38.8159 36.1181C38.8159 34.9197 39.8349 33.9054 41.2276 33.5809V38.6554C39.835 38.331 38.8159 37.3166 38.8159 36.1181ZM43.1377 45.8584V40.7839C44.5303 41.1084 45.5493 42.1227 45.5493 43.3211C45.5493 44.5196 44.5303 45.5339 43.1377 45.8584Z" fill="#E0A33F"/> <path d="M42.1826 54.687C37.6817 54.687 33.4614 52.6892 30.6038 49.2056C28.418 46.5416 27.2141 43.1723 27.2141 39.7185C27.2141 31.4649 33.929 24.75 42.1826 24.75C45.6355 24.75 49.005 25.9545 51.6706 28.1415C55.1535 30.9983 57.151 35.2179 57.151 39.7184C57.1509 47.9721 50.4362 54.687 42.1826 54.687ZM42.1826 26.6603C34.9823 26.6603 29.1244 32.5182 29.1244 39.7185C29.1244 42.7315 30.1742 45.6706 32.0806 47.9939C34.5739 51.0335 38.2559 52.7767 42.1826 52.7767C49.3828 52.7767 55.2407 46.9188 55.2407 39.7185C55.2407 35.7924 53.4978 32.111 50.459 29.6184C48.1342 27.7107 45.1948 26.6603 42.1826 26.6603Z" fill="#E0A33F"/> </svg>
+            </div>
+            <!-- Coin Redeem -->
+            <div class="bg-white flex items-center justify-between p-3 rounded-md space-y-2 md:space-y-0">
+              <div class="w-full sm:w-1/2 flex items-center">
+                <div class="bg-[#D5DBFF] p-1.5 lg:p-3 rounded-sm">
+                  <svg class="w-7 lg:w-9" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_1159_11070)"> <path d="M17.9731 26.1016H19.2236V36.7302H17.9731V26.1016Z" fill="#5568CC"/> <path d="M7.97009 26.1016H16.7231V36.7302H7.97009V26.1016Z" fill="#5568CC"/> <path d="M20.474 36.7302H29.227V26.1016H20.474V36.7302ZM26.7262 34.2294H27.9766V35.4798H26.7262V34.2294ZM24.2253 34.2294H25.4757V35.4798H24.2253V34.2294ZM21.7244 34.2294H22.9749V35.4798H21.7244V34.2294Z" fill="#5568CC"/> <path d="M2.96863 9.84766H4.21906V11.0981H2.96863V9.84766Z" fill="#5568CC"/> <path d="M2.96863 12.3477H4.21906V19.8502H2.96863V12.3477Z" fill="#5568CC"/> <path d="M5.46912 22.3516H6.71955V23.602H5.46912V22.3516Z" fill="#5568CC"/> <path d="M5.46912 13.5977H6.71955V21.1003H5.46912V13.5977Z" fill="#5568CC"/> <path d="M30.4771 22.3516H31.7275V23.602H30.4771V22.3516Z" fill="#5568CC"/> <path d="M30.4771 13.5977H31.7275V21.1003H30.4771V13.5977Z" fill="#5568CC"/> <path d="M32.978 9.84766H34.2285V11.0981H32.978V9.84766Z" fill="#5568CC"/> <path d="M32.978 12.3477H34.2285V19.8502H32.978V12.3477Z" fill="#5568CC"/> <path d="M35.479 6.72266H36.7294V7.97309H35.479V6.72266Z" fill="#5568CC"/> <path d="M35.479 9.22266H36.7294V16.7253H35.479V9.22266Z" fill="#5568CC"/> <path d="M0.467651 6.72266H1.71808V7.97309H0.467651V6.72266Z" fill="#5568CC"/> <path d="M0.467651 9.22266H1.71808V16.7253H0.467651V9.22266Z" fill="#5568CC"/> <path d="M20.474 4.84375H30.4775V7.34461H20.474V4.84375Z" fill="#5568CC"/> <path d="M26.1017 2.49643C26.1017 1.37849 25.1925 0.46875 24.0746 0.46875C23.5327 0.46875 23.0238 0.679394 22.6416 1.06222L20.1084 3.59483H26.1017V2.49643Z" fill="#5568CC"/> <path d="M6.72083 4.84375H16.7243V7.34461H6.72083V4.84375Z" fill="#5568CC"/> <path d="M14.5571 1.06283C14.1743 0.679394 13.6654 0.46875 13.1235 0.46875C12.0056 0.46875 11.0964 1.37849 11.0964 2.49643V3.59483H17.0897L14.5571 1.06283Z" fill="#5568CC"/> <path d="M17.9731 4.84375H19.2236V7.34461H17.9731V4.84375Z" fill="#5568CC"/> <path d="M11.7223 16.725C11.7223 20.5233 14.8014 23.6024 18.5997 23.6024C22.398 23.6024 25.477 20.5233 25.477 16.725C25.477 12.9267 22.398 9.84766 18.5997 9.84766C14.8014 9.84766 11.7223 12.9267 11.7223 16.725ZM19.8501 12.9737C20.8841 12.9737 21.7258 13.8154 21.7258 14.8494H20.4753C20.4753 14.505 20.1951 14.2242 19.8501 14.2242H17.3492C17.0043 14.2242 16.724 14.505 16.724 14.8494V15.4746C16.724 15.819 17.0043 16.0998 17.3492 16.0998H19.8501C20.8841 16.0998 21.7258 16.9415 21.7258 17.9755V18.6007C21.7258 19.6347 20.8841 20.4763 19.8501 20.4763H19.2249V21.1015H17.9745V20.4763H17.3492C16.3152 20.4763 15.4736 19.6347 15.4736 18.6007H16.724C16.724 18.945 17.0043 19.2259 17.3492 19.2259H19.8501C20.1951 19.2259 20.4753 18.945 20.4753 18.6007V17.9755C20.4753 17.6311 20.1951 17.3502 19.8501 17.3502H17.3492C16.3152 17.3502 15.4736 16.5086 15.4736 15.4746V14.8494C15.4736 13.8154 16.3152 12.9737 17.3492 12.9737H17.9745V12.3485H19.2249V12.9737H19.8501Z" fill="#5568CC"/> </g> <defs> <clipPath id="clip0_1159_11070"> <rect width="36.2625" height="36.2625" fill="white" transform="translate(0.467651 0.46875)"/> </clipPath> </defs> </svg>
+                </div>
+                <div class="pl-3 lg:pl-6">
+                  <p class="text-xs sm:text-sm lg:text-base font-bold">Coin Redeem</p>
+                  <span class="text-[10px] sm:text-xs lg:text-sm font-bold text-grey">Processing</span>
+                </div>
+              </div>
+              <div class="w-full sm:w-1/2 flex items-center justify-end space-x-2.5 lg:space-x-5 px-2.5 lg:px-5">
+                <p class="text-xs sm:text-sm lg:text-base font-bold">Jan 18, 2021</p>
+                <span class="border block h-3"></span>
+                <span class="text-sm sm:text-base lg:text-xl font-bold text-leafGreen">-325</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assest/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../assest/js/swiper-bundle.min.js"></script>
+    <script src="../assest/js/script.js"></script>
+  </body>
+</html>

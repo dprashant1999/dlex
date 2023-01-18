@@ -53,6 +53,7 @@ h4,.h4{@apply text-base md:text-lg xl:text-xl text-dark font-medium font-semibol
 .selaction-input{@apply appearance-none mt-0 text-xs lg:text-sm text-grey border-grey/40 rounded py-2 sm:py-2.5 pr-8 pl-3 overflow-hidden overflow-ellipsis w-full border outline-primary;}
 .down-icon{@apply absolute top-1/2 -translate-y-1/2 right-3 text-sm text-grey pointer-events-none;}
 .detailsTitel{@apply text-sm sm:text-base text-dark font-semibold;}
+.detailsSubtitel{@apply text-xs md:text-sm text-grey;}
 
 
 /* button  */
@@ -191,6 +192,29 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .reporTable tr th, .reporTable tr td{@apply text-xs md:text-sm;}
 .reporTable tr th{@apply border-b-[1.5px] border-gray-300 pb-3 lg:pb-5;}
 .reporTable tbody tr:first-child td{@apply pt-3 lg:pt-5;}
+
+ /* chat-bot */
+ .chat-holder{@apply h-[calc(100vh-320px)] sm:h-[calc(100vh-350px)] md:h-[calc(100vh-400px)] lg:h-[calc(100vh-400px)] xl:h-[calc(100vh-400px)] overflow-y-auto p-7 space-y-8;}
+ .text-massage{@apply max-w-[90%] sm:max-w-[70%] relative;}
+ .text-massage p{@apply max-w-fit sm:min-w-[284px] relative text-xs sm:text-sm font-semibold p-2.5 sm:p-5 rounded-md;}
+ .text-massage.right-massage p{@apply bg-[#E6E7E9] ml-auto;}
+ .text-massage.left-massage p{@apply bg-white;}
+ .right-massage{@apply ml-auto;}
+ .text-massage .arrow{@apply block w-3 h-3 rounded-sm rotate-45 absolute top-3;}
+ .text-massage.left-massage .arrow{@apply -left-[6px] bg-white;}
+ .text-massage.right-massage .arrow{@apply -right-[6px] bg-[#E6E7E9];}
+ .line-main{@apply relative py-4;}
+ .line-main span{@apply absolute block text-center text-[10px] text-grey top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2 bg-[#F9FAFB] px-5;}
+ .user-container{@apply overflow-y-auto h-[calc(100vh-250px)] md:h-[calc(100vh-300px)] xl:h-[calc(100vh-350px)];}
+ .chat-user-holder{@apply flex border-b border-gray-300 cursor-pointer;}
+ .chat-user-holder .user-img{@apply w-12 h-12 rounded-full overflow-hidden;}
+ .chat-user-holder .user-info{@apply w-full py-5;}
+ .chat-user-holder .user-info div{@apply flex items-center justify-between w-full;}
+ .chat-user-holder .user-info div h3{@apply text-sm;}
+ .chat-user-holder .user-info div p{@apply text-primary text-xs font-normal ml-auto;}
+ .chat-user-holder .user-info span{@apply text-xs text-grey;}
+ .chtinnerTime{@apply absolute left-0 -bottom-5 block text-[10px] text-grey font-normal;}
+ #chatBot.active{@apply left-0 anim;}
 
 
 @tailwind utilities;

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice Details</title>
+    <title>Save To Draft List</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../assest/css/style.css" />
   </head>
   <body>
@@ -24,7 +24,7 @@
           </a>
           <a href="javascript:void(0)">
             <span>
-              <i class="icon-ads"></i>All Gift </span>
+              <i class="icon-ads"></i>All Ads </span>
           </a>
           <a href="javascript:void(0)">
             <span>
@@ -215,84 +215,85 @@
             </div>
           </div>
         </div>
-        <div class="content-area space-y-7">
-          <div class="flex items-center justify-between">
-            <a href="javascript:void(0)" class="inline-block">
-              <h1>Invoice Details</h1>
-            </a>
-            <a href="javascript:void(0)" class="btn-primary text-center rounded-lg px-4 py-3 2xl:px-6">Download Invoice</a>
-          </div>
-          <div class="flex -mx-4">
-            <div class="w-full 2xl:w-1/2 p-4">
-              <div class="bg-white p-4 lg:p-7 rounded-xl drop-shadow-two">
-                <!-- brand logo -->
-                <div class="flex items-center space-x-5 pb-5">
-                  <div class="border rounded-md w-full max-w-[70px] md:max-w-[100px] h-full max-h-[70px] md:max-h-[100px]">
-                    <img src="../assest/images/shopping-logo.png" alt="logo" class="w-full h-full object-cover" />
-                  </div>
-                  <div class="space-y-2.5 lg:space-y-5">
-                    <p class="text-base md:text-lg lg:text-xl font-semibold text-dark">Digital Daily Deals</p>
-                    <span class="status published">Running</span>
+        <div class="content-area flex flex-col">
+          <div class="w-full space-y-7">
+            <!-- pagination -->
+            <div class="flex items-center justify-between flex-wrap space-y-4 sm:space-y-0">
+              <div class="w-full sm:w-5/12 md:w-1/2">
+                <a href="javascript:void(0)" class="inline-block">
+                  <h1>
+                    <i class="icon-left-arrow mr-3"></i>Ads Details
+                  </h1>
+                </a>
+              </div>
+              <div class="flex items-center sm:justify-end space-x-3 w-full sm:w-7/12 md:w-1/2">
+                <a href="javascript:void(0)" class="btn-primary w-full px-2 max-w-[140px] text-center rounded-lg">Edit</a>
+                <a href="javascript:void(0)" class="btn-red w-full px-2 max-w-[140px] text-center rounded-lg">Delete</a>
+              </div>
+            </div>
+            <div class="w-full space-y-3 md:space-y-5">
+              <div>
+                <!-- Tabs -->
+                <ul id="tabs" class="tebMenu">
+                  <li class="adsTab active">
+                    <a href="#ddetails">Details</a>
+                  </li>
+                </ul>
+                <!-- Tab Contents -->
+                <div id="tab-contents">
+                  <!-- Gift Details -->
+                  <div id="ddetails">
+                    <div class="flex flex-wrap lg:-mx-2.5 py-2.5 lg:py-0">
+                      <div class="w-full 2xl:w-1/2 py-2.5 lg:py-5 lg:px-2.5">
+                        <div class="bg-white p-4 lg:p-7 rounded-xl drop-shadow-two">
+                          <!-- brand logo  -->
+                          <div class="flex items-center space-x-5 pb-5">
+                            <div class="border rounded-md w-full max-w-[70px] md:max-w-[100px] h-full max-h-[70px] md:max-h-[100px]">
+                              <img src="../assest/images/shopping-logo.png" alt="logo" class="w-full h-full object-cover" />
+                            </div>
+                            <div class="space-y-2.5 lg:space-y-5">
+                              <p class="text-base md:text-lg lg:text-xl font-semibold text-dark">Digital Daily Deals</p>
+                              <span class="status">Running</span>
+                            </div>
+                          </div>
+                          <!-- ads -->
+                          <div class="h-16">
+                            <img src="../assest/images/ads.png" alt="ad" class="w-full h-full" />
+                          </div>
+                          <!-- product ad details -->
+                          <ul class="flex flex-wrap -mx-2 md:-mx-2.5 pt-2.5">
+                            <li class="w-full sm:w-1/2 p-2 md:p-2.5">
+                              <p class="detailsTitel">Camping name</p>
+                              <span class="form-labal">Fashion Campaign</span>
+                            </li>
+                            <li class="w-full sm:w-1/2 p-2 md:p-2.5">
+                              <p class="detailsTitel">Call to Action Button Name</p>
+                              <span class="detailsSubtitel">Open now</span>
+                            </li>
+                            <li class="w-full sm:w-1/2 p-2 md:p-2.5">
+                              <p class="detailsTitel">ADS Click URL</p>
+                              <span class="detailsSubtitel">www.google.com</span>
+                            </li>
+                            <li class="w-full sm:w-1/2 p-2 md:p-2.5">
+                              <p class="detailsTitel">where to place ads</p>
+                              <span class="detailsSubtitel">Website</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- Swiper -->
-                <div class="swiper adslider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide pb-10">
-                      <div class="rounded-lg overflow-hidden">
-                        <img src="../assest/images/sale-banner.png" class="w-full object-cover" alt="ad-banner" />
-                      </div>
-                    </div>
-                    <div class="swiper-slide p-2 pb-10">
-                      <div class="rounded-lg overflow-hidden">
-                        <img src="../assest/images/sale-banner.png" class="w-full object-cover" alt="ad-banner" />
-                      </div>
-                    </div>
-                    <div class="swiper-slide p-2 pb-10">
-                      <div class="rounded-lg overflow-hidden">
-                        <img src="../assest/images/sale-banner.png" class="w-full object-cover" alt="ad-banner" />
-                      </div>
-                    </div>
-                    <div class="swiper-slide p-2 pb-10">
-                      <div class="rounded-lg overflow-hidden">
-                        <img src="../assest/images/sale-banner.png" class="w-full object-cover" alt="ad-banner" />
-                      </div>
-                    </div>
-                    <div class="swiper-slide p-2 pb-10">
-                      <div class="rounded-lg overflow-hidden">
-                        <img src="../assest/images/sale-banner.png" class="w-full object-cover" alt="ad-banner" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <!-- details -->
-                <ul class="flex flex-wrap -mx-2 md:-mx-2.5 pt-2.5">
-                  <li class="w-full sm:w-1/2 p-2 md:p-2.5">
-                    <p class="detailsTitel">Camping name</p>
-                    <span class="detailsSubtitel">Fashion Campaign</span>
-                  </li>
-                  <li class="w-full sm:w-1/2 p-2 md:p-2.5">
-                    <p class="detailsTitel">Call to Action Button Name</p>
-                    <span class="detailsSubtitel">Open now</span>
-                  </li>
-                  <li class="w-full sm:w-1/2 p-2 md:p-2.5">
-                    <p class="detailsTitel">ADS Click URL</p>
-                    <span class="detailsSubtitel">www.google.com</span>
-                  </li>
-                  <li class="w-full sm:w-1/2 p-2 md:p-2.5">
-                    <p class="detailsTitel">where to place ads</p>
-                    <span class="detailsSubtitel">Website</span>
-                  </li>
-                </ul>                
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../assest/js/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../assest/js/swiper-bundle.min.js"></script>
     <script src="../assest/js/script.js"></script>
   </body>
 </html>

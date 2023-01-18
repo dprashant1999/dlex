@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice Details</title>
+    <title>View Notification</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../assest/css/style.css" />
   </head>
   <body>
@@ -24,7 +24,7 @@
           </a>
           <a href="javascript:void(0)">
             <span>
-              <i class="icon-ads"></i>All Gift </span>
+              <i class="icon-ads"></i>All Ads </span>
           </a>
           <a href="javascript:void(0)">
             <span>
@@ -108,7 +108,7 @@
               <span class="flex items-center text-xs md:text-sm xl:text-base font-semibold text-dark">Samantha <i class="icon-downarrow ml-2"></i>
               </span>
             </button>
-            <!-- onlclick show Profilepopup  -->
+            <!-- onl click show Profile popup  -->
             <div class="homeProfile">
               <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-dark group hover:text-primary anim">
                 <span class="icon-view mr-3 text-base lg:text-lg"></span> View Profile </a>
@@ -215,84 +215,88 @@
             </div>
           </div>
         </div>
-        <div class="content-area space-y-7">
-          <div class="flex items-center justify-between">
-            <a href="javascript:void(0)" class="inline-block">
-              <h1>Invoice Details</h1>
-            </a>
-            <a href="javascript:void(0)" class="btn-primary text-center rounded-lg px-4 py-3 2xl:px-6">Download Invoice</a>
-          </div>
-          <div class="flex -mx-4">
-            <div class="w-full 2xl:w-1/2 p-4">
-              <div class="bg-white p-4 lg:p-7 rounded-xl drop-shadow-two">
-                <!-- brand logo -->
-                <div class="flex items-center space-x-5 pb-5">
-                  <div class="border rounded-md w-full max-w-[70px] md:max-w-[100px] h-full max-h-[70px] md:max-h-[100px]">
-                    <img src="../assest/images/shopping-logo.png" alt="logo" class="w-full h-full object-cover" />
-                  </div>
-                  <div class="space-y-2.5 lg:space-y-5">
-                    <p class="text-base md:text-lg lg:text-xl font-semibold text-dark">Digital Daily Deals</p>
-                    <span class="status published">Running</span>
+        <div class="content-area flex flex-col">
+          <div class="w-full space-y-7">
+            <!-- pagination -->
+            <div class="w-full sm:w-5/12 md:w-1/2">
+              <a href="javascript:void(0)" class="inline-block">
+                <h1>Notification</h1>
+              </a>
+            </div>
+            <!-- notification -->
+            <div class="w-full space-y-3 md:space-y-7">
+              <div class="bg-white flex flex-wrap items-center p-2.5 rounded shadow-sm">
+                <div class="w-full xl:w-3/12 h-52 rounded overflow-hidden">
+                  <img src="../assest/images/adsBanner.png" alt="banner" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full xl:w-9/12 xl:pl-4">
+                  <h3 class="py-2.5 font-bold">Festival Offer</h3>
+                  <p class="text-sm lg:text-base text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
+                  <div class="sm:flex justify-between items-end">
+                    <div class="flex space-x-3 pt-2.5">
+                      <div class="w-14 h-14 rounded-full overflow-hidden">
+                        <img src="../assest/images/profile.jpg" alt="profile" class="w-full h-full object-cover" />
+                      </div>
+                      <div class="space-y-1">
+                        <h4>Samantha C. Davis</h4>
+                        <p class="text-sm lg:text-base text-grey">10:20</p>
+                      </div>
+                    </div>
+                    <a href="#" class="btn-primary block px-6 font-bold text-center mt-2.5">Message</a>
                   </div>
                 </div>
-                <!-- Swiper -->
-                <div class="swiper adslider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide pb-10">
-                      <div class="rounded-lg overflow-hidden">
-                        <img src="../assest/images/sale-banner.png" class="w-full object-cover" alt="ad-banner" />
-                      </div>
-                    </div>
-                    <div class="swiper-slide p-2 pb-10">
-                      <div class="rounded-lg overflow-hidden">
-                        <img src="../assest/images/sale-banner.png" class="w-full object-cover" alt="ad-banner" />
-                      </div>
-                    </div>
-                    <div class="swiper-slide p-2 pb-10">
-                      <div class="rounded-lg overflow-hidden">
-                        <img src="../assest/images/sale-banner.png" class="w-full object-cover" alt="ad-banner" />
-                      </div>
-                    </div>
-                    <div class="swiper-slide p-2 pb-10">
-                      <div class="rounded-lg overflow-hidden">
-                        <img src="../assest/images/sale-banner.png" class="w-full object-cover" alt="ad-banner" />
-                      </div>
-                    </div>
-                    <div class="swiper-slide p-2 pb-10">
-                      <div class="rounded-lg overflow-hidden">
-                        <img src="../assest/images/sale-banner.png" class="w-full object-cover" alt="ad-banner" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
+              </div>
+              <div class="bg-white flex flex-wrap items-center p-2.5 rounded shadow-sm">
+                <div class="w-full xl:w-3/12 h-52 rounded overflow-hidden">
+                  <img src="../assest/images/adsBanner.png" alt="banner" class="w-full h-full object-cover" />
                 </div>
-                <!-- details -->
-                <ul class="flex flex-wrap -mx-2 md:-mx-2.5 pt-2.5">
-                  <li class="w-full sm:w-1/2 p-2 md:p-2.5">
-                    <p class="detailsTitel">Camping name</p>
-                    <span class="detailsSubtitel">Fashion Campaign</span>
-                  </li>
-                  <li class="w-full sm:w-1/2 p-2 md:p-2.5">
-                    <p class="detailsTitel">Call to Action Button Name</p>
-                    <span class="detailsSubtitel">Open now</span>
-                  </li>
-                  <li class="w-full sm:w-1/2 p-2 md:p-2.5">
-                    <p class="detailsTitel">ADS Click URL</p>
-                    <span class="detailsSubtitel">www.google.com</span>
-                  </li>
-                  <li class="w-full sm:w-1/2 p-2 md:p-2.5">
-                    <p class="detailsTitel">where to place ads</p>
-                    <span class="detailsSubtitel">Website</span>
-                  </li>
-                </ul>                
+                <div class="w-full xl:w-9/12 xl:pl-4">
+                  <h3 class="py-2.5 font-bold">Festival Offer</h3>
+                  <p class="text-sm lg:text-base text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
+                  <div class="sm:flex justify-between items-end">
+                    <div class="flex space-x-3 pt-2.5">
+                      <div class="w-14 h-14 rounded-full overflow-hidden">
+                        <img src="../assest/images/profile.jpg" alt="profile" class="w-full h-full object-cover" />
+                      </div>
+                      <div class="space-y-1">
+                        <h4>Samantha C. Davis</h4>
+                        <p class="text-sm lg:text-base text-grey">10:20</p>
+                      </div>
+                    </div>
+                    <a href="#" class="btn-primary block px-6 font-bold text-center mt-2.5">Message</a>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white flex flex-wrap items-center p-2.5 rounded shadow-sm">
+                <div class="w-full xl:w-3/12 h-52 rounded overflow-hidden">
+                  <img src="../assest/images/adsBanner.png" alt="banner" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full xl:w-9/12 xl:pl-4">
+                  <h3 class="py-2.5 font-bold">Festival Offer</h3>
+                  <p class="text-sm lg:text-base text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
+                  <div class="sm:flex justify-between items-end">
+                    <div class="flex space-x-3 pt-2.5">
+                      <div class="w-14 h-14 rounded-full overflow-hidden">
+                        <img src="../assest/images/profile.jpg" alt="profile" class="w-full h-full object-cover" />
+                      </div>
+                      <div class="space-y-1">
+                        <h4>Samantha C. Davis</h4>
+                        <p class="text-sm lg:text-base text-grey">10:20</p>
+                      </div>
+                    </div>
+                    <a href="#" class="btn-primary block px-6 font-bold text-center mt-2.5">Message</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../assest/js/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../assest/js/swiper-bundle.min.js"></script>
     <script src="../assest/js/script.js"></script>
   </body>
 </html>
