@@ -55,6 +55,7 @@ h4,.h4{@apply text-base md:text-lg xl:text-xl text-dark font-medium font-semibol
 .selaction-input{@apply appearance-none mt-0 text-xs lg:text-sm text-grey border-grey/40 rounded py-2 sm:py-2.5 pr-8 pl-3 overflow-hidden overflow-ellipsis w-full border outline-primary;}
 .down-icon{@apply absolute top-1/2 -translate-y-1/2 right-3 text-sm text-grey pointer-events-none;}
 .detailsTitel{@apply text-sm sm:text-base text-dark font-semibold;}
+.detailsSubtitel{@apply text-xs md:text-sm text-grey;}
 
 
 /* button  */
@@ -165,9 +166,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 /* ads campping video mob and laptop  */
 .bglep iframe, .bglep img, .bglep video {@apply bg-[url('../../assest/images/svg/laptop-mocup.svg')] bg-no-repeat bg-contain absolute inset-0 w-full h-full z-20 pt-[5%] pr-[14.5%] pb-[6.5%] pl-[14.5%];}
 .bgmob iframe, .bgmob video {@apply absolute inset-0 w-full h-full object-cover px-[5px];}
+.mobPriew iframe {@apply rounded-[40px];}
 
 /* popup */
-.popWidth{@apply w-full sm:max-w-[480px] mx-auto max-h-[calc(100vh-55px)] overflow-y-auto px-4 md:px-0;}
+.popWidth{@apply w-full max-w-3xl xl:max-w-4xl 2xl:max-w-6xl mx-auto max-h-[calc(100vh-55px)] overflow-y-auto px-7 xl:px-0;}
 .popMain{@apply relative bg-white rounded-lg shadow;}
 .popPad{@apply py-4 md:py-[30px] px-4 sm:px-[30px] md:px-[60px];}
 .popBtn{@apply w-full md:max-w-[172px] font-semibold rounded-xl text-xs sm:text-sm px-5 py-3 text-center;}
@@ -192,6 +194,29 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .reporTable tr th, .reporTable tr td{@apply text-xs md:text-sm;}
 .reporTable tr th{@apply border-b-[1.5px] border-gray-300 pb-3 lg:pb-5;}
 .reporTable tbody tr:first-child td{@apply pt-3 lg:pt-5;}
+
+ /* chat-bot */
+ .chat-holder{@apply h-[calc(100vh-320px)] sm:h-[calc(100vh-350px)] md:h-[calc(100vh-400px)] lg:h-[calc(100vh-400px)] xl:h-[calc(100vh-400px)] overflow-y-auto p-7 space-y-8;}
+ .text-massage{@apply max-w-[90%] sm:max-w-[70%] relative;}
+ .text-massage p{@apply max-w-fit sm:min-w-[284px] relative text-xs sm:text-sm font-semibold p-2.5 sm:p-5 rounded-md;}
+ .text-massage.right-massage p{@apply bg-[#E6E7E9] ml-auto;}
+ .text-massage.left-massage p{@apply bg-white;}
+ .right-massage{@apply ml-auto;}
+ .text-massage .arrow{@apply block w-3 h-3 rounded-sm rotate-45 absolute top-3;}
+ .text-massage.left-massage .arrow{@apply -left-[6px] bg-white;}
+ .text-massage.right-massage .arrow{@apply -right-[6px] bg-[#E6E7E9];}
+ .line-main{@apply relative py-4;}
+ .line-main span{@apply absolute block text-center text-[10px] text-grey top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2 bg-[#F9FAFB] px-5;}
+ .user-container{@apply overflow-y-auto h-[calc(100vh-250px)] md:h-[calc(100vh-300px)] xl:h-[calc(100vh-350px)];}
+ .chat-user-holder{@apply flex border-b border-gray-300 cursor-pointer;}
+ .chat-user-holder .user-img{@apply w-12 h-12 rounded-full overflow-hidden;}
+ .chat-user-holder .user-info{@apply w-full py-5;}
+ .chat-user-holder .user-info div{@apply flex items-center justify-between w-full;}
+ .chat-user-holder .user-info div h3{@apply text-sm;}
+ .chat-user-holder .user-info div p{@apply text-primary text-xs font-normal ml-auto;}
+ .chat-user-holder .user-info span{@apply text-xs text-grey;}
+ .chtinnerTime{@apply absolute left-0 -bottom-5 block text-[10px] text-grey font-normal;}
+ #chatBot.active{@apply left-0 anim;}
 
 /* stapbar */
 .stapHolder{@apply relative z-10 flex justify-between text-sm font-medium text-gray-500;}
