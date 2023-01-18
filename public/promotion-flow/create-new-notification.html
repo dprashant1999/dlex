@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Notification</title>
+    <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/iconmoon.css" />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+  <body>
+    <div class="main flex min-h-screen relative w-full h-full overflow-hidden">
+      <!-- left-bar -->
+      <div class="left_bar">
+        <a href="javascript:void(0)" class="inline-block w-full text-center">
+          <img src="../assest/images/hero-logo.png" alt="logo" class="mx-auto"/>
+        </a>
+        <nav aria-label="Main Nav" class="navitems">
+          <a href="javascript:void(0)" class="active">
+            <span><i class="icon-Category"></i>Dashboard</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-ads"></i>All Ads</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-gift"></i>Gift</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-gads"></i>Google Ads</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-draft"></i>Draft</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-history"></i>History</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-invoice"></i>Invoice</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-promotion"></i>Promotion</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-our-products"></i>our Products</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-refer-earn"></i>Refer & Earn</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-redeem"></i>Redeem</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-qation"></i>FAQ</span>
+          </a>
+          <a href="javascript:void(0)">
+            <span><i class="icon-help"></i>Help</span>
+          </a>
+        </nav>
+      </div>
+      <!-- right-bar -->
+      <div class="right_bar relative ml-auto">
+        <div class="header">
+          <div id="searchBar" class="w-full">
+            <div class="searchHolder">
+              <button type="button" class="absolute top-1/2 left-6 sm:left-4 -translate-y-1/2 rounded-md text-gray-600 transition hover:text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-7 lg:h-7 stroke-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </button>  
+              <input class="h-10 lg:h-12 w-full rounded-lg border-none sm:bg-gray-100 pl-12 lg:pl-14 pr-4 outline-none" id="search" type="search" placeholder="Search">    
+            </div>
+            <button type="button" class="block sm:hidden px-2 xl:px-4" id="searchbtn">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-7 lg:h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </button>    
+          </div>
+          <div class="flex items-center ml-auto">            
+            <a href="javascript:void(0)" class="headerMenu">
+              <span class="icon-scan text-base md:text-xl 2xl:text-26 text-primary"></span>                 
+            </a> 
+            <a href="javascript:void(0)" class="headerMenu ml-2.5 2xl:ml-4">
+              <span class="icon-message text-base md:text-xl 2xl:text-26 text-primary"></span>
+            </a>    
+            <a href="javascript:void(0)" id="notifications" class="headerMenu ml-2.5 2xl:ml-4 relative">
+              <span class="icon-bell text-lg md:text-26 2xl:text-32 text-primary"></span>
+              <span class="w-4 h-4 2xl:w-5 2xl:h-5 rounded-full border-4 border-white bg-primary absolute -top-0.5 -right-0.5"></span>
+            </a>
+            <button type="button" id="userProfile" class="ml-2.5 2xl:ml-4 flex space-x-3 items-center">
+              <div class="headerMenu overflow-hidden">
+                <img alt="Man" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80">
+              </div>
+              <span class="flex items-center text-xs md:text-sm xl:text-base font-semibold text-dark">Samantha <i class="icon-downarrow ml-2"></i></span>
+            </button>
+            <!-- onlclick show Profilepopup  -->
+            <div class="homeProfile">
+              <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-dark group hover:text-primary anim">
+                <span class="icon-view mr-3 text-base lg:text-lg"></span>
+                View Profile
+              </a>
+              <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-dark group hover:text-primary anim">
+                <span class="icon-edit mr-3 text-base lg:text-lg"></span>
+                Edit Profile
+              </a>
+              <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-red group">
+                <span class="icon-logout mr-3 text-base lg:text-lg"></span>
+                Logout
+              </a>
+            </div>
+            <!-- On click Notifications -->
+            <div class="notifictionbar">
+              <div class="flex items-center justify-between p-4">
+                <span class="inline-block font-semibold text-dark">Notifications</span>
+                <a href="javascript:void(0)" class="text-sm text-darkGrey flex items-center">Mark all as read<span class="icon-true ml-1 w-[18px] h-[18px] leading-4 text-center inline-block border-2 border-davyGrey rounded-full text-[8px] font-bold"></span></a>
+              </div>
+              <div class="w-full border-t border-darkGrey/50 h-full max-h-[570px] overflow-y-auto">
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/../assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-area flex flex-col">
+          <div class="w-full space-y-7">
+            <div class="flex items-center justify-between flex-wrap space-y-4 sm:space-y-0">
+              <div class="w-full sm:w-5/12 md:w-1/2">
+                <a href="javascript:void(0)" class="inline-block">                
+                  <h1><i class="icon-left-arrow mr-3"></i>Create New Notification</h1>
+                </a>
+              </div>
+              <div class="flex items-center sm:justify-end space-x-3 w-full sm:w-7/12 md:w-1/2">
+                <a href="javascript:void(0)" class="btn-secondary">Preview</a>
+                <a href="javascript:void(0)" class="btn-primary1">Save</a>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-full md:w-1/2 px-4 py-2">
+                <div class="w-full">
+                  <label for="#notititel" class="form-labal text-sm md:text-base">Notification Title</label>
+                  <input type="text" name="notititel" id="notititel" class="form-input py-3 font-semibold xl:py-3.5"/>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 px-4 py-2">
+                <div class="w-full">
+                  <label for="#link" class="form-labal text-sm md:text-base">Link</label>
+                  <input type="text" name="link" id="link" class="form-input py-3 font-semibold xl:py-3.5"/>
+                </div>
+              </div>
+              <div class="w-full px-4 py-2">
+                <label for="#uploadphoto" class="form-labal text-sm md:text-base">Photo</label>
+                <div class="w-full form-input py-8 relative border-dashed flex items-center justify-center">
+                  <input type="file" name="uploadphoto" id="uploadphoto" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer"/>
+                  <span class="text-sm text-grey font-semibold flex items-center"><i class="icon-imges mr-2 text-2xl"></i>Upload Images</span>
+                </div>
+              </div>
+              <div class="w-full px-4 py-2">
+                <label for="#uploadphoto" class="form-labal text-sm md:text-base">Terms and conditions</label>
+                <div class="w-full form-input py-4 pt-0 relative">
+                  <div class="textedit -mx-4 border-b border-gray-300 p-4 mb-2">
+                      <ul class="flex space-x-4">
+                        <li class="flex space-x-2">
+                          <a href="javascript:void(0)">
+                            <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.70577 7.66638C8.37293 7.1922 7.85752 6.87654 7.15932 6.71943C7.71579 6.49734 8.12757 6.16682 8.39487 5.7278C8.66224 5.28864 8.79575 4.78764 8.79575 4.22401C8.79575 3.14567 8.38114 2.3341 7.55213 1.78959C6.72298 1.24497 5.56919 0.972656 4.0911 0.972656H0V12.8075H4.68015C6.1367 12.8075 7.25481 12.5123 8.03496 11.9215C8.81485 11.331 9.20489 10.4585 9.20489 9.30426C9.20492 8.68661 9.03836 8.14058 8.70577 7.66638ZM2.77379 3.08603H4.09117C4.74577 3.08603 5.23116 3.20126 5.54772 3.43151C5.86395 3.66187 6.02222 4.02887 6.02222 4.53289C6.02222 4.97728 5.8667 5.31457 5.55579 5.54482C5.24481 5.77518 4.77564 5.89577 4.14836 5.90659H2.77379V3.08603ZM6.00574 10.3486C5.7112 10.579 5.26934 10.6942 4.68015 10.6942H2.77379V7.72738H4.83579C5.40304 7.72738 5.81351 7.85879 6.06708 8.12151C6.32079 8.38438 6.44767 8.77317 6.44767 9.28801C6.44767 9.76487 6.30022 10.1184 6.00574 10.3486Z" fill="black"/>
+                            </svg>                              
+                          </a>
+                          <a href="javascript:void(0)">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1121_10020)">
+                              <path d="M0.779297 1.98047V3.5907H3.13892V10.9978H5.23845V3.5907H7.61666V1.98047H0.779297Z" fill="black"/>
+                              <path d="M6.89062 5.23828V6.70275H8.78314V11.8001H10.6925V6.70275H12.6132V5.23828H6.89062Z" fill="black"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1121_10020">
+                              <rect width="11.8349" height="11.8349" fill="white" transform="translate(0.779297 0.972656)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                          </a>
+                          <a href="javascript:void(0)">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1121_10017)">
+                              <path d="M7.63958 0.972656V6.56576C7.63958 7.0957 7.51975 7.48629 7.25483 7.73746C6.98991 7.98872 6.61834 8.11426 6.1277 8.11426C5.63313 8.11426 5.2503 7.98766 4.97944 7.73448C4.70863 7.48135 4.57308 7.09181 4.57308 6.56569V0.972656H2.56067V6.56576C2.56067 7.54318 2.89794 8.30079 3.54953 8.83854C4.20107 9.37638 5.06453 9.64518 6.12828 9.64518C7.18024 9.64518 8.02949 9.37638 8.6792 8.83854C9.32878 8.30079 9.65202 7.54318 9.65202 6.56576V0.972656H7.63958Z" fill="black"/>
+                              <path d="M11.6161 11.2266H0.595825V12.8077H11.6161V11.2266Z" fill="black"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1121_10017">
+                              <rect width="11.8349" height="11.8349" fill="white" transform="translate(0.189575 0.972656)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>                              
+                          </a>
+                          <a href="javascript:void(0)">
+                            <svg width="6" height="13" viewBox="0 0 6 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2.7457 0.972656L0.599365 12.8075H3.05548L5.20181 0.972656H2.7457Z" fill="black"/>
+                            </svg>                              
+                          </a>
+                        </li>
+                        <li class="flex space-x-2">
+                          <a href="javascript:void(0)">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1121_10023)">
+                              <path d="M12.653 11.1172H0.869385V12.8079H12.653V11.1172Z" fill="black"/>
+                              <path d="M10.1426 7.73633H0.869385V9.42703H10.1426V7.73633Z" fill="black"/>
+                              <path d="M12.653 4.35352H0.869385V6.04421H12.653V4.35352Z" fill="black"/>
+                              <path d="M7.58093 0.972656H0.869385V2.66335H7.58093V0.972656Z" fill="black"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1121_10023">
+                              <rect width="11.8349" height="11.8349" fill="white" transform="translate(0.84375 0.972656)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>                              
+                          </a>
+                          <a href="javascript:void(0)">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1121_10052)">
+                              <path d="M1.44177 11.1172H11.5859V12.8079H1.44177V11.1172Z" fill="black"/>
+                              <path d="M0.622366 7.73633H12.406V9.42703H0.622366V7.73633Z" fill="black"/>
+                              <path d="M3.13371 4.40625H9.89648V6.09695H3.13371V4.40625Z" fill="black"/>
+                              <path d="M0.622366 0.972656H12.406V2.66335H0.622366V0.972656Z" fill="black"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1121_10052">
+                              <rect width="11.8349" height="11.8349" fill="white" transform="matrix(-1 0 0 1 12.4316 0.972656)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>                              
+                          </a>
+                          <a href="javascript:void(0)">
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1121_10047)">
+                              <path d="M0.0325222 11.1172H11.8162V12.8079H0.0325222V11.1172Z" fill="black"/>
+                              <path d="M2.54297 7.73633H11.8162V9.42703H2.54297V7.73633Z" fill="black"/>
+                              <path d="M0.0325222 4.35352H11.8162V6.04421H0.0325222V4.35352Z" fill="black"/>
+                              <path d="M5.10462 0.972656H11.8162V2.66335H5.10462V0.972656Z" fill="black"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1121_10047">
+                              <rect width="11.8349" height="11.8349" fill="white" transform="matrix(-1 0 0 1 11.8418 0.972656)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>                              
+                          </a>
+                        </li>
+                        <li class="flex space-x-2">
+                          <a href="javascript:void(0)">
+                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1121_10028)">
+                              <path d="M1.7298 7.8801L1.72373 7.85683L2.11781 7.4292C2.37387 7.15054 2.54946 6.93766 2.64487 6.7963C2.74014 6.65496 2.78782 6.49086 2.78782 6.30689C2.78782 6.03357 2.69813 5.81753 2.51885 5.66009C2.33951 5.50284 2.08982 5.42383 1.76982 5.42383C1.46848 5.42383 1.22644 5.51733 1.04376 5.70462C0.861084 5.89191 0.773061 6.11738 0.779776 6.38674L0.783821 6.39588H1.4438V6.39593C1.4438 6.27719 1.47282 6.15568 1.53083 6.06971C1.58884 5.98368 1.6685 5.94212 1.76984 5.94212C1.88316 5.94212 1.96819 5.97613 2.02488 6.04274C2.08151 6.10946 2.10988 6.19918 2.10988 6.3112C2.10988 6.38987 2.08186 6.48272 2.02588 6.58932C1.96989 6.696 1.87165 6.81741 1.75291 6.95341L0.805962 7.93762V8.35503H2.82442V7.8801H1.7298Z" fill="black"/>
+                              <path d="M2.17205 3.42712V1.01758L0.806641 1.22156V1.7055H1.45967V3.42712H0.806641V3.96141H2.82507V3.42712H2.17205Z" fill="black"/>
+                              <path d="M2.74178 11.5156C2.65373 11.3988 2.53173 11.3122 2.37572 11.2548C2.51304 11.1921 2.62275 11.1052 2.70473 10.9939C2.78676 10.8825 2.82773 10.7608 2.82773 10.6289C2.82773 10.3635 2.73304 10.1585 2.54373 10.0139C2.35442 9.86912 2.10176 9.79688 1.78569 9.79688C1.51367 9.79688 1.28234 9.86888 1.09165 10.0129C0.900961 10.1569 0.809594 10.3553 0.81763 10.5873L0.821676 10.6097H1.47772C1.47772 10.4909 1.51097 10.4539 1.57769 10.4032C1.64435 10.3525 1.72173 10.3221 1.80969 10.3221C1.92172 10.3221 2.00702 10.3508 2.06575 10.4135C2.12441 10.4762 2.15372 10.5522 2.15372 10.6442C2.15372 10.7602 2.12106 10.8564 2.05578 10.9218C1.99041 10.9871 1.8971 11.0252 1.77574 11.0252H1.4589V11.5002H1.77574C1.91045 11.5002 2.01476 11.5399 2.08878 11.6046C2.16281 11.6693 2.19981 11.776 2.19981 11.9173C2.19981 12.0187 2.16443 12.1046 2.09385 12.1712C2.02314 12.2379 1.92846 12.2721 1.80978 12.2721C1.70576 12.2721 1.61749 12.2273 1.54476 12.164C1.47203 12.1007 1.43576 12.0344 1.43576 11.9157H0.775642L0.771677 11.9414C0.765016 12.2134 0.863988 12.4279 1.06867 12.5712C1.27336 12.7145 1.51237 12.7897 1.78569 12.7897C2.10308 12.7897 2.36375 12.7151 2.56779 12.5624C2.77182 12.4098 2.87376 12.2009 2.87376 11.9342C2.87376 11.7715 2.82983 11.6323 2.74178 11.5156Z" fill="black"/>
+                              <path d="M14.5787 9.7793H4.78333V11.7384H14.5787V9.7793Z" fill="black"/>
+                              <path d="M14.5787 5.91992H4.78333V7.879H14.5787V5.91992Z" fill="black"/>
+                              <path d="M14.5787 1.94336H4.78333V3.90243H14.5787V1.94336Z" fill="black"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1121_10028">
+                              <rect width="13.8073" height="13.8073" fill="white" transform="translate(0.771484)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>                              
+                          </a>
+                          <a href="javascript:void(0)">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1121_9978)">
+                              <path d="M13.961 9.36328H4.56824V11.2418H13.961V9.36328Z" fill="black"/>
+                              <path d="M13.961 5.66406H4.56824V7.54261H13.961V5.66406Z" fill="black"/>
+                              <path d="M13.961 1.84961H4.56824V3.72816H13.961V1.84961Z" fill="black"/>
+                              <path d="M2.68898 9.42188H0.810425V11.3004H2.68898V9.42188Z" fill="black"/>
+                              <path d="M2.68898 5.66406H0.810425V7.54261H2.68898V5.66406Z" fill="black"/>
+                              <path d="M2.68898 1.84961H0.810425V3.72816H2.68898V1.84961Z" fill="black"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1121_9978">
+                              <rect width="13.1498" height="13.1498" fill="white" transform="translate(0.810425)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>                              
+                          </a>
+                          <a href="javascript:void(0)">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1121_9997)">
+                              <path d="M14 9.69727H4.55078V11.5871H14V9.69727Z" fill="black"/>
+                              <path d="M1.8006 1.2207H1.10014L0.193359 4.02681H0.849372L1.00754 3.45413H1.89318L2.05337 4.02681H2.70938L1.8006 1.2207ZM1.15225 2.996L1.44363 1.96517H1.45514L1.74842 2.996H1.15225Z" fill="black"/>
+                              <path d="M2.59163 7.1028C2.51329 6.9901 2.39169 6.91543 2.22705 6.87813C2.35825 6.82538 2.45533 6.74694 2.51844 6.64271C2.58143 6.53858 2.61293 6.4196 2.61293 6.28582C2.61293 6.02984 2.51517 5.83805 2.31966 5.70874C2.12414 5.57948 1.85212 5.51562 1.50349 5.51562H0.542847V8.32176H1.6424C1.98588 8.32176 2.24954 8.25245 2.43349 8.11227C2.61738 7.97207 2.70942 7.76534 2.70942 7.49132C2.70942 7.34464 2.67013 7.21533 2.59163 7.1028ZM1.17273 6.03097H1.17278H1.50346C1.65779 6.03097 1.77232 6.05069 1.84694 6.1053C1.92156 6.15999 1.95878 6.24326 1.95878 6.36294C1.95878 6.46844 1.92218 6.5344 1.84883 6.58904C1.77559 6.64373 1.66483 6.66091 1.51697 6.66091H1.17273V6.03097ZM1.95503 7.73195C1.88556 7.78664 1.78133 7.80627 1.6424 7.80627H1.17281V7.11906H1.6791C1.81288 7.11906 1.90959 7.14934 1.96946 7.21177C2.0293 7.2742 2.05915 7.36223 2.05915 7.48442C2.05912 7.5976 2.0245 7.67726 1.95503 7.73195Z" fill="black"/>
+                              <path d="M1.20618 10.3773C1.29105 10.2584 1.4179 10.1989 1.56587 10.1989C1.74084 10.1989 1.86991 10.2377 1.94264 10.3265C2.01526 10.4152 2.06129 10.5563 2.07036 10.7281H2.70512L2.709 10.722C2.68449 10.3928 2.57837 10.1414 2.39065 9.96271C2.20269 9.78386 1.93131 9.69727 1.57631 9.69727C1.24186 9.69727 0.960263 9.8043 0.751183 10.0185C0.542158 10.2326 0.427734 10.5095 0.427734 10.8491V11.4356C0.427734 11.7765 0.546284 12.0537 0.763723 12.2672C0.981055 12.4808 1.26848 12.5875 1.61576 12.5875C1.96173 12.5875 2.22814 12.5007 2.41025 12.327C2.59226 12.1534 2.69093 11.915 2.70374 11.5857L2.70115 11.5871H2.06645C2.05738 11.7589 2.02012 11.8898 1.95448 11.9735C1.88889 12.0571 1.77762 12.0923 1.62073 12.0923C1.45865 12.0923 1.31027 12.0292 1.21767 11.9097C1.12506 11.79 1.05778 11.6298 1.05778 11.4356V10.8452C1.05778 10.6523 1.12131 10.4963 1.20618 10.3773Z" fill="black"/>
+                              <path d="M14 5.97461H4.55078V7.86444H14V5.97461Z" fill="black"/>
+                              <path d="M14 2.13672H4.55078V4.02655H14V2.13672Z" fill="black"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1121_9997">
+                              <rect width="13.8073" height="13.8073" fill="white" transform="translate(0.193359)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>                              
+                          </a>
+                        </li>
+                      </ul>
+                  </div>
+                  <textarea name="conditions" id="conditions" cols="30" rows="4" class="w-full outline-none"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex justify-end items-center mt-auto pt-5">
+            <a href="javascript:void(0)" class="btn-secondary inline-block py-3 sm:py-3.5 lg:py-4">Cancel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assest/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../assest/js/script.js"></script>
+  </body>
+</html>

@@ -18,8 +18,10 @@ select option{@apply text-dark;}
  ::-webkit-scrollbar-track {border-radius: 0.25rem!important;}
  /* scroll end  */
 
- /* buttons  */
+/* dateinput icon change  */
+.datepicker input::-webkit-calendar-picker-indicator, input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator {@apply w-full h-full absolute inset-0 opacity-0 cursor-pointer;}
 
+ /* buttons  */
 .right_bar{@apply w-full lg:w-[calc(100%-300px)] 2xl:w-[calc(100%-340px)];}
 .left_bar{@apply  absolute inset-y-0 left-0 h-screen -translate-x-[320px] z-10 lg:translate-x-0 py-7 px-4 2xl:px-10 xl:py-9 w-full max-w-[300px] 2xl:max-w-[340px] bg-white overflow-y-auto;}
 .content-area{@apply h-[calc(100vh-70px)] md:h-[calc(100vh-100px)] px-4 sm:px-6 lg:px-8 2xl:px-10 py-5 overflow-y-auto;}
@@ -49,7 +51,7 @@ h4,.h4{@apply text-base md:text-lg xl:text-xl text-dark font-medium font-semibol
 
 /* form login */
 .form-labal{@apply text-xs sm:text-sm text-grey;}
-.form-input{@apply w-full border text-sm lg:text-base border-grey/40 rounded py-2 sm:py-2.5 px-4 mt-1 outline-primary;}
+.form-input{@apply w-full bg-white border text-sm lg:text-base border-grey/40 rounded py-2 sm:py-2.5 px-4 mt-1 outline-primary;}
 .selaction-input{@apply appearance-none mt-0 text-xs lg:text-sm text-grey border-grey/40 rounded py-2 sm:py-2.5 pr-8 pl-3 overflow-hidden overflow-ellipsis w-full border outline-primary;}
 .down-icon{@apply absolute top-1/2 -translate-y-1/2 right-3 text-sm text-grey pointer-events-none;}
 .detailsTitel{@apply text-sm sm:text-base text-dark font-semibold;}
@@ -191,6 +193,26 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .reporTable tr th{@apply border-b-[1.5px] border-gray-300 pb-3 lg:pb-5;}
 .reporTable tbody tr:first-child td{@apply pt-3 lg:pt-5;}
 
+/* stapbar */
+.stapHolder{@apply relative z-10 flex justify-between text-sm font-medium text-gray-500;}
+.stapbar{@apply relative w-1/4;}
+.stapbar .stapProcess{@apply absolute top-3 md:top-4 -z-10 h-[3px] bg-grey/50;}
+.stapbar div{@apply text-center space-y-2 relative z-10;}
+.stapbar div .stapNab{@apply h-6 w-6 md:h-8 md:w-8 bg-gray-300 text-grey mx-auto rounded-full text-xs md:text-sm font-bold flex items-center justify-center;}
+.stapbar div .stapTitel{@apply sm:ml-2 block text-[10px] leading-4 sm:text-xs xl:text-sm;}
+.processBtn{@apply text-grey text-base sm:text-lg lg:text-xl font-semibold flex items-center hover:text-primary;}
+/* :activeACTION  */
+.stapbar.active .stapProcess, .stapbar.active div .stapNab{@apply bg-primary text-white;}
+.processBtn.active{@apply text-primary;}
 
+
+/* userPlan check  */
+.userPlans{@apply flex items-center relative;}
+.userPlans input{@apply absolute inset-0 w-full h-full opacity-0 cursor-pointer;}
+.userPlans span{@apply w-6 h-6 md:w-7 md:h-7 mr-1.5 md:mr-3 rounded bg-gray-200 flex items-center justify-center;}
+.userPlans span i{@apply text-white scale-0 anim text-[10px] md:text-sm;}
+.userPlans label{@apply text-sm sm:text-base text-grey font-semibold;}
+/* user plan checked  */
+.userPlans input:checked ~ span{@apply bg-primary;}
+.userPlans input:checked ~ span i{@apply scale-100;}
 @tailwind utilities;
-

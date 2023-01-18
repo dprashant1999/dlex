@@ -468,66 +468,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-right: 1.75rem;
-    padding-left: 1.75rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-    padding-right: 0.875rem;
-    padding-left: 0.875rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding-right: 2.25rem;
-    padding-left: 2.25rem;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-    padding-right: 3rem;
-    padding-left: 3rem;
-  }
-}
-
-@media (min-width: 1920px) {
-  .container {
-    max-width: 1920px;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-}
-
-@media (min-width: 2560px) {
-  .container {
-    max-width: 2560px;
-  }
-}
-
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -570,6 +510,20 @@ select option {
 }
 
 /* scroll end  */
+
+/* dateinput icon change  */
+
+.datepicker input::-webkit-calendar-picker-indicator, input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
 
 /* buttons  */
 
@@ -725,7 +679,7 @@ select option {
 @media (min-width: 1536px) {
   .navitems a span {
     font-size: 1.125rem;
-    line-height: 1.75rem;
+    line-height: 1.45rem;
   }
 }
 
@@ -739,7 +693,7 @@ select option {
   .navitems a span i {
     margin-right: 1.25rem;
     font-size: 1.125rem;
-    line-height: 1.75rem;
+    line-height: 1.45rem;
   }
 }
 
@@ -923,7 +877,7 @@ select option {
 
 h1, .h1 {
   font-size: 1.25rem;
-  line-height: 1.875rem;
+  line-height: 1.55rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(24 24 25 / var(--tw-text-opacity));
@@ -959,7 +913,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 1.25rem;
-  line-height: 1.875rem;
+  line-height: 1.55rem;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(24 24 25 / var(--tw-text-opacity));
@@ -983,14 +937,14 @@ h4, .h4 {
 @media (min-width: 768px) {
   h4, .h4 {
     font-size: 1.125rem;
-    line-height: 1.75rem;
+    line-height: 1.45rem;
   }
 }
 
 @media (min-width: 1280px) {
   h4, .h4 {
     font-size: 1.25rem;
-    line-height: 1.875rem;
+    line-height: 1.55rem;
   }
 }
 
@@ -1016,6 +970,8 @@ h4, .h4 {
   border-radius: 0.25rem;
   border-width: 1px;
   border-color: rgb(158 158 158 / 0.4);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -1853,14 +1809,14 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 @media (min-width: 768px) {
   .invoiceSlidenum span {
     font-size: 1.125rem;
-    line-height: 1.75rem;
+    line-height: 1.45rem;
   }
 }
 
 @media (min-width: 1024px) {
   .invoiceSlidenum span {
     font-size: 1.25rem;
-    line-height: 1.875rem;
+    line-height: 1.55rem;
   }
 }
 
@@ -1990,7 +1946,7 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 @media (min-width: 1280px) {
   .attendeeDetails .bookOffer {
     font-size: 1.125rem;
-    line-height: 1.75rem;
+    line-height: 1.45rem;
   }
 }
 
@@ -2348,6 +2304,232 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   }
 }
 
+/* stapbar */
+
+.stapHolder {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.stapbar {
+  position: relative;
+  width: 25%;
+}
+
+.stapbar .stapProcess {
+  position: absolute;
+  top: 0.75rem;
+  z-index: -10;
+  height: 3px;
+  background-color: rgb(158 158 158 / 0.5);
+}
+
+@media (min-width: 768px) {
+  .stapbar .stapProcess {
+    top: 1rem;
+  }
+}
+
+.stapbar div {
+  position: relative;
+  z-index: 10;
+}
+
+.stapbar div > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.stapbar div {
+  text-align: center;
+}
+
+.stapbar div .stapNab {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 1.5rem;
+  width: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(158 158 158 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .stapbar div .stapNab {
+    height: 2rem;
+    width: 2rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.stapbar div .stapTitel {
+  display: block;
+  font-size: 10px;
+  line-height: 1rem;
+}
+
+@media (min-width: 640px) {
+  .stapbar div .stapTitel {
+    margin-left: 0.5rem;
+    font-size: .75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .stapbar div .stapTitel {
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.processBtn {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(158 158 158 / var(--tw-text-opacity));
+}
+
+.processBtn:hover {
+  --tw-text-opacity: 1;
+  color: rgb(32 192 232 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .processBtn {
+    font-size: 1.125rem;
+    line-height: 1.45rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .processBtn {
+    font-size: 1.25rem;
+    line-height: 1.55rem;
+  }
+}
+
+/* :activeACTION  */
+
+.stapbar.active .stapProcess, .stapbar.active div .stapNab {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 192 232 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.processBtn.active {
+  --tw-text-opacity: 1;
+  color: rgb(32 192 232 / var(--tw-text-opacity));
+}
+
+/* userPlan check  */
+
+.userPlans {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.userPlans input {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.userPlans span {
+  margin-right: 0.375rem;
+  display: flex;
+  height: 1.5rem;
+  width: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .userPlans span {
+    margin-right: 0.75rem;
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+}
+
+.userPlans span i {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  font-size: 10px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+@media (min-width: 768px) {
+  .userPlans span i {
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.userPlans label {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(158 158 158 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .userPlans label {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+/* user plan checked  */
+
+.userPlans input:checked ~ span {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 192 232 / var(--tw-bg-opacity));
+}
+
+.userPlans input:checked ~ span i {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -2370,11 +2552,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .relative {
   position: relative;
-}
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 .inset-0 {
@@ -2456,6 +2633,18 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   right: 44.3%;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-1\/2 {
+  right: 50%;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -2501,6 +2690,16 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.-mx-3 {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.-mx-0 {
+  margin-left: -0px;
+  margin-right: -0px;
 }
 
 .ml-auto {
@@ -2573,6 +2772,30 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.-mt-3 {
+  margin-top: -0.75rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .block {
@@ -2675,6 +2898,18 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   height: 100vh;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-\[120px\] {
+  height: 120px;
+}
+
 .max-h-\[570px\] {
   max-height: 570px;
 }
@@ -2753,6 +2988,20 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-max {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-\[116px\] {
+  width: 116px;
 }
 
 .min-w-\[160px\] {
@@ -2839,6 +3088,20 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   max-width: 75px;
 }
 
+.max-w-max {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
 .border-collapse {
   border-collapse: collapse;
 }
@@ -2896,6 +3159,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -3010,6 +3277,12 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0px * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -3020,6 +3293,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
 }
 
 .whitespace-nowrap {
@@ -3084,6 +3361,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .border-dashed {
   border-style: dashed;
+}
+
+.border-dotted {
+  border-style: dotted;
 }
 
 .border-none {
@@ -3191,6 +3472,11 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   background-color: rgb(254 228 226 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#eee\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
 }
@@ -3250,6 +3536,18 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .p-2\.5 {
   padding: 0.625rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .px-2 {
@@ -3337,6 +3635,31 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   padding-bottom: 2.25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pl-12 {
   padding-left: 3rem;
 }
@@ -3389,12 +3712,24 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   padding-bottom: 2.5rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .pt-1 {
   padding-top: 0.25rem;
 }
 
 .pb-0 {
   padding-bottom: 0px;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .text-left {
@@ -3416,7 +3751,7 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .text-lg {
   font-size: 1.125rem;
-  line-height: 1.75rem;
+  line-height: 1.45rem;
 }
 
 .text-xs {
@@ -3435,7 +3770,7 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .text-xl {
   font-size: 1.25rem;
-  line-height: 1.875rem;
+  line-height: 1.55rem;
 }
 
 .text-2xl {
@@ -3452,6 +3787,11 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   font-size: 10px;
 }
 
+.text-26 {
+  font-size: 1.625rem;
+  line-height: 2.125rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -3466,6 +3806,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .font-medium {
   font-weight: 500;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .leading-4 {
@@ -3530,12 +3874,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
 .opacity-100 {
   opacity: 1;
-}
-
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline-none {
@@ -3648,6 +3986,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     margin-top: 0px;
   }
 
+  .sm\:-mt-3 {
+    margin-top: -0.75rem;
+  }
+
   .sm\:inline-block {
     display: inline-block;
   }
@@ -3684,6 +4026,26 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     width: 66.666667%;
   }
 
+  .sm\:w-auto {
+    width: auto;
+  }
+
+  .sm\:w-\[calc\(100\%-130px\)\] {
+    width: calc(100% - 130px);
+  }
+
+  .sm\:w-\[calc\(100\%-150px\)\] {
+    width: calc(100% - 150px);
+  }
+
+  .sm\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .sm\:max-w-\[200px\] {
+    max-width: 200px;
+  }
+
   .sm\:flex-nowrap {
     flex-wrap: nowrap;
   }
@@ -3706,6 +4068,18 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .sm\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+
+  .sm\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .sm\:border-2 {
@@ -3763,6 +4137,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .sm\:pl-4 {
     padding-left: 1rem;
+  }
+
+  .sm\:text-center {
+    text-align: center;
   }
 
   .sm\:text-sm {
@@ -3848,6 +4226,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     max-width: 100px;
   }
 
+  .md\:max-w-\[180px\] {
+    max-width: 180px;
+  }
+
   .md\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -3866,6 +4248,32 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .md\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-7 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .md\:border-r {
+    border-right-width: 1px;
+  }
+
   .md\:p-8 {
     padding: 2rem;
   }
@@ -3882,18 +4290,31 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     padding: 0.5rem;
   }
 
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .md\:pt-7 {
     padding-top: 1.75rem;
   }
 
+  .md\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.875rem;
+    line-height: 1.55rem;
   }
 
   .md\:text-26 {
@@ -3908,7 +4329,7 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .md\:text-lg {
     font-size: 1.125rem;
-    line-height: 1.75rem;
+    line-height: 1.45rem;
   }
 
   .md\:text-base {
@@ -3961,6 +4382,14 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     width: 23%;
   }
 
+  .lg\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .lg\:w-5\/12 {
+    width: 41.666667%;
+  }
+
   .lg\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -3985,6 +4414,12 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
   }
 
+  .lg\:space-y-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+  }
+
   .lg\:p-7 {
     padding: 1.75rem;
   }
@@ -4003,6 +4438,14 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .lg\:p-3 {
     padding: 0.75rem;
+  }
+
+  .lg\:p-9 {
+    padding: 2.25rem;
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
   }
 
   .lg\:px-6 {
@@ -4050,6 +4493,16 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     padding-bottom: 1.5rem;
   }
 
+  .lg\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .lg\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .lg\:pl-14 {
     padding-left: 3.5rem;
   }
@@ -4061,7 +4514,7 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .lg\:text-lg {
     font-size: 1.125rem;
-    line-height: 1.75rem;
+    line-height: 1.45rem;
   }
 
   .lg\:text-sm {
@@ -4071,7 +4524,7 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .lg\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.875rem;
+    line-height: 1.55rem;
   }
 
   .lg\:text-2xl {
@@ -4087,6 +4540,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .xl\:ml-4 {
     margin-left: 1rem;
+  }
+
+  .xl\:h-36 {
+    height: 9rem;
   }
 
   .xl\:w-1\/4 {
@@ -4105,6 +4562,14 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     width: 23%;
   }
 
+  .xl\:w-36 {
+    width: 9rem;
+  }
+
+  .xl\:w-\[calc\(100\%-150px\)\] {
+    width: calc(100% - 150px);
+  }
+
   .xl\:justify-end {
     justify-content: flex-end;
   }
@@ -4113,6 +4578,12 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+  }
+
+  .xl\:space-y-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
   }
 
   .xl\:p-10 {
@@ -4134,6 +4605,24 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     padding-right: 3rem;
   }
 
+  .xl\:py-3\.5 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .xl\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .xl\:pb-5 {
+    padding-bottom: 1.25rem;
+  }
+
+  .xl\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.625rem;
@@ -4146,7 +4635,7 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .xl\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.875rem;
+    line-height: 1.55rem;
   }
 }
 
@@ -4169,6 +4658,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     height: 1.25rem;
   }
 
+  .\32xl\:h-12 {
+    height: 3rem;
+  }
+
   .\32xl\:w-5 {
     width: 1.25rem;
   }
@@ -4183,6 +4676,18 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .\32xl\:w-1\/5 {
     width: 20%;
+  }
+
+  .\32xl\:w-12 {
+    width: 3rem;
+  }
+
+  .\32xl\:w-auto {
+    width: auto;
+  }
+
+  .\32xl\:w-\[calc\(100\%-160px\)\] {
+    width: calc(100% - 160px);
   }
 
   .\32xl\:max-w-\[240px\] {
@@ -4201,8 +4706,22 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
     max-width: 180px;
   }
 
+  .\32xl\:space-y-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+  }
+
   .\32xl\:p-10 {
     padding: 2.5rem;
+  }
+
+  .\32xl\:p-12 {
+    padding: 3rem;
+  }
+
+  .\32xl\:p-11 {
+    padding: 2.75rem;
   }
 
   .\32xl\:px-8 {
@@ -4218,6 +4737,16 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   .\32xl\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .\32xl\:py-3\.5 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .\32xl\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .\32xl\:text-26 {
@@ -4237,7 +4766,6 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
 
   .\32xl\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.875rem;
+    line-height: 1.55rem;
   }
 }
-
