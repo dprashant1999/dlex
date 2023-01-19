@@ -178,7 +178,7 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .popInput{@apply w-full p-2 pl-11 text-xs sm:text-base leading-6 sm:leading-7 outline-0;}
 .popInputicon{@apply absolute inset-y-0 left-4 inline-flex items-center;}
 .popSelect{@apply text-grey font-normal text-sm md:text-base rounded-lg block w-full p-2.5 outline-none appearance-none;}
-.popSeicon{@apply text-[8px] text-grey absolute right-3 top-[18px] pointer-events-none;}
+.popSeicon{@apply text-[10px] block text-grey absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none;}
 
 /* tab */
 .tebMenu{@apply inline-flex w-full border-b border-primary space-x-2 md:space-x-5 overflow-hidden overflow-x-auto;}
@@ -240,4 +240,22 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 /* user plan checked  */
 .userPlans input:checked ~ span{@apply bg-primary;}
 .userPlans input:checked ~ span i{@apply scale-100;}
+
+/* radio checked style */
+input[type=radio].transactiongroup:checked + div span.radio {
+  opacity: 1;
+  border: 4px solid #20C0E8;
+}
+input[type=radio].transactiongroup:checked ~ .transactionoption {
+  border-color: #20C0E8;
+}
+/* select bank */
+input[type=radio].bankholder:checked + .transactionBank {
+  border-color: #20C0E8;
+}
+input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
+  opacity: 1;
+  border: 4px solid #20C0E8;
+}
+
 @tailwind utilities;
