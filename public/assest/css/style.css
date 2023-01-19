@@ -4035,6 +4035,10 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   padding-bottom: 1.5rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -4095,20 +4099,16 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span {
   padding-top: 1.75rem;
 }
 
+.pr-12 {
+  padding-right: 3rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
 
 .pl-5 {
   padding-left: 1.25rem;
-}
-
-.pr-12 {
-  padding-right: 3rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
 }
 
 .text-left {
