@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Profile</title>
+    <title>Help</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../assest/css/style.css" />
   </head>
   <body>
@@ -24,7 +24,7 @@
           </a>
           <a href="javascript:void(0)">
             <span>
-              <i class="icon-ads"></i>All Gift </span>
+              <i class="icon-ads"></i>All Ads </span>
           </a>
           <a href="javascript:void(0)">
             <span>
@@ -108,7 +108,7 @@
               <span class="flex items-center text-xs md:text-sm xl:text-base font-semibold text-dark">Samantha <i class="icon-downarrow ml-2"></i>
               </span>
             </button>
-            <!-- onlclick show Profilepopup  -->
+            <!-- onclick show Profile popup  -->
             <div class="homeProfile">
               <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-dark group hover:text-primary anim">
                 <span class="icon-view mr-3 text-base lg:text-lg"></span> View Profile </a>
@@ -215,62 +215,76 @@
             </div>
           </div>
         </div>
-        <div class="content-area space-y-7">
-          <div class="flex items-center justify-between">
-            <a href="javascript:void(0)" class="inline-block">
-              <h1>Edit Profile</h1>
-            </a>
-            <a href="javascript:void(0)" class="btn-primary w-full max-w-[150px] text-center rounded-lg px-4 py-3 2xl:px-6">Save</a>
-          </div>
-          <div class="flex flex-wrap -mx-4">
-            <div class="w-full md:w-1/2 p-4">
-              <div class="bg-white p-7 lg:p-9 2xl:p-12 rounded-xl drop-shadow-two flex flex-col space-y-5 justify-between h-full">
-                <!-- profile-img  -->
-                <div class="relative w-24 h-24 xl:w-36 xl:h-36 mx-auto border-4 border-primary rounded-full">
-                  <img src="../assest/images/userProfile.png" class="w-full object-cover" alt="userProfile"/>
-                  <div class="w-9 h-9 2xl:w-12 2xl:h-12 rounded-full bg-primary absolute right-0 bottom-0 flex items-center justify-center">
-                    <a href="javascipt:void(0)" class="text-white text-lg 2xl:text-2xl inline-block mt-1"><i class="icon-camara"></i></a>
-                  </div>
-                </div>
-                <!-- user name  -->
-                <div class="space-y-1 sm:space-y-2 text-center w-full">
-                  <h4>samanthadavis@gmail.com</h4>
-                  <p class="form-labal">+91 5283 52 1234</p>
-                </div>
-                <!-- user input  -->
-                <div class="w-full">
-                  <label for="#emailorphone" class="form-labal 2xl:text-base">Your Full Name</label>
-                  <input type="text" name="fullnssame" id="name" class="form-input 2xl:py-3.5">
-                </div>
-              </div>  
+        <div class="content-area flex flex-col">
+          <div class="w-full space-y-7 md:space-y-12">
+            <!-- pagination -->
+            <div class="w-full sm:w-5/12 md:w-1/2">
+              <a href="javascript:void(0)" class="inline-block"><h1>Help</h1></a>
             </div>
-            <div class="w-full md:w-1/2 p-4">
-              <div class="bg-white p-7 lg:p-9 2xl:p-12 rounded-xl drop-shadow-two space-y-4 sm:space-y-6 md:space-y-8 h-full">
-                <!-- titel  -->
-                <h4>Change Password</h4>
-                <!-- profile-img  -->
-                <div class="w-full">
-                  <label for="#oldpassword" class="form-labal 2xl:text-base">Old Password</label>
-                  <input type="text" name="oldpassword" id="oldpassword" class="form-input 2xl:py-3.5">
-                </div>
-                <!-- user name  -->
-                <div class="w-full">
-                  <label for="#newpassword" class="form-labal 2xl:text-base">New Password</label>
-                  <input type="text" name="newpassword" id="newpassword" class="form-input 2xl:py-3.5">
-                </div>
-                <!-- user input  -->
-                <div class="w-full">
-                  <label for="#compassword" class="form-labal 2xl:text-base">Confirm Password</label>
-                  <input type="text" name="compassword" id="compassword" class="form-input 2xl:py-3.5">
-                </div>
-              </div>  
+            <!-- chatbot  -->
+            <div class="w-full">
+              <!-- <div class="flex flex-wrap relative w-full overflow-hidden xl:overflow-visible"> -->
+                  <!-- <div id="chatBot" class="absolute xl:relative w-full left-full xl:left-0 bg-[#F9FAFB] anim"> -->
+                    <div class="shadow-lg rounded-md overflow-hidden h-full">
+                      <!-- chat-title  -->
+                      <div class="p-5 py-3.5 bg-white flex items-center">
+                          <div class="flex items-center">
+                            <a href="javascript:void(0)" class="block xl:hidden"  onclick="removeActive('#chatBot','active')"><i class="icon-left-arrow mr-3"></i></a>
+                            <div class="w-12 h-12 rounded-full overflow-hidden">
+                              <img src="../assest/images/profile.jpg" alt="upload-2" class="w-full h-full object-cover" />
+                            </div>
+                          </div>
+                          <div class="w-full pl-3.5">
+                              <h3 class="text-base sm:text-lg">Mark Jecno</h3>
+                              <span class="text-xs sm:text-sm text-grey pb-0">markjecno@gmail.com</span>   
+                          </div>
+                      </div>
+                      <!-- chat-text  -->  
+                      <div class="chat-holder">
+                          <div class="text-massage right-massage">
+                              <p>I need your help <span class="chtinnerTime">2:55PM</span></p>
+                              <span class="arrow"></span>
+                          </div>
+                          <div class="text-massage left-massage">
+                              <p>Can you tell me exactly what you’re looking for? <span class="chtinnerTime">2:55PM</span></p>
+                              <span class="arrow"></span>
+                          </div>
+                          <div class="text-massage left-massage">
+                              <p>Pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth <br>
+                                1.praesentium voluptatum <br>
+                                2.deleniti atque corrupti quos dolores<span class="chtinnerTime">2:55PM</span></p>
+                              <span class="arrow"></span>
+                          </div>
+                          <div class="line-main">
+                              <hr>
+                              <span>Today</span>
+                          </div>
+                          <div class="text-massage right-massage">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <br>
+                              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto<br>         
+                              enouncing pleasure and praising<span class="chtinnerTime">2:55PM</span></p>
+                            <span class="arrow"></span>
+                        </div>                           
+                      </div>
+                      <!-- chat-input -->
+                      <div class="p-3 sm:p-5 bg-white flex items-center space-x-3">
+                        <label class="block w-full">
+                          <input type="text" placeholder="Type here..." class="w-full outline-none text-xs md:text-sm xl:text-base">
+                        </label>
+                        <a href="#" type="submit"><i class="icon-send text-primary text-2xl"></i></a>
+                    </div>
+                    </div>
+                  <!-- </div>    -->
+              <!-- </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../assest/js/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../assest/js/swiper-bundle.min.js"></script>
     <script src="../assest/js/script.js"></script>
   </body>
 </html>
