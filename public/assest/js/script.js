@@ -12,22 +12,15 @@ function removeActive(Id, db) {
   element.classList.remove(db);
 }
 
-// gift product ads swiper 
-var swiper = new Swiper(".adslider", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
 
-// searchtoggle mobile
-$(function() {
+$(document).ready(function() {
+ 
+  // searchtoggle mobile
   $("#searchbtn").on("click", function(a) {
     $(".searchHolder").toggle("active");
   });
-});
 
-// header profile 
-$(function() {
+  // header profile 
   $("#userProfile").on("click", function(a) {
     $(".homeProfile").addClass("open");
     a.stopPropagation()
@@ -37,11 +30,9 @@ $(function() {
       $(".homeProfile").removeClass("open");
     }
   });
-});
 
-// faq
-$(function() {
-  $('.inner_content').slideUp();
+  // faq
+  $('.faqContent').slideUp();
   $('.title_tab.active').next().slideDown();
   $('.title_tab').click(function(j) {   
     if ($(this).hasClass('active')) {
@@ -51,7 +42,7 @@ $(function() {
     }
     else {
       $('.title_tab').removeClass('active');
-      $('.inner_content').slideUp();
+      $('.faqContent').slideUp();
       $(this).addClass('active');
       $(this).next().slideDown();
     }     
@@ -140,3 +131,10 @@ tabTogglers.forEach(function(toggler) {
    }
  });
 
+   
+  // gift product ads swiper 
+  var swiper = new Swiper(".adslider", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });

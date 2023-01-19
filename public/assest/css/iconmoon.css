@@ -25,6 +25,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-password-hide:before {
+  content: "\e929";
+}
+.icon-discount-coupon:before {
+  content: "\e92a";
+}
+.icon-email-fill:before {
+  content: "\e92b";
+}
+.icon-sms:before {
+  content: "\e92c";
+}
+.icon-bell-fill:before {
+  content: "\e92d";
+}
+.icon-video-play:before {
+  content: "\e92e";
+}
+.icon-download:before {
+  content: "\e92f";
+}
+.icon-buy-product:before {
+  content: "\e930";
+}
+.icon-buy-bank:before {
+  content: "\e931";
+}
 .icon-message:before {
   content: "\e902";
 }

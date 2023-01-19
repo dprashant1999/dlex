@@ -196,7 +196,7 @@ tbody tr td .scheduled-action a:hover:nth-child(4) span{@apply text-red;}
 .reporTable tbody tr:first-child td{@apply pt-3 lg:pt-5;}
 
  /* chat-bot */
- .chat-holder{@apply h-[calc(100vh-320px)] sm:h-[calc(100vh-350px)] md:h-[calc(100vh-400px)] lg:h-[calc(100vh-400px)] xl:h-[calc(100vh-400px)] overflow-y-auto p-7 space-y-8;}
+ .chat-holder{@apply h-[calc(100vh-320px)] sm:h-[calc(100vh-350px)] md:h-[calc(100vh-400px)] lg:h-[calc(100vh-400px)] xl:h-[calc(100vh-400px)] overflow-y-auto p-7 space-y-6 md:space-y-8;}
  .text-massage{@apply max-w-[90%] sm:max-w-[70%] relative;}
  .text-massage p{@apply max-w-fit sm:min-w-[284px] relative text-xs sm:text-sm font-semibold p-2.5 sm:p-5 rounded-md;}
  .text-massage.right-massage p{@apply bg-[#E6E7E9] ml-auto;}
@@ -258,4 +258,12 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
   border: 4px solid #20C0E8;
 }
 
+/* FAQs  */
+.faqMain{@apply bg-white drop-shadow-two rounded-lg;}
+.title_tab{@apply font-semibold p-4 pr-10 md:py-6 md:px-8 md:pr-14 cursor-pointer text-base md:text-lg lg:text-xl 2xl:text-2xl relative;}
+.title_tab span{@apply text-dark anim absolute right-4 md:right-6 top-1/2 -translate-y-1/2 pointer-events-none;}
+.faqContent{@apply text-sm md:text-base text-grey pb-4 md:pb-6 px-4 md:px-8 hidden;}
+/* active actions  */
+.title_tab.active .icon-plus2{@apply hidden;}
+.title_tab.active .icon-minus2{@apply block;}
 @tailwind utilities;
