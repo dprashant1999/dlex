@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redeem</title>
+    <title>Scan Qr</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
-    <link rel="stylesheet" href="../assest/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
   </head>
@@ -108,7 +107,7 @@
               <span class="flex items-center text-xs md:text-sm xl:text-base font-semibold text-dark">Samantha <i class="icon-downarrow ml-2"></i>
               </span>
             </button>
-            <!-- onlclick show Profilepopup  -->
+            <!-- onclick show Profile popup  -->
             <div class="homeProfile">
               <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-dark group hover:text-primary anim">
                 <span class="icon-view mr-3 text-base lg:text-lg"></span> View Profile </a>
@@ -117,7 +116,7 @@
               <a href="javascript:void(0)" class="flex items-center text-sm lg:text-base text-red group">
                 <span class="icon-logout mr-3 text-base lg:text-lg"></span> Logout </a>
             </div>
-            
+            <!-- On click Notifications -->
             <div class="notifictionbar">
               <div class="flex items-center justify-between p-4">
                 <span class="inline-block font-semibold text-dark">Notifications</span>
@@ -215,91 +214,79 @@
             </div>
           </div>
         </div>
-        <div class="content-area flex flex-col justify-between">
-          <div class="w-full space-y-4 md:space-y-7">
+        <div class="content-area flex flex-col">
+          <div class="w-full space-y-7">
             <!-- pagination -->
-            <div class="flex items-center justify-between flex-wrap space-y-4 sm:space-y-0">
-              <div class="w-full sm:w-5/12 md:w-1/2">
-                <h1>Redeem Coin</h1>
-              </div>
-              <div class="flex items-center sm:justify-end space-x-3 w-full sm:w-7/12 md:w-1/2">
-                <a href="javascript:void(0)" class="btnDownload font-bold py-2 px-9 rounded">Redeem</a>
-              </div>
-            </div>
-            <!-- you have -->
-            <div class="bg-primary sm:flex items-center justify-between p-4 md:py-4 xl:px-7 rounded-xl  space-y-2 md:space-y-0">
-              <img src="../assest/images/svg/coins.svg" alt="coin" class="mx-auto md:mx-0" />
-              <p class="h1 font-normal text-white text-center">You have :  <br class="block md:hidden"> <span class="font-bold">250 F-Coins</span></p>
-              <img src="../assest/images/svg/coins.svg" alt="coin" class="mx-auto md:mx-0 hidden sm:block" />
-            </div>
-            <!-- Coin Redeem -->
-            <div class="bg-white flex items-center justify-between p-3 rounded-md space-y-2 md:space-y-0">
-              <div class="w-1/2 flex items-center">
-                <div class="bg-[#D5DBFF] p-1.5 lg:p-3 rounded-sm">
-                  <div class="w-7 lg:w-9 h-7 lg:h-9 flex items-center justify-center">
-                    <img src="../assest/images/svg/coin-redeem.svg" alt="Coin Redeem" class="w-full" />
+            <a href="javascript:void(0)" class="inline-block">
+              <h1>
+                <i class="icon-left-arrow mr-3"></i>Redeem Coin
+              </h1>
+            </a>
+            <!-- selection transaction -->
+            <div class="flex flex-wrap -mx-3 2xl:-mx-4 space-y-3 sm:space-y-0">
+              <div class="px-3 2xl:px-4 w-full sm:w-1/2">
+                <div class="flex items-center relative">
+                  <input class="absolute inset-0 z-10 cursor-pointer opacity-0 transactiongroup" type="radio" name="bytransaction" checked="">
+                  <div>
+                    <span class="inline-block w-4 h-4 rounded-full border-2 border-black/20 mr-4 radio"></span>
+                  </div>
+                  <div class="flex items-center p-3 xl:px-5 xl:py-4 bg-white rounded-lg border-2 border-black/20 w-full transactionoption">
+                    <div>
+                      <div class="w-10 h-10 xl:w-12 xl:h-12 rounded-full bg-black/5 flex items-center justify-center">
+                        <span class="icon-bank text-lg xl:text-2xl text-dark"></span>
+                      </div>
+                    </div>
+                    <div class="flex items-center flex-wrap pl-3 space-y-1 2xl:flex-nowrap 2xl:space-y-0">
+                      <p class="text-base lg:text-lg 2xl:text-xl font-semibold text-dark">By Bank</p>
+                      <span class="2xl:ml-2 text-xs sm:text-sm 2xl:text-base font-normal opacity-50">(You can redeem coin by bank)</span>
+                    </div>
                   </div>
                 </div>
-                <div class="pl-3 lg:pl-6">
-                  <p class="whitespace-nowrap text-xs sm:text-sm lg:text-base font-bold">Coin Redeem</p>
-                  <span class="whitespace-nowrap text-[10px] sm:text-xs lg:text-sm font-bold text-grey block">Processing</span>
-                </div>
               </div>
-              <div class="w-1/2 sm:flex items-center justify-end space-y-1 sm:space-y-0 sm:space-x-2.5 lg:space-x-5 lg:px-5">
-                <p class="whitespace-nowrap text-xs sm:text-sm lg:text-base font-bold text-right">Jan 18, 2021</p>
-                <span class="border w-10 sm:w-0 sm:h-4 block ml-auto"></span>
-                <span class="text-sm sm:text-base lg:text-xl font-bold text-leafGreen text-right block">-325</span>
-              </div>
-            </div>
-            <!-- Login Refer -->
-            <div class="bg-white flex items-center justify-between p-3 rounded-md space-y-2 md:space-y-0">
-              <div class="w-1/2 flex items-center">
-                <div class="bg-[#FFF0C8] p-1.5 lg:p-3 rounded-sm">
-                  <div class="w-7 lg:w-9 h-7 lg:h-9 flex items-center justify-center">
-                    <img src="../assest/images/svg/login-refer.svg" alt="Coin Redeem" class="w-full" />
+              <div class="px-3 2xl:px-4 w-full sm:w-1/2">
+                <div class="flex items-center relative">
+                  <input class="absolute inset-0 z-10 cursor-pointer opacity-0 transactiongroup" type="radio" name="bytransaction">
+                  <div>
+                    <span class="inline-block w-4 h-4 rounded-full border-2 border-black/20 mr-4 radio"></span>
+                  </div>
+                  <div class="flex items-center p-3 xl:px-5 xl:py-4 bg-white rounded-lg border-2 border-black/20 w-full transactionoption">
+                    <div>
+                      <div class="w-10 h-10 xl:w-12 xl:h-12 rounded-full bg-black/5 flex items-center justify-center">
+                        <span class="icon-by-product text-lg xl:text-2xl text-dark"></span>
+                      </div>
+                    </div>
+                    <div class="flex items-center flex-wrap pl-3 space-y-1 2xl:flex-nowrap 2xl:space-y-0">
+                      <p class="text-base lg:text-lg 2xl:text-xl font-semibold text-dark">By Product</p>
+                      <span class="2xl:ml-2 text-xs sm:text-sm 2xl:text-base font-normal opacity-50">(You can redeem coin by Product)</span>
+                    </div>
                   </div>
                 </div>
-                <div class="pl-3 lg:pl-6">
-                  <p class="whitespace-nowrap text-xs sm:text-sm lg:text-base font-bold">Login Refer</p>
-                  <span class="whitespace-nowrap text-[10px] sm:text-xs lg:text-sm font-bold text-grey block">Refer by Mark jecno</span>
-                </div>
-              </div>
-              <div class="w-1/2 sm:flex items-center justify-end space-y-1 sm:space-y-0 sm:space-x-2.5 lg:space-x-5 lg:px-5">
-                <p class="whitespace-nowrap text-xs sm:text-sm lg:text-base font-bold text-right">Jan 18, 2021</p>
-                <span class="border w-10 sm:w-0 sm:h-4 block ml-auto"></span>
-                <span class="text-sm sm:text-base lg:text-xl font-bold text-primary text-right block">+250</span>
               </div>
             </div>
-            <!-- Coin Send -->
-            <div class="bg-white flex items-center justify-between p-3 rounded-md space-y-2 md:space-y-0">
-              <div class="w-1/2 flex items-center">
-                <div class="bg-[#C6F4FF] p-1.5 lg:p-3 rounded-sm">
-                  <div class="w-7 lg:w-9 h-7 lg:h-9 flex items-center justify-center">
-                    <img src="../assest/images/svg/coin-send.svg" alt="Coin Redeem" class="w-full" />
-                  </div>
-                </div>
-                <div class="pl-3 lg:pl-6">
-                  <p class="whitespace-nowrap text-xs sm:text-sm lg:text-base font-bold">Coin Send</p>
-                  <span class="whitespace-nowrap text-[10px] sm:text-xs lg:text-sm font-bold text-grey block">Refer by Mark jecno</span>
-                </div>
-              </div>
-              <div class="w-1/2 sm:flex items-center justify-end space-y-1 sm:space-y-0 sm:space-x-2.5 lg:space-x-5 lg:px-5">
-                <p class="whitespace-nowrap text-xs sm:text-sm lg:text-base font-bold text-right">Jan 18, 2021</p>
-                <span class="border w-10 sm:w-0 sm:h-4 block ml-auto"></span>
-                <span class="text-sm sm:text-base lg:text-xl font-bold text-leafGreen text-right block">-14</span>
-              </div>
-            </div>
-          </div>
-          <div class="w-full">
-            <img src="../assest/images/ads.png" alt="ads" class="w-full h-28" />
           </div>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- SYNC Account  -->
+    <div class="fixed w-full inset-0 z-40 bg-black bg-opacity-70">
+      <div class="flex flex-col items-center justify-center h-screen">
+        <div class="popWidth max-w-[480px]">
+          <!-- Modal content -->
+          <div class="popMain">
+            <div class="popPad">
+                <h2 class="text-center font-bold">Scan QR Code</h2>
+                <p class="text-xs md:text-sm text-grey font-normal text-center">Scan code to pay or transfer coins</p>
+                <img src="../assest/images/svg/scan-qr.svg" alt="QR Scan" class="mx-auto py-3 md:py-6" />
+                <p class="text-sm text-davyGrey font-semibold text-center">Scan this code to pay</p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
     <script src="../assest/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="../assest/js/swiper-bundle.min.js"></script>
     <script src="../assest/js/script.js"></script>
   </body>
 </html>
